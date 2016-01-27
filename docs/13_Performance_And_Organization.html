@@ -1,0 +1,1722 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>性能和组织 | 学写HTML和CSS</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../docs/14_Detailed_Positioning.html" />
+    
+    
+    <link rel="prev" href="../docs/12_Writing_Your_Best_Code.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.1"
+        data-chapter-title="性能和组织"
+        data-filepath="docs/13_Performance_And_Organization.md"
+        data-basepath=".."
+        data-revision="Wed Jan 27 2016 20:22:01 GMT+0800 (China Standard Time)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> 基础</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="docs/01_Building_Your_First_Web_Page.html">
+            
+                
+                    <a href="../docs/01_Building_Your_First_Web_Page.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        新建一个网页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="docs/02_Getting_to_Know_HTML.html">
+            
+                
+                    <a href="../docs/02_Getting_to_Know_HTML.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        了解HTML
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="docs/03_Getting_to_Know_CSS.html">
+            
+                
+                    <a href="../docs/03_Getting_to_Know_CSS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        了解CSS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="docs/04_Opening_the_Box_Model.html">
+            
+                
+                    <a href="../docs/04_Opening_the_Box_Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        盒模型解析
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="docs/05_Positioning_Content.html">
+            
+                
+                    <a href="../docs/05_Positioning_Content.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        定位
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="docs/06_Working_with_Typography.html">
+            
+                
+                    <a href="../docs/06_Working_with_Typography.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        排版
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="docs/07_Setting_Backgrounds_And_Gradients.html">
+            
+                
+                    <a href="../docs/07_Setting_Backgrounds_And_Gradients.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        背景和渐变
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="docs/08_Creating_Lists.html">
+            
+                
+                    <a href="../docs/08_Creating_Lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        创建列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="docs/09_Adding_Media.html">
+            
+                
+                    <a href="../docs/09_Adding_Media.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        添加多媒体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="docs/10_Building_Forms.html">
+            
+                
+                    <a href="../docs/10_Building_Forms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        创建表单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="docs/11_Organizing_Data_with_Tables.html">
+            
+                
+                    <a href="../docs/11_Organizing_Data_with_Tables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        通过表格组织数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="docs/12_Writing_Your_Best_Code.html">
+            
+                
+                    <a href="../docs/12_Writing_Your_Best_Code.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        写出你最好的代码
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 高级</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="docs/13_Performance_And_Organization.html">
+            
+                
+                    <a href="../docs/13_Performance_And_Organization.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        性能和组织
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="docs/14_Detailed_Positioning.html">
+            
+                
+                    <a href="../docs/14_Detailed_Positioning.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        定位详解
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="docs/15_Complex_Selectors.html">
+            
+                
+                    <a href="../docs/15_Complex_Selectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        复杂选择器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="docs/16_Responsive_Web_Design.html">
+            
+                
+                    <a href="../docs/16_Responsive_Web_Design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        响应式Web设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="docs/17_Preprocessors.html">
+            
+                
+                    <a href="../docs/17_Preprocessors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        预处理器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="docs/18_jQuery.html">
+            
+                
+                    <a href="../docs/18_jQuery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        jQuery
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="docs/19_Transforms.html">
+            
+                
+                    <a href="../docs/19_Transforms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        变换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="docs/20_Transitions_And_Animations.html">
+            
+                
+                    <a href="../docs/20_Transitions_And_Animations.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        过渡和动画
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="docs/21_Feature_Support_And_Polyfills.html">
+            
+                
+                    <a href="../docs/21_Feature_Support_And_Polyfills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        功能支持与Polyfills
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="docs/22_Extending_Semantics_And_Accessibility.html">
+            
+                
+                    <a href="../docs/22_Extending_Semantics_And_Accessibility.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        扩展语意和辅助功能
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >学写HTML和CSS</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <p>&#x521B;&#x5EFA;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7F51;&#x9875;</p>
+<p>&#x5728;&#x4E92;&#x8054;&#x7F51;&#x53D1;&#x660E;&#x4E4B;&#x524D;&#xFF0C;&#x7F51;&#x7AD9;&#x662F;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x4E66;&#x7C4D;&#xFF0C;&#x5370;&#x5728;&#x7EB8;&#x4E0A;&#x7684;&#x6587;&#x4EF6;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x4E3B;&#x8981;&#x4FE1;&#x606F;&#x6E90;&#x5934;&#xFF0C;It took a considerable amount of effort&#x2014;and reading&#x2014;to track down the exact piece of information you were after.</p>
+<p>&#x5982;&#x4ECA;&#x4F60;&#x53EF;&#x4EE5;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x9009;&#x62E9;&#x4F60;&#x5E38;&#x7528;&#x7684;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x6765;&#x641C;&#x7D22;&#x4FE1;&#x606F;&#xFF0C;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x60F3;&#x8C61;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x5728;&#x6307;&#x5C16;&#x4E0B;&#x3002;And chances are someone somewhere has built a website with your exact search in mind.</p>
+<p>&#x672C;&#x4E66;&#x5C06;&#x5411;&#x4F60;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x4E24;&#x5927;&#x4E3B;&#x6D41;&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;HTML&#x548C;CSS&#x6765;&#x5EFA;&#x7ACB;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x7F51;&#x7AD9;&#x3002;</p>
+<p>&#x5728;&#x5F00;&#x59CB;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x4F7F;&#x7528;HTML&#x548C;CSS&#x6765;&#x5EFA;&#x7ACB;&#x7F51;&#x7AD9;&#x4E4B;&#x524D;&#xFF0C;&#x660E;&#x767D;&#x4E24;&#x79CD;&#x8BED;&#x8A00;&#x7684;&#x8BED;&#x6CD5;&#x3001;&#x672F;&#x8BED;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;</p>
+<p>HTML&#x548C;CSS&#x662F;&#x4EC0;&#x4E48;&#xFF1F;
+HTML HyperText Markup Language gives content structure and meaning by defining that content as, for example, headings, paragraphs, or images. &#x901A;&#x8FC7;&#x5982;&#x6807;&#x9898;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x56FE;&#x50CF;&#x7B49;&#x65B9;&#x5F0F;&#x5B9A;&#x4E49;&#x5185;&#x5BB9;&#x6765;&#x8D4B;&#x4E88;&#x7ED9;&#x5B9A;&#x5185;&#x5BB9;&#x7684;&#x7ED3;&#x6784;&#x548C;&#x542B;&#x4E49;&#x3002;</p>
+<p>CSS &#x6216;&#x8005; Cascading Style Sheets &#x7528;&#x6765;&#x8868;&#x793A;&#x5185;&#x5BB9;&#x5916;&#x89C2;&#x7684;&#x5C55;&#x793A;&#x8BED;&#x8A00;&#xFF0C;&#x5982;&#x5B57;&#x4F53;&#x3001;&#x989C;&#x8272;&#x7B49;&#x7B49;&#x3002;</p>
+<p>HTML&#x548C;CSS&#x8FD9;&#x4E24;&#x79CD;&#x8BED;&#x8A00;&#x5E94;&#x8BE5;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#x3002;HTML&#x5185;&#x4E0D;&#x5E94;&#x8BE5;&#x51FA;&#x73B0;CSS&#x8BED;&#x8A00;&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#x3002;&#x89C4;&#x5219;&#x662F;&#xFF1A;HTML&#x7528;&#x4E8E;&#x5C55;&#x793A;&#x5185;&#x5BB9;&#xFF0C;CSS&#x7528;&#x4E8E;&#x5C55;&#x793A;&#x5185;&#x5BB9;&#x7684;&#x5916;&#x89C2;&#x3002;</p>
+<p>&#x5728;&#x4E86;&#x89E3;HTML&#x548C;CSS&#x7684;&#x533A;&#x522B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x66F4;&#x6DF1;&#x5165;&#x7684;&#x4E86;&#x89E3;HTML</p>
+<p>&#x4E86;&#x89E3;&#x5E38;&#x89C1;&#x7684;HTML&#x672F;&#x8BED;
+&#x5F00;&#x59CB;&#x5B66;&#x4E60;HTML&#x4F60;&#x4F1A;&#x9047;&#x5230;&#x4E00;&#x4E9B;&#x65B0;&#x7684;&#x4E5F;&#x633A;&#x5947;&#x602A;&#x7684;&#x2014;&#x2014;&#x672F;&#x8BED;&#x3002;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x4F60;&#x4F1A;&#x9010;&#x6E10;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#xFF0C;&#x4F46;&#x6709;&#x4E09;&#x4E2A;HTML&#x672F;&#x8BED;&#x5728;&#x5F00;&#x59CB;&#x5B66;&#x4E60;&#x4E4B;&#x524D;&#x4F60;&#x5C31;&#x5FC5;&#x987B;&#x638C;&#x63E1;&#x3002;</p>
+<p>Elements
+&#x5143;&#x7D20;&#x662F;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x5185;&#x5BF9;&#x8C61;&#xFF08;&#x6807;&#x9898;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x56FE;&#x7247;&#xFF09;&#x7ED3;&#x6784;&#x548C;&#x5185;&#x5BB9;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;&#x6709;&#x5E38;&#x7528;&#x7684; &#x591A;&#x5C42;&#x7EA7;&#x7684;&#x6807;&#x9898;&#x5143;&#x7D20;&#xFF08;&#x901A;&#x8FC7;</p><h1 id="&#x5230;-&#x6807;&#x8BC6;&#xFF09;&#x3001;&#x6BB5;&#x843D;&#x5143;&#x7D20;&#xFF08;&#x901A;&#x8FC7;&#xFF09;&#xFF0C;&#x5F53;&#x7136;&#x8FD8;&#x5305;&#x62EC;---&#x5143;&#x7D20;&#x7B49;&#x7B49;
+&#x5143;&#x7D20;&#x901A;&#x8FC7;&#x5C0F;&#x4E8E;&#x53F7;&#x548C;&#x5927;&#x4E8E;&#x53F7;&#x8868;&#x793A;&#x4E2D;&#x95F4;&#x662F;&#x5143;&#x7D20;&#x540D;&#x79F0;&#xFF0C;&#x56E0;&#x6B64;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+
+tags
+the-use-of-lessthan-and-greaterthan-angle-brackets-surrounding-an-element-creates-what-is-known-as-a-tag-tags-most-commonly-occur-in-pairs-of-opening-and-closing-tags
+&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x8868;&#x793A;&#x5143;&#x7D20;&#x7684;&#x5F00;&#x59CB;&#xFF0C;-it-consists-of-a-lessthan-sign-followed-by-an-elements-name-and-then-ends-with-a-greaterthan-sign-for-example-
+&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x8868;&#x793A;&#x5143;&#x7D20;&#x7684;&#x7ED3;&#x675F;&#xFF0C;it-consists-of-a-lessthan-sign-followed-by-a-forward-slash-and-the-elements-name-and-then-ends-with-a-greaterthan-sign-for-example-
+&#x5728;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x548C;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x79F0;&#x4E3A;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#xFF0C;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;-&#x548C;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#xFF0C;&#x5B83;&#x4EEC;&#x4E2D;&#x95F4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x8D85;&#x94FE;&#x63A5;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x90A3;&#x4E48;&#x8D85;&#x94FE;&#x63A5;&#x7684;&#x6807;&#x7B7E;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+
+attributes
+attributes-are-properties-used-to-provide-additional-information-about-an-element-&#xFF08;attributes&#x548C;-properties&#x7684;&#x533A;&#x522B;httpjqueryhowtoblogspotcom201106htmldifferencebetweenattributeandhtml&#xFF0C;-&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;-attributes-&#x503C;&#x662F;&#x56FA;&#x5B9A;&#x7684;html&#x5C5E;&#x6027;&#x503C;&#xFF0C;-properties&#x662F;dom&#x4E2D;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7684;&#x5C5E;&#x6027;&#x503C;&#xFF09;&#x5E38;&#x89C1;&#x7684;&#x5C5E;&#x6027;&#x6709;id&#x5C5E;&#x6027;&#x7528;&#x6765;&#x6807;&#x8BC6;&#x5F53;&#x524D;&#x7684;&#x5143;&#x7D20;&#xFF0C;class&#x5C5E;&#x6027;&#x7528;&#x6765;&#x5BF9;&#x5143;&#x7D20;&#x5206;&#x7EC4;&#xFF0C;src&#x5C5E;&#x6027;&#x4E3A;&#x5D4C;&#x5165;&#x7684;&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x6E90;&#x6587;&#x4EF6;&#xFF0C;href-&#x5C5E;&#x6027;&#x63D0;&#x4F9B;&#x4E86;&#x8D85;&#x94FE;&#x63A5;&#x3002;
+attributes&#x5728;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x4E2D;&#x5B9A;&#x4E49;&#xFF0C;&#x653E;&#x5728;&#x5143;&#x7D20;&#x540D;&#x79F0;&#x7684;&#x540E;&#x9762;&#xFF0C;&#x4E00;&#x822C;&#x5C5E;&#x6027;&#x5305;&#x62EC;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x548C;&#x503C;&#xFF0C;&#x8FD9;&#x4E9B;&#x8212;&#x5FC3;&#x7684;&#x683C;&#x5F0F;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x540D;&#x79F0;--&#x7B49;&#x4E8E;&#x53F7;--&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#x503C;&#x3002;&#x4F8B;&#x5982;-&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;href&#x5C5E;&#x6027;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+shay-howe
+&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4F1A;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#x663E;&#x793A;shay-home&#x7684;&#x6587;&#x672C;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6587;&#x672C;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8DF3;&#x8F6C;&#x5230;-xx-&#x94FE;&#x63A5;&#x3002;&#x951A;&#x5143;&#x7D20;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;-&#x548C;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;-&#x5305;&#x542B;&#x4E86;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x8D85;&#x94FE;&#x63A5;&#x5C5E;&#x6027;-the-anchor-element-is-declared-with-the-opening--and-closing--tags-encompassing-the-text-and-the-hyperlink-reference-attribute-and-value-are-declared-with-hrefhttpshayhowecom-in-the-opening-tag
+&#x56FE;101
+html-syntax-outline-including-an-element-attribute-and-tag
+&#x73B0;&#x5728;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;html-elements-tags-&#x548C;-attributes&#x662F;&#x4EC0;&#x4E48;&#x4E86;&#xFF0C;lets-take-a-look-at-putting-together-our-first-web-page-&#x5982;&#x679C;&#x770B;&#x8D77;&#x6765;&#x90FD;&#x662F;&#x65B0;&#x7684;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x89E3;&#x6790;&#x3002;
+&#x8BBE;&#x7F6E;html&#x6587;&#x6863;&#x7ED3;&#x6784;
+html&#x6587;&#x6863;&#x5C31;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x4E3A;html&#x6587;&#x4EF6;&#x800C;&#x4E0D;&#x662F;txt&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x3002;-&#x5F00;&#x59CB;&#x5199;html&#xFF0C;&#x4F60;&#x9996;&#x5148;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4F60;&#x719F;&#x6089;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;microsoft-word&#x6216;pages&#x90A3;&#x4E9B;&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x3002;-&#x6709;&#x4E24;&#x4E2A;&#x6BD4;&#x8F83;&#x6D41;&#x884C;&#x7684;&#x7528;&#x6765;&#x5199;html&#x548C;css&#x7684;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x662F;dreamweaver&#x548C;sublime-text&#x3002;-&#x5176;&#x4ED6;&#x7C7B;&#x4F3C;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x5982;windows&#x4E0A;&#x7684;notepad-&#x548C;mac&#x4E0A;&#x7684;textwrangler&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;
+&#x6240;&#x6709;&#x7684;html&#x6587;&#x6863;&#x90FD;&#x6709;&#x8981;&#x6C14;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x542B;&#x5982;&#x4E0B;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x5143;&#x7D20;&#xFF1A;
+doctype-html---
+&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x6216;&#x8005;-doctype-html&#x544A;&#x8BC9;web&#x6D4F;&#x89C8;&#x5668;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x7684;html&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x653E;&#x5728;html&#x7684;&#x6700;&#x9876;&#x7AEF;&#x3002;-&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x7684;html&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x7B80;&#x5355;&#x5C31;&#x662F;doctype-html-&#x5728;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x4E4B;&#x540E;&#x5C31;&#x662F;&#x5143;&#x7D20;&#x7528;&#x6765;&#x8868;&#x793A;&#x6587;&#x6863;&#x5F00;&#x59CB;&#x3002;
+&#x5728;&#x5143;&#x7D20;&#x5185;&#x90E8;&#xFF0C;&#x5143;&#x7D20;&#x8868;&#x793A;&#x6587;&#x6863;&#x7684;&#x9876;&#x90E8;&#xFF0C;&#x5305;&#x62EC;&#x4E00;&#x4E9B;&#x5143;&#x6570;&#x636E;&#xFF08;metadata&#xFF0C;-&#x9644;&#x5E26;&#x9875;&#x9762;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF09;-&#x5143;&#x7D20;&#x5185;&#x90E8;&#x7684;&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#xFF0C;&#x5B83;&#x4F1A;&#x5305;&#x542B;&#x6587;&#x6863;&#x7684;&#x6807;&#x9898;&#xFF08;&#x4F1A;&#x73B0;&#x5B9E;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x6807;&#x9898;&#x680F;&#x4E0A;&#xFF09;&#xFF0C;&#x5916;&#x90E8;&#x6587;&#x4EF6;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x6709;&#x7528;&#x5143;&#x6570;&#x636E;&#x3002;
+&#x7F51;&#x9875;&#x91CC;&#x6240;&#x6709;&#x53EF;&#x89C1;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x4F1A;&#x5728;&#x5143;&#x7D20;&#x5185;&#xFF0C;-&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;html&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+doctype-html
+
+--
+----
+----hello-world
+--
+--
+----hello-world
+----this-is-a-web-page
+--
+
+
+&#x4EE5;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x6587;&#x6863;&#x7531;&#x6587;&#x6863;&#x7C7B;&#x578B;doctype-html&#x58F0;&#x660E;&#x5F00;&#x59CB;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7D27;&#x8DDF;&#x5143;&#x7D20;&#xFF0C;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x548C;&#x5143;&#x7D20;&#x3002;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x901A;&#x8FC7;&#x6807;&#x7B7E;&#x6307;&#x5B9A;&#x4E86;&#x5B57;&#x7B26;&#x96C6;&#x7F16;&#x7801;&#x5DF2;&#x7ECF;&#x6307;&#x5B9A;&#x4E86;&#x6587;&#x6863;&#x7684;&#x6807;&#x9898;&#x3002;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x901A;&#x8FC7;&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x7684;&#x6807;&#x9898;&#x4EE5;&#x53CA;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x7684;&#x6BB5;&#x843D;&#x3002;&#x56E0;&#x4E3A;&#x6807;&#x9898;&#x548C;&#x6BB5;&#x843D;&#x5D4C;&#x5957;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x4EEC;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;
+&#x5F53;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x65B9;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5185;&#x90E8;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5D4C;&#x5957;&#xFF0C;&#x7528;&#x539F;&#x6765;&#x8868;&#x793A;&#x6587;&#x6863;&#x7ED3;&#x6784;&#x7EC4;&#x7EC7;&#x548C;&#x7ED3;&#x6784;&#x6E05;&#x6670;when-an-element-is-placed-inside-of-another-element-also-known-as-nested-it-is-a-good-idea-to-indent-that-element-to-keep-the-document-structure-well-organized-and-legible
+&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x548C;&#x6807;&#x7B7E;&#x5D4C;&#x5957;&#x5E76;&#x7F29;&#x8FDB;&#x5728;&#x5143;&#x7D20;&#x91CC;&#x3002;in-the-previous-code-both-the--and--elements-were-nested&#x2014;and-indented&#x2014;inside-the--element-the-pattern-of-indenting-for-elements-continues-as-new-elements-are-added-inside-the--and--elements
+&#x81EA;&#x95ED;&#x5408;&#x5143;&#x7D20;
+&#x5728;&#x4E4B;&#x524D;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x6CA1;&#x6709;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x8FD9;&#x662F;&#x6545;&#x610F;&#x7684;&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5305;&#x542B;&#x5F00;&#x53E3;&#x5143;&#x7D20;&#x548C;&#x95ED;&#x5408;&#x5143;&#x7D20;&#xFF0C;some-elements-simply-receive-their-content-or-behavior-from-attributes-within-a-single-tag-the--element-is-one-of-these-elements-the-content-of-the-previous--element-is-assigned-with-the-use-of-the-charset-attribute-and-value-other-common-selfclosing-elements-include
+
+
+
+
+
+
+
+
+
+
+&#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;doctype-hmtl&#x4F5C;&#x4E3A;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x4E86;&#x548C;&#x5143;&#x7D20;&#xFF0C;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;
+&#x4EE3;&#x7801;&#x9A8C;&#x8BC1;
+&#x5728;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x7BA1;&#x6211;&#x4EEC;&#x591A;&#x4E48;&#x5C0F;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x72AF;&#x9519;&#x8BEF;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5199;html&#x548C;css&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x6709;&#x9A8C;&#x8BC1;&#x7A0B;&#x5E8F;&#x6765;&#x68C0;&#x6D4B;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x3002;the-w3c-has-built-both-html-and-css-validators-that-will-scan-code-for-mistakes-validating-our-code-not-only-helps-it-render-properly-across-all-browsers-but-also-helps-teach-us-the-best-practices-for-writing-code
+&#x5B9E;&#x8DF5;
+&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;web&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#x548C;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4EBA;&#x5458;we-have-the-luxury-of-attending-a-number-of-great-conferences-dedicated-to-our-craft-&#x6211;&#x4EEC;&#x5C06;&#x7EC4;&#x7EC7;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x4F1A;&#x8BAE;&#xFF0C;-&#x6837;&#x5F0F;&#x4F1A;&#x8BAE;&#xFF0C;&#x5E76;&#x5EFA;&#x7ACB;&#x4E3A;&#x4E4B;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x3002;&#x5F00;&#x59CB;&#x5427;&#xFF01;
+
+&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x521B;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x4E3A;indexhtml&#xFF0C;-&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x5FD8;&#x8BB0;&#x7684;&#x5730;&#x65B9;&#x3002;&#x6211;&#x5C06;&#x5728;&#x6211;&#x7684;&#x684C;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x547D;&#x540D;&#x4E3A;styleconference-&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x8BE5;&#x6587;&#x4EF6;&#x3002;
+&#x5728;indexhtml&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x6587;&#x6863;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;doctype-html&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x548C;--&#x548C;-&#x5143;&#x7D20;
+doctype-html
+
+
+
+
+
+
+
+&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x548C;&#x5143;&#x7D20;&#xFF0C;-&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x62EC;&#x6070;&#x5F53;&#x7684;charset&#x5C5E;&#x6027;&#x548C;&#x503C;&#xFF0C;&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x7F51;&#x9875;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x547D;&#x540D;&#x4E3A;style-conference
+
+
+
+--
+--styles-conference
+
+
+
+&#x5728;-&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;-&#x548C;-&#x5143;&#x7D20;&#xFF0C;-&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5305;&#x542B;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F7F;&#x7528;-styles-conference&#xFF0C;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6BB5;&#x843D;&#x7528;&#x4E8E;&#x4ECB;&#x7ECD;&#x6211;&#x4EEC;&#x7684;&#x4F1A;&#x8BAE;&#x3002;
+
+
+--styles-conference
+--every-year-the-brightest-web-designers-and-frontend-developers-descend-on-chicago-to-discuss-the-latest-technologies-join-us-this-august
+
+
+
+
+&#x5148;&#x5728;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x600E;&#x4E48;&#x6837;&#xFF01;&#x627E;&#x5230;&#x6211;&#x4EEC;&#x7684;indexhtml&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x8BE5;&#x6587;&#x4EF6;&#x3002;
+
+&#x56FE;102
+our-first-steps-into-building-our-styles-conference-website
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5207;&#x6362;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x7684;&#x88C5;&#x5907;&#xFF0C;&#x770B;&#x770B;css&#xFF0C;&#x8BB0;&#x4F4F;&#xFF1A;html&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x7ED3;&#x6784;&#xFF0C;css&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x89C6;&#x89C9;&#x98CE;&#x683C;&#x548C;&#x5916;&#x89C2;&#x3002;
+&#x4E86;&#x89E3;&#x5E38;&#x89C1;&#x7684;css&#x672F;&#x8BED;
+&#x9664;&#x4E86;html&#x672F;&#x8BED;&#x5916;&#xFF0C;&#x6709;&#x51E0;&#x4E2A;&#x5E38;&#x89C1;&#x7684;css&#x672F;&#x8BED;&#x4F60;&#x9700;&#x8981;&#x719F;&#x6089;&#x3002;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x5305;&#x62EC;&#x9009;&#x62E9;&#x5668;selectors&#xFF0C;-&#x5C5E;&#x6027;properties-&#x548C;&#x503C;values&#xFF0C;&#x548C;html&#x4E2D;&#x7684;&#x672F;&#x8BED;&#x4E00;&#x6837;&#xFF0C;&#x4F7F;&#x7528;css&#x8D8A;&#x591A;&#xFF0C;&#x4F60;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x8D8A;&#x719F;&#x6089;&#x3002;
+&#x9009;&#x62E9;&#x5668;selectors
+&#x4E00;&#x4E2A;&#x6DFB;&#x52A0;&#x5230;&#x7F51;&#x9875;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;css&#x6765;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#xFF0C;
+as-elements-are-added-to-a-web-page-they-may-be-styled-using-css-a-selector-designates-exactly-which-element-or-elements-within-our-html-to-target-and-apply-styles-such-as-color-size-and-position-to-selectors-may-include-a-combination-of-different-qualifiers-to-select-unique-elements-all-depending-on-how-specific-we-wish-to-be-for-example-we-may-want-to-select-every-paragraph-on-a-page-or-we-may-want-to-select-only-one-specific-paragraph-on-a-page
+&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x7F51;&#x9875;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#xFF0C;&#x6216;&#x8005;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x3002;
+&#x9009;&#x62E9;&#x5668;&#x4E00;&#x822C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x6BD4;&#x5982;id&#x6216;class&#x7684;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x6307;&#x5411;&#x5143;&#x7D20;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;-&#x7B49;
+&#x5728;css&#x4E2D;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;&#x8DDF;&#x7684;&#x662F;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;-&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x5230;&#x6240;&#x9009;&#x62E9;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5982;&#x4E0B;&#x7684;&#x9009;&#x62E9;&#x5668;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#x3002;
+p---
+&#x5C5E;&#x6027;-properties
+&#x4E00;&#x65E6;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x540E;&#xFF0C;&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x4E86;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x8FD0;&#x7528;&#x5230;&#x8BE5;&#x5143;&#x7D20;&#x3002;-&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x540E;&#xFF0C;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x90E8;&#xFF0C;&#x5192;&#x53F7;&#x4E4B;&#x524D;&#xFF0C;&#x6709;&#x8BB8;&#x591A;&#x5C5E;&#x6027;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;background-color-fontsize-height&#x5DF2;&#x7ECF;width&#x7B49;&#x7B49;&#xFF0C;&#x6B64;&#x5916;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x4E0D;&#x65AD;&#x589E;&#x52A0;&#x3002;-&#x5728;&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x5143;&#x7D20;&#x5185;&#x7684;color&#x548C;fontsize&#x5C5E;&#x6027;
+p-
+--color-
+--fontsize-
+
+&#x503C;-values
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x6765;&#x786E;&#x5B9A;&#x6211;&#x4EEC;&#x5C06;&#x5E94;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x5F0F;&#x3002;-&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x503C;&#x6765;&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x7684;&#x884C;&#x4E3A;&#x4E86;&#x3002;-&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6587;&#x672C;&#x8868;&#x793A;&#xFF0C;&#x653E;&#x5728;&#x5192;&#x53F7;&#x548C;&#x5206;&#x53F7;&#x4E4B;&#x95F4;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x4E86;color&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;orange&#xFF0C;-fontsize&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;16pixels
+p-
+--color-orange
+--fontsize-16px
+
+&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#xFF0C;&#x5728;css&#x4E2D;&#x6211;&#x4EEC;&#x7684;&#x89C4;&#x5219;&#x662F;&#xFF0C;&#x5148;&#x4ECE;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#xFF0C;&#x6BCF;&#x4E2A;&#x58F0;&#x660E;&#x90FD;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x5F00;&#x59CB;&#xFF0C;&#x8DDF;&#x4E0A;&#x5192;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5206;&#x53F7;
+it-is-a-common-practice-to-indent-property-and-value-pairs-within-the-curly-brackets-as-with-html-these-indentations-help-keep-our-code-organized-and-legible
+&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x7F29;&#x8FDB;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x6B63;&#x5982;html&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F29;&#x8FDB;&#x53EF;&#x4EE5;&#x663E;&#x5F97;&#x4EE3;&#x7801;&#x6709;&#x7EC4;&#x7EC7;&#xFF0C;&#x5E76;&#x4E14;&#x6E05;&#x6670;&#x53EF;&#x8BFB;&#x3002;
+&#x56FE;-103
+css&#x8BED;&#x6CD5;css-syntax-outline-including-a-selector-properties-and-values
+&#x638C;&#x63E1;&#x4E86;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x672F;&#x8BED;&#x548C;css&#x7684;&#x901A;&#x7528;&#x8BED;&#x6CD5;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x4F46;&#x5728;&#x6DF1;&#x5165;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x5B66;&#x70B9;&#x66F4;&#x591A;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;css&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x600E;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+&#x4F7F;&#x7528;selectors
+&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6B63;&#x5982;&#x4E0A;&#x6587;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x6807;&#x8BC6;&#x54EA;&#x4E2A;html&#x5143;&#x7D20;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#x3002;it-is-important-to-fully-understand-how-to-use-selectors-and-how-they-can-be-leveraged-the-first-step-is-to-become-familiar-with-the-different-types-of-selectors-well-start-with-the-most-common-selectors-type-class-and-id-selectors-&#x5145;&#x5206;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x5668;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x600E;&#x6837;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;-&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x5148;&#x719F;&#x6089;&#x6709;&#x54EA;&#x51E0;&#x7C7B;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&#x5E38;&#x89C1;&#x7684;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x7C7B;&#xFF0C;id&#x9009;&#x62E9;&#x5668;
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;-type
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x6765;&#x6307;&#x5411;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x6307;&#x5411;&#x6240;&#x6709;&#x7684;&#x5757;&#x5143;&#x7D20;-&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;div&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x3002;-&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;div&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;&#x5DF2;&#x7ECF;&#x5176;&#x5BF9;&#x5E94;&#x6307;&#x5411;&#x7684;html
+css
+div---
+html
+----------
+
+
+&#x7C7B;&#x9009;&#x62E9;&#x5668;class
+&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x6765;&#x9009;&#x62E9;html&#x5143;&#x7D20;&#x3002;-&#x7531;&#x4E8E;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E00;&#x7EC4;&#x7279;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x5177;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x3002;
+&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x5728;&#x591A;&#x4E2A;html&#x5143;&#x7D20;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7ED9;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x8FD0;&#x7528;&#x76F8;&#x540C;&#x7684;&#x6837;&#x5F0F;&#x3002;
+&#x5728;css&#x4E2D;&#xFF0C;-&#x7C7B;&#x7531;&#x524D;&#x7F6E;&#x7684;&#x70B9;&#x53F7;--&#x8868;&#x793A;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x6240;&#x6709;&#x5305;&#x542B;&#x7C7B;&#x5C5E;&#x6027;&#x503C;&#x4E3A;awesome&#x7684;&#x6240;&#x6709;html&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x62EC;div&#x5143;&#x7D20;&#x548C;&#x6BB5;&#x843D;&#x5143;&#x7D20;
+css
+awesome---
+html
+
+
+
+id&#x9009;&#x62E9;&#x5668;
+id&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x52A0;&#x7CBE;&#x51C6;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x6307;&#x5411;&#x4E00;&#x4E2A;html&#x5143;&#x7D20;&#x3002;-&#x548C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x505A;&#x4E3A;&#x9009;&#x62E9;&#x5668;&#x4E00;&#x6837;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x7684;id&#x5C5E;&#x6027;&#x503C;&#x4F5C;&#x4E3A;&#x9009;&#x62E9;&#x5668;
+
+&#x65E0;&#x8BBA;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;id&#x5C5E;&#x6027;&#x503C;&#x5728;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF0C;if-used-they-should-be-reserved-for-significant-elements
+
+&#x5728;css&#x4E2D;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x7531;&#x524D;&#x7F6E;&#x7684;-&#x8DDF;&#x4E0A;id&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;id&#x9009;&#x62E9;&#x5668;&#x53EA;&#x4F1A;&#x9009;&#x62E9;id&#x5C5E;&#x6027;&#x503C;&#x4E3A;shayhowe&#x7684;html&#x5143;&#x7D20;
+
+css
+shayhowe---
+
+html
+
+
+&#x5176;&#x4ED6;&#x9009;&#x62E9;&#x5668;
+&#x9009;&#x62E9;&#x5668;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E0A;&#x9762;&#x6240;&#x793A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x5230;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x9009;&#x62E9;&#x5668;&#x4E5F;&#x4EC5;&#x4EC5;&#x662F;&#x5F00;&#x59CB;&#x3002;&#x6B64;&#x5916;&#x6709;&#x8BB8;&#x591A;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF08;httplearnshayhowecomadvancedhtmlcsscomplexselectors&#xFF09;&#x5F53;&#x4F60;&#x5BF9;&#x4EE5;&#x4E0A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x81EA;&#x5982;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x770B;&#x770B;&#x8FD9;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;
+&#x5F15;&#x7528;css
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;&#x6211;&#x4EEC;&#x7684;css&#x548C;html&#x80FD;&#x4EA4;&#x6D41;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;html&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x7528;css&#x6587;&#x4EF6;&#x3002;-&#x5F15;&#x7528;css&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x6211;&#x4EEC;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#xFF0C;the-best-practice-for-referencing-our-css-is-to-include-all-of-our-styles-in-a-single-external-style-sheet-which-is-referenced-from-within-the--element-of-our-html-document--&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;&#x4E2D;&#x4F7F;&#x7528;&#x5E76;&#x9AD8;&#x6548;&#x4FEE;&#x6539;
+&#x6DFB;&#x52A0;css&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;
+other-options-for-referencing-css-include-using-internal-and-inline-styles-you-may-come-across-these-options-in-the-wild-but-they-are-generally-frowned-upon-as-they-make-updating-websites-cumbersome-and-unwieldy
+&#x521B;&#x5EFA;css&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x6587;&#x4EF6;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;css&#x540E;&#x7F00;&#xFF0C;-css&#x6587;&#x4EF6;&#x5E94;&#x4FDD;&#x5B58;&#x5728;html&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76F8;&#x540C;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x5B50;&#x76EE;&#x5F55;&#x3002;
+&#x5728;html&#x6587;&#x6863;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x7528;&#x6765;&#x5B9A;&#x4E49;html&#x6587;&#x4EF6;&#x548C;css&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FDE;&#x63A5;&#x5230;css&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;rel&#x5C5E;&#x6027;&#x503C;&#x4E3A;stylesheet&#x6765;&#x6307;&#x5B9A;&#x5B83;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6B64;&#x5916;&#xFF0C;hrefhyperlink-reference&#x5C5E;&#x6027;&#x7528;&#x6765;&#x8868;&#x793A;css&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x6216;&#x8DEF;&#x5F84;&#x3002;within-the--element-of-the-html-document-the--element-is-used-to-define-the-relationship-between-the-html-file-and-the-css-file-because-we-are-linking-to-css-we-use-the-rel-attribute-with-a-value-of-stylesheet-to-specify-their-relationship-furthermore-the-href-or-hyperlink-reference-attribute-is-used-to-identify-the-location-or-path-of-the-css-file
+&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;
+
+--
+
+
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;css&#x6B63;&#x5E38;&#x6E32;&#x67D3;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x6240;&#x8868;&#x793A;&#x7684;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E3A;&#x6211;&#x4EEC;&#x4FDD;&#x5B58;&#x7684;css&#x6587;&#x4EF6;&#x3002;&#x5728;&#x5982;&#x4E0A;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;&#x548C;html&#x76F8;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x6839;&#x76EE;&#x5F55;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;css&#x6587;&#x4EF6;&#x653E;&#x5728;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x9700;&#x8981;&#x76F8;&#x5E94;&#x53D8;&#x5316;&#x3002;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x5C06;&#x6587;&#x4EF6;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;sytlesheets&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;href&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5C31;&#x662F;stylesheetsmaincss&#x3002;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x55EF;&#x7684;&#x9875;&#x9762;&#x5F00;&#x59CB;&#x6162;&#x6162;&#x7684;&#x6709;&#x751F;&#x6C14;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x6DF1;&#x5165;css&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x610F;&#x8BC6;&#x5230;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;css&#xFF0C;&#x4E00;&#x4E9B;html&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x7528;&#x4E86;&#x5176;&#x504F;&#x597D;&#x7684;&#x4E00;&#x4E9B;css&#x6837;&#x5F0F;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x91CD;&#x5199;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C31;&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;&#xFF08;&#x521D;&#x59CB;&#x5316;&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x3002;
+&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;
+&#x6BCF;&#x4E2A;web&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x90FD;&#x6709;&#x5176;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;google-chrome&#x6D4F;&#x89C8;&#x5668;&#x548C;ie&#x6D4F;&#x89C8;&#x5668;&#x5982;&#x6076;&#x5316;&#x6E32;&#x67D3;&#x6807;&#x9898;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x5217;&#x8868;&#x7B49;&#x7B49;&#x4E5F;&#x8BB8;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;-&#x4E3A;&#x4E86;&#x5305;&#x88C5;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x517C;&#x5BB9;&#xFF0C;css&#x91CD;&#x7F6E;&#x5C31;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x3002;
+css&#x91CD;&#x7F6E;&#x5C06;&#x6BCF;&#x4E2A;html&#x5143;&#x7D20;&#x8D4B;&#x4E88;&#x9884;&#x8BBE;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5E76;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EDF;&#x4E00;&#x7684;&#x3002;-&#x8FD9;&#x4E9B;&#x91CD;&#x7F6E;&#x4E00;&#x822C;&#x5305;&#x62EC;&#x79FB;&#x9664;&#x4EFB;&#x4F55;sizing-margins-paddings&#x6216;&#x5176;&#x4ED6;&#x6837;&#x5F0F;&#x5E76;&#x8C03;&#x6574;&#x8FD9;&#x4E9B;&#x503C;&#x3002;-&#x7531;&#x4E8E;css&#x6837;&#x5F0F;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x89E3;&#x6790;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x91CD;&#x7F6E;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x653E;&#x5230;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x6700;&#x4E0A;&#x65B9;&#x3002;doing-so-ensures-that-those-styles-are-read-first-and-that-all-of-the-different-web-browsers-are-working-from-a-common-baseline&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x88AB;&#x5148;&#x8BFB;&#x53D6;&#xFF0C;&#x7136;&#x540E;&#x6240;&#x6709;&#x7684;web&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8D77;&#x70B9;&#x90FD;&#x76F8;&#x540C;&#x3002;
+&#x6211;&#x4EEC;&#x6709;&#x5F88;&#x591A;&#x7684;&#x91CD;&#x7F6E;&#x65B9;&#x6848;&#x4EE5;&#x4F9B;&#x9009;&#x62E9;&#xFF0C;&#x5B83;&#x4EEC;&#x5404;&#x6709;&#x6240;&#x957F;&#xFF0C;&#x6700;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x7684;&#x662F;-eric-meyers-rest-&#xFF08;httpmeyerwebcomerictoolscssreset&#xFF09;-which-has-been-adapted-to-include-styles-for-the-new-html5-elements-&#x53EF;&#x4EE5;&#x9002;&#x7528;html5&#x5143;&#x7D20;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x63A2;&#x7D22;&#xFF0C;&#x8FD8;&#x6709;nicolas-gallagher&#x521B;&#x5EFA;&#x7684;normaizecss&#xFF08;httpnecolasgithubionormalizecss&#xFF09;--normalizecss-focuses-not-on-using-a-hard-reset-for-all-common-elements-but-instead-on-setting-common-styles-for-these-elements-it-requires-a-stronger-understanding-of-css-as-well-as-awareness-of-what-youd-like-your-styles-to-be
+&#x5938;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x548C;&#x6D4B;&#x8BD5;
+&#x6B63;&#x5982;&#x4E4B;&#x524D;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6E32;&#x67D3;html&#x5143;&#x7D20;&#xFF0C;-&#x867D;&#x7136;&#x4E0D;&#x8981;&#x6C42;&#x7F51;&#x7AD9;&#x5728;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x770B;&#x8D77;&#x6765;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x81F3;&#x5C11;&#x5F97;&#x975E;&#x5E38;&#x63A5;&#x8FD1;&#xFF0C;
+as-previously-mentioned-different-browsers-render-elements-in-different-ways-its-important-to-recognize-the-value-in-crossbrowser-compatibility-and-testing-websites-dont-need-to-look-exactly-the-same-in-every-browser-but-they-should-be-close-which-browsers-you-wish-to-support-and-to-what-degree-is-a-decision-you-will-need-to-make-based-on-what-is-best-for-your-website
+in-all-there-are-a-handful-of&#xFF08;&#x5C11;&#x91CF;&#x7684;&#xFF09;-things-to-be-on-the-lookout-for-when-writing-css-the-good-news-is-that-anything-is-possible-and-with-a-little-patience-well-figure-it-all-out
+&#x5B9E;&#x8DF5;
+&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x7684;conference-website&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x70B9;css
+
+&#x5728;stylesconference&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x79F0;&#x4E3A;assets&#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#x7B49;&#x7B49;&#xFF0C;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x547D;&#x540D;stylesheets
+&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230;stylesheets&#x6587;&#x4EF6;&#x5939;&#x4E2D;
+&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;indexhtml&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;-&#x548C;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x7684;css&#x6837;&#x5F0F;&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x548C;&#x95F4;&#x8DDD;&#x3002;-&#x4F7F;&#x7528;eric-meyer&#x7684;&#x91CD;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x8282;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x8BA9;&#x5176;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8D77;&#x70B9;&#x3002;&#x53BB;eric&#x7684;&#x7F51;&#x7AD9;&#x590D;&#x5236;&#x5176;&#x91CD;&#x7F6E;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#x3002;
+
+-httpmeyerwebcomerictoolscssreset-2-v20--20110126
+--license-none-public-domain
+
+html-body-div-span-applet-object-iframe
+h1-h2-h3-h4-h5-h6-p-blockquote-pre
+a-abbr-acronym-address-big-cite-code
+del-dfn-em-img-ins-kbd-q-s-samp
+small-strike-strong-sub-sup-tt-var
+b-u-i-center
+dl-dt-dd-ol-ul-li
+fieldset-form-label-legend
+table-caption-tbody-tfoot-thead-tr-th-td
+article-aside-canvas-details-embed
+figure-figcaption-footer-header-hgroup
+menu-nav-output-ruby-section-summary
+time-mark-audio-video-
+--margin-0
+--padding-0
+--border-0
+--fontsize-100
+--font-inherit
+--verticalalign-baseline
+
+-html5-displayrole-reset-for-older-browsers-
+article-aside-details-figcaption-figure
+footer-header-hgroup-menu-nav-section-
+--display-block
+
+body-
+--lineheight-1
+
+ol-ul-
+--liststyle-none
+
+blockquote-q-
+--quotes-none
+
+blockquotebefore-blockquoteafter
+qbefore-qafter-
+--content-
+--content-none
+
+table-
+--bordercollapse-collapse
+--borderspacing-0
+
+
+&#x968F;&#x7740;&#x6211;&#x4EEC;&#x5F80;css&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x548C;indexhtml&#x6587;&#x4EF6;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x540E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x3002;
+&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x5143;&#x7D20;&#x6C47;&#x603B;&#x5F15;&#x7528;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x90A3;&#x4E48;&#x6765;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x5C5E;&#x6027;&#xFF0C;rel-&#x6307;&#x5B9A;&#x503C;&#x4E3A;stylesheet
+&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#x5F15;&#x7528;&#xFF0C;&#x4F7F;&#x7528;href&#x5C5E;&#x6027;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;maincss&#x6587;&#x4EF6;&#xFF0C;&#x8BB0;&#x4F4F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;assets&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;stylesheets&#x6587;&#x4EF6;&#x5939;&#x3002;&#x56E0;&#x6B64;href&#x5C5E;&#x6027;&#x503C;&#x4E3A;assetsstylesheetsmaincss
+
+
+--
+--styles-conference
+--
+
+
+&#x8BE5;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x7684;&#x6210;&#x679C;&#x4E86;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#x3002;
+&#x56FE;-104
+our-styles-conference-website-with-a-css-reset
+demo&#x548C;&#x6E90;&#x4EE3;&#x7801;
+&#x4E0B;&#x9762;&#x7684;&#x8FDE;&#x63A5;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;style-conference&#x7F51;&#x7AD9;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x6E90;&#x4EE3;&#x7801;
+httplearnshayhowecompracticebuildingyourfirstwebpageindexhtml
+httplearnshayhowecompracticebuildingyourfirstwebpagezip
+&#x603B;&#x7ED3;
+&#x76EE;&#x524D;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x9519;&#xFF01;&#x5728;&#x672C;&#x8BFE;&#x4E2D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8D70;&#x4E86;&#x5F88;&#x5927;&#x4E00;&#x6B65;&#x4E86;&#x3002;
+&#x56DE;&#x5934;&#x770B;&#x770B;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;html&#x548C;css&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x901A;&#x8FC7;&#x7EE7;&#x7EED;&#x52AA;&#x529B;&#xFF0C;&#x4F60;&#x82B1;&#x4E9B;&#x65F6;&#x95F4;&#x6765;&#x5199;html&#x548C;csss&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x66F4;&#x52A0;&#x719F;&#x6089;&#x4E24;&#x95E8;&#x8BED;&#x8A00;&#x3002;
+&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF0C;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x6240;&#x8986;&#x76D6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;
+&#xF06C;----html&#x548C;css&#x7684;&#x533A;&#x522B;
+&#xF06C;----&#x719F;&#x6089;html&#x5143;&#x7D20;&#x3001;&#x6807;&#x7B7E;&#x548C;&#x5C5E;&#x6027;
+&#xF06C;----&#x8BBE;&#x7F6E;&#x7F51;&#x9875;&#x7ED3;&#x6784;
+&#xF06C;----&#x719F;&#x6089;css&#x9009;&#x62E9;&#x5668;&#x3001;&#x5C5E;&#x6027;&#x548C;&#x503C;
+&#xF06C;----&#x4F7F;&#x7528;css&#x9009;&#x62E9;&#x5668;
+&#xF06C;----&#x5728;html&#x4E2D;&#x5F15;&#x7528;css
+&#xF06C;----css&#x91CD;&#x7F6E;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x4E86;&#x89E3;&#x4E0B;html&#x5E76;&#x5B66;&#x70B9;&#x8BED;&#x610F;&#x65B9;&#x9762;&#x7684;&#x77E5;&#x8BC6;&#x3002;
+&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;
+&#xF0A7;----common-html-terms-via-scripting-master
+&#xF0A7;----css-terms--definitions-via-impressive-webs
+&#xF0A7;----css-tools-reset-css-via-eric-meyer
+&#xF0A7;----normalizecss-via-nicolas-gallagher
+&#xF0A7;----an-intro-to-html--css-via-shay-howe
+"> &#x5230; <h6 id="&#x6807;&#x8BC6;&#xFF09;&#x3001;&#x6BB5;&#x843D;&#x5143;&#x7D20;&#xFF08;&#x901A;&#x8FC7;&#xFF09;&#xFF0C;&#x5F53;&#x7136;&#x8FD8;&#x5305;&#x62EC;---&#x5143;&#x7D20;&#x7B49;&#x7B49;
+&#x5143;&#x7D20;&#x901A;&#x8FC7;&#x5C0F;&#x4E8E;&#x53F7;&#x548C;&#x5927;&#x4E8E;&#x53F7;&#x8868;&#x793A;&#x4E2D;&#x95F4;&#x662F;&#x5143;&#x7D20;&#x540D;&#x79F0;&#xFF0C;&#x56E0;&#x6B64;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+
+tags
+the-use-of-lessthan-and-greaterthan-angle-brackets-surrounding-an-element-creates-what-is-known-as-a-tag-tags-most-commonly-occur-in-pairs-of-opening-and-closing-tags
+&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x8868;&#x793A;&#x5143;&#x7D20;&#x7684;&#x5F00;&#x59CB;&#xFF0C;-it-consists-of-a-lessthan-sign-followed-by-an-elements-name-and-then-ends-with-a-greaterthan-sign-for-example-
+&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x8868;&#x793A;&#x5143;&#x7D20;&#x7684;&#x7ED3;&#x675F;&#xFF0C;it-consists-of-a-lessthan-sign-followed-by-a-forward-slash-and-the-elements-name-and-then-ends-with-a-greaterthan-sign-for-example-
+&#x5728;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x548C;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x79F0;&#x4E3A;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#xFF0C;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;-&#x548C;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#xFF0C;&#x5B83;&#x4EEC;&#x4E2D;&#x95F4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x8D85;&#x94FE;&#x63A5;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x90A3;&#x4E48;&#x8D85;&#x94FE;&#x63A5;&#x7684;&#x6807;&#x7B7E;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+
+attributes
+attributes-are-properties-used-to-provide-additional-information-about-an-element-&#xFF08;attributes&#x548C;-properties&#x7684;&#x533A;&#x522B;httpjqueryhowtoblogspotcom201106htmldifferencebetweenattributeandhtml&#xFF0C;-&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;-attributes-&#x503C;&#x662F;&#x56FA;&#x5B9A;&#x7684;html&#x5C5E;&#x6027;&#x503C;&#xFF0C;-properties&#x662F;dom&#x4E2D;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7684;&#x5C5E;&#x6027;&#x503C;&#xFF09;&#x5E38;&#x89C1;&#x7684;&#x5C5E;&#x6027;&#x6709;id&#x5C5E;&#x6027;&#x7528;&#x6765;&#x6807;&#x8BC6;&#x5F53;&#x524D;&#x7684;&#x5143;&#x7D20;&#xFF0C;class&#x5C5E;&#x6027;&#x7528;&#x6765;&#x5BF9;&#x5143;&#x7D20;&#x5206;&#x7EC4;&#xFF0C;src&#x5C5E;&#x6027;&#x4E3A;&#x5D4C;&#x5165;&#x7684;&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x6E90;&#x6587;&#x4EF6;&#xFF0C;href-&#x5C5E;&#x6027;&#x63D0;&#x4F9B;&#x4E86;&#x8D85;&#x94FE;&#x63A5;&#x3002;
+attributes&#x5728;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x4E2D;&#x5B9A;&#x4E49;&#xFF0C;&#x653E;&#x5728;&#x5143;&#x7D20;&#x540D;&#x79F0;&#x7684;&#x540E;&#x9762;&#xFF0C;&#x4E00;&#x822C;&#x5C5E;&#x6027;&#x5305;&#x62EC;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x548C;&#x503C;&#xFF0C;&#x8FD9;&#x4E9B;&#x8212;&#x5FC3;&#x7684;&#x683C;&#x5F0F;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x540D;&#x79F0;--&#x7B49;&#x4E8E;&#x53F7;--&#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#x503C;&#x3002;&#x4F8B;&#x5982;-&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;href&#x5C5E;&#x6027;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+shay-howe
+&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4F1A;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#x663E;&#x793A;shay-home&#x7684;&#x6587;&#x672C;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6587;&#x672C;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8DF3;&#x8F6C;&#x5230;-xx-&#x94FE;&#x63A5;&#x3002;&#x951A;&#x5143;&#x7D20;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;-&#x548C;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;-&#x5305;&#x542B;&#x4E86;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x8D85;&#x94FE;&#x63A5;&#x5C5E;&#x6027;-the-anchor-element-is-declared-with-the-opening--and-closing--tags-encompassing-the-text-and-the-hyperlink-reference-attribute-and-value-are-declared-with-hrefhttpshayhowecom-in-the-opening-tag
+&#x56FE;101
+html-syntax-outline-including-an-element-attribute-and-tag
+&#x73B0;&#x5728;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;html-elements-tags-&#x548C;-attributes&#x662F;&#x4EC0;&#x4E48;&#x4E86;&#xFF0C;lets-take-a-look-at-putting-together-our-first-web-page-&#x5982;&#x679C;&#x770B;&#x8D77;&#x6765;&#x90FD;&#x662F;&#x65B0;&#x7684;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x89E3;&#x6790;&#x3002;
+&#x8BBE;&#x7F6E;html&#x6587;&#x6863;&#x7ED3;&#x6784;
+html&#x6587;&#x6863;&#x5C31;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x4E3A;html&#x6587;&#x4EF6;&#x800C;&#x4E0D;&#x662F;txt&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x3002;-&#x5F00;&#x59CB;&#x5199;html&#xFF0C;&#x4F60;&#x9996;&#x5148;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4F60;&#x719F;&#x6089;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;microsoft-word&#x6216;pages&#x90A3;&#x4E9B;&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x3002;-&#x6709;&#x4E24;&#x4E2A;&#x6BD4;&#x8F83;&#x6D41;&#x884C;&#x7684;&#x7528;&#x6765;&#x5199;html&#x548C;css&#x7684;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x662F;dreamweaver&#x548C;sublime-text&#x3002;-&#x5176;&#x4ED6;&#x7C7B;&#x4F3C;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x5982;windows&#x4E0A;&#x7684;notepad-&#x548C;mac&#x4E0A;&#x7684;textwrangler&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;
+&#x6240;&#x6709;&#x7684;html&#x6587;&#x6863;&#x90FD;&#x6709;&#x8981;&#x6C14;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x542B;&#x5982;&#x4E0B;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x5143;&#x7D20;&#xFF1A;
+doctype-html---
+&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x6216;&#x8005;-doctype-html&#x544A;&#x8BC9;web&#x6D4F;&#x89C8;&#x5668;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x7684;html&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x653E;&#x5728;html&#x7684;&#x6700;&#x9876;&#x7AEF;&#x3002;-&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x7684;html&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x7B80;&#x5355;&#x5C31;&#x662F;doctype-html-&#x5728;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x4E4B;&#x540E;&#x5C31;&#x662F;&#x5143;&#x7D20;&#x7528;&#x6765;&#x8868;&#x793A;&#x6587;&#x6863;&#x5F00;&#x59CB;&#x3002;
+&#x5728;&#x5143;&#x7D20;&#x5185;&#x90E8;&#xFF0C;&#x5143;&#x7D20;&#x8868;&#x793A;&#x6587;&#x6863;&#x7684;&#x9876;&#x90E8;&#xFF0C;&#x5305;&#x62EC;&#x4E00;&#x4E9B;&#x5143;&#x6570;&#x636E;&#xFF08;metadata&#xFF0C;-&#x9644;&#x5E26;&#x9875;&#x9762;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF09;-&#x5143;&#x7D20;&#x5185;&#x90E8;&#x7684;&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#xFF0C;&#x5B83;&#x4F1A;&#x5305;&#x542B;&#x6587;&#x6863;&#x7684;&#x6807;&#x9898;&#xFF08;&#x4F1A;&#x73B0;&#x5B9E;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x6807;&#x9898;&#x680F;&#x4E0A;&#xFF09;&#xFF0C;&#x5916;&#x90E8;&#x6587;&#x4EF6;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x6709;&#x7528;&#x5143;&#x6570;&#x636E;&#x3002;
+&#x7F51;&#x9875;&#x91CC;&#x6240;&#x6709;&#x53EF;&#x89C1;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x4F1A;&#x5728;&#x5143;&#x7D20;&#x5185;&#xFF0C;-&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;html&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+doctype-html
+
+--
+----
+----hello-world
+--
+--
+----hello-world
+----this-is-a-web-page
+--
+
+
+&#x4EE5;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x6587;&#x6863;&#x7531;&#x6587;&#x6863;&#x7C7B;&#x578B;doctype-html&#x58F0;&#x660E;&#x5F00;&#x59CB;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7D27;&#x8DDF;&#x5143;&#x7D20;&#xFF0C;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x548C;&#x5143;&#x7D20;&#x3002;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x901A;&#x8FC7;&#x6807;&#x7B7E;&#x6307;&#x5B9A;&#x4E86;&#x5B57;&#x7B26;&#x96C6;&#x7F16;&#x7801;&#x5DF2;&#x7ECF;&#x6307;&#x5B9A;&#x4E86;&#x6587;&#x6863;&#x7684;&#x6807;&#x9898;&#x3002;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x901A;&#x8FC7;&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x7684;&#x6807;&#x9898;&#x4EE5;&#x53CA;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x7684;&#x6BB5;&#x843D;&#x3002;&#x56E0;&#x4E3A;&#x6807;&#x9898;&#x548C;&#x6BB5;&#x843D;&#x5D4C;&#x5957;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x4EEC;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;
+&#x5F53;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x65B9;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5185;&#x90E8;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5D4C;&#x5957;&#xFF0C;&#x7528;&#x539F;&#x6765;&#x8868;&#x793A;&#x6587;&#x6863;&#x7ED3;&#x6784;&#x7EC4;&#x7EC7;&#x548C;&#x7ED3;&#x6784;&#x6E05;&#x6670;when-an-element-is-placed-inside-of-another-element-also-known-as-nested-it-is-a-good-idea-to-indent-that-element-to-keep-the-document-structure-well-organized-and-legible
+&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x548C;&#x6807;&#x7B7E;&#x5D4C;&#x5957;&#x5E76;&#x7F29;&#x8FDB;&#x5728;&#x5143;&#x7D20;&#x91CC;&#x3002;in-the-previous-code-both-the--and--elements-were-nested&#x2014;and-indented&#x2014;inside-the--element-the-pattern-of-indenting-for-elements-continues-as-new-elements-are-added-inside-the--and--elements
+&#x81EA;&#x95ED;&#x5408;&#x5143;&#x7D20;
+&#x5728;&#x4E4B;&#x524D;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x6CA1;&#x6709;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x8FD9;&#x662F;&#x6545;&#x610F;&#x7684;&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5305;&#x542B;&#x5F00;&#x53E3;&#x5143;&#x7D20;&#x548C;&#x95ED;&#x5408;&#x5143;&#x7D20;&#xFF0C;some-elements-simply-receive-their-content-or-behavior-from-attributes-within-a-single-tag-the--element-is-one-of-these-elements-the-content-of-the-previous--element-is-assigned-with-the-use-of-the-charset-attribute-and-value-other-common-selfclosing-elements-include
+
+
+
+
+
+
+
+
+
+
+&#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;doctype-hmtl&#x4F5C;&#x4E3A;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x4E86;&#x548C;&#x5143;&#x7D20;&#xFF0C;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;
+&#x4EE3;&#x7801;&#x9A8C;&#x8BC1;
+&#x5728;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x7BA1;&#x6211;&#x4EEC;&#x591A;&#x4E48;&#x5C0F;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x72AF;&#x9519;&#x8BEF;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5199;html&#x548C;css&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x6709;&#x9A8C;&#x8BC1;&#x7A0B;&#x5E8F;&#x6765;&#x68C0;&#x6D4B;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x3002;the-w3c-has-built-both-html-and-css-validators-that-will-scan-code-for-mistakes-validating-our-code-not-only-helps-it-render-properly-across-all-browsers-but-also-helps-teach-us-the-best-practices-for-writing-code
+&#x5B9E;&#x8DF5;
+&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;web&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#x548C;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4EBA;&#x5458;we-have-the-luxury-of-attending-a-number-of-great-conferences-dedicated-to-our-craft-&#x6211;&#x4EEC;&#x5C06;&#x7EC4;&#x7EC7;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x4F1A;&#x8BAE;&#xFF0C;-&#x6837;&#x5F0F;&#x4F1A;&#x8BAE;&#xFF0C;&#x5E76;&#x5EFA;&#x7ACB;&#x4E3A;&#x4E4B;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x3002;&#x5F00;&#x59CB;&#x5427;&#xFF01;
+
+&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x521B;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x4E3A;indexhtml&#xFF0C;-&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x5FD8;&#x8BB0;&#x7684;&#x5730;&#x65B9;&#x3002;&#x6211;&#x5C06;&#x5728;&#x6211;&#x7684;&#x684C;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x547D;&#x540D;&#x4E3A;styleconference-&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x8BE5;&#x6587;&#x4EF6;&#x3002;
+&#x5728;indexhtml&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x6587;&#x6863;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;doctype-html&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x548C;--&#x548C;-&#x5143;&#x7D20;
+doctype-html
+
+
+
+
+
+
+
+&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x548C;&#x5143;&#x7D20;&#xFF0C;-&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x62EC;&#x6070;&#x5F53;&#x7684;charset&#x5C5E;&#x6027;&#x548C;&#x503C;&#xFF0C;&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x7F51;&#x9875;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x547D;&#x540D;&#x4E3A;style-conference
+
+
+
+--
+--styles-conference
+
+
+
+&#x5728;-&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;-&#x548C;-&#x5143;&#x7D20;&#xFF0C;-&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5305;&#x542B;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F7F;&#x7528;-styles-conference&#xFF0C;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6BB5;&#x843D;&#x7528;&#x4E8E;&#x4ECB;&#x7ECD;&#x6211;&#x4EEC;&#x7684;&#x4F1A;&#x8BAE;&#x3002;
+
+
+--styles-conference
+--every-year-the-brightest-web-designers-and-frontend-developers-descend-on-chicago-to-discuss-the-latest-technologies-join-us-this-august
+
+
+
+
+&#x5148;&#x5728;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x600E;&#x4E48;&#x6837;&#xFF01;&#x627E;&#x5230;&#x6211;&#x4EEC;&#x7684;indexhtml&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x8BE5;&#x6587;&#x4EF6;&#x3002;
+
+&#x56FE;102
+our-first-steps-into-building-our-styles-conference-website
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5207;&#x6362;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x7684;&#x88C5;&#x5907;&#xFF0C;&#x770B;&#x770B;css&#xFF0C;&#x8BB0;&#x4F4F;&#xFF1A;html&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x7ED3;&#x6784;&#xFF0C;css&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x89C6;&#x89C9;&#x98CE;&#x683C;&#x548C;&#x5916;&#x89C2;&#x3002;
+&#x4E86;&#x89E3;&#x5E38;&#x89C1;&#x7684;css&#x672F;&#x8BED;
+&#x9664;&#x4E86;html&#x672F;&#x8BED;&#x5916;&#xFF0C;&#x6709;&#x51E0;&#x4E2A;&#x5E38;&#x89C1;&#x7684;css&#x672F;&#x8BED;&#x4F60;&#x9700;&#x8981;&#x719F;&#x6089;&#x3002;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x5305;&#x62EC;&#x9009;&#x62E9;&#x5668;selectors&#xFF0C;-&#x5C5E;&#x6027;properties-&#x548C;&#x503C;values&#xFF0C;&#x548C;html&#x4E2D;&#x7684;&#x672F;&#x8BED;&#x4E00;&#x6837;&#xFF0C;&#x4F7F;&#x7528;css&#x8D8A;&#x591A;&#xFF0C;&#x4F60;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x8D8A;&#x719F;&#x6089;&#x3002;
+&#x9009;&#x62E9;&#x5668;selectors
+&#x4E00;&#x4E2A;&#x6DFB;&#x52A0;&#x5230;&#x7F51;&#x9875;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;css&#x6765;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#xFF0C;
+as-elements-are-added-to-a-web-page-they-may-be-styled-using-css-a-selector-designates-exactly-which-element-or-elements-within-our-html-to-target-and-apply-styles-such-as-color-size-and-position-to-selectors-may-include-a-combination-of-different-qualifiers-to-select-unique-elements-all-depending-on-how-specific-we-wish-to-be-for-example-we-may-want-to-select-every-paragraph-on-a-page-or-we-may-want-to-select-only-one-specific-paragraph-on-a-page
+&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x7F51;&#x9875;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#xFF0C;&#x6216;&#x8005;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x3002;
+&#x9009;&#x62E9;&#x5668;&#x4E00;&#x822C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x6BD4;&#x5982;id&#x6216;class&#x7684;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x6307;&#x5411;&#x5143;&#x7D20;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;-&#x7B49;
+&#x5728;css&#x4E2D;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;&#x8DDF;&#x7684;&#x662F;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;-&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x5230;&#x6240;&#x9009;&#x62E9;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5982;&#x4E0B;&#x7684;&#x9009;&#x62E9;&#x5668;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#x3002;
+p---
+&#x5C5E;&#x6027;-properties
+&#x4E00;&#x65E6;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x540E;&#xFF0C;&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x4E86;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x8FD0;&#x7528;&#x5230;&#x8BE5;&#x5143;&#x7D20;&#x3002;-&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x540E;&#xFF0C;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x90E8;&#xFF0C;&#x5192;&#x53F7;&#x4E4B;&#x524D;&#xFF0C;&#x6709;&#x8BB8;&#x591A;&#x5C5E;&#x6027;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;background-color-fontsize-height&#x5DF2;&#x7ECF;width&#x7B49;&#x7B49;&#xFF0C;&#x6B64;&#x5916;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x4E0D;&#x65AD;&#x589E;&#x52A0;&#x3002;-&#x5728;&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x5143;&#x7D20;&#x5185;&#x7684;color&#x548C;fontsize&#x5C5E;&#x6027;
+p-
+--color-
+--fontsize-
+
+&#x503C;-values
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x6765;&#x786E;&#x5B9A;&#x6211;&#x4EEC;&#x5C06;&#x5E94;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x5F0F;&#x3002;-&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x503C;&#x6765;&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x7684;&#x884C;&#x4E3A;&#x4E86;&#x3002;-&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6587;&#x672C;&#x8868;&#x793A;&#xFF0C;&#x653E;&#x5728;&#x5192;&#x53F7;&#x548C;&#x5206;&#x53F7;&#x4E4B;&#x95F4;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x4E86;color&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;orange&#xFF0C;-fontsize&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;16pixels
+p-
+--color-orange
+--fontsize-16px
+
+&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#xFF0C;&#x5728;css&#x4E2D;&#x6211;&#x4EEC;&#x7684;&#x89C4;&#x5219;&#x662F;&#xFF0C;&#x5148;&#x4ECE;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#xFF0C;&#x6BCF;&#x4E2A;&#x58F0;&#x660E;&#x90FD;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x5F00;&#x59CB;&#xFF0C;&#x8DDF;&#x4E0A;&#x5192;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5206;&#x53F7;
+it-is-a-common-practice-to-indent-property-and-value-pairs-within-the-curly-brackets-as-with-html-these-indentations-help-keep-our-code-organized-and-legible
+&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x7F29;&#x8FDB;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x6B63;&#x5982;html&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F29;&#x8FDB;&#x53EF;&#x4EE5;&#x663E;&#x5F97;&#x4EE3;&#x7801;&#x6709;&#x7EC4;&#x7EC7;&#xFF0C;&#x5E76;&#x4E14;&#x6E05;&#x6670;&#x53EF;&#x8BFB;&#x3002;
+&#x56FE;-103
+css&#x8BED;&#x6CD5;css-syntax-outline-including-a-selector-properties-and-values
+&#x638C;&#x63E1;&#x4E86;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x672F;&#x8BED;&#x548C;css&#x7684;&#x901A;&#x7528;&#x8BED;&#x6CD5;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x4F46;&#x5728;&#x6DF1;&#x5165;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x5B66;&#x70B9;&#x66F4;&#x591A;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;css&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x600E;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+&#x4F7F;&#x7528;selectors
+&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6B63;&#x5982;&#x4E0A;&#x6587;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x6807;&#x8BC6;&#x54EA;&#x4E2A;html&#x5143;&#x7D20;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#x3002;it-is-important-to-fully-understand-how-to-use-selectors-and-how-they-can-be-leveraged-the-first-step-is-to-become-familiar-with-the-different-types-of-selectors-well-start-with-the-most-common-selectors-type-class-and-id-selectors-&#x5145;&#x5206;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x5668;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x600E;&#x6837;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;-&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x5148;&#x719F;&#x6089;&#x6709;&#x54EA;&#x51E0;&#x7C7B;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&#x5E38;&#x89C1;&#x7684;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x7C7B;&#xFF0C;id&#x9009;&#x62E9;&#x5668;
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;-type
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x6765;&#x6307;&#x5411;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x6307;&#x5411;&#x6240;&#x6709;&#x7684;&#x5757;&#x5143;&#x7D20;-&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;div&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x3002;-&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;div&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;&#x5DF2;&#x7ECF;&#x5176;&#x5BF9;&#x5E94;&#x6307;&#x5411;&#x7684;html
+css
+div---
+html
+----------
+
+
+&#x7C7B;&#x9009;&#x62E9;&#x5668;class
+&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x6765;&#x9009;&#x62E9;html&#x5143;&#x7D20;&#x3002;-&#x7531;&#x4E8E;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E00;&#x7EC4;&#x7279;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x5177;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x3002;
+&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x5728;&#x591A;&#x4E2A;html&#x5143;&#x7D20;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7ED9;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x8FD0;&#x7528;&#x76F8;&#x540C;&#x7684;&#x6837;&#x5F0F;&#x3002;
+&#x5728;css&#x4E2D;&#xFF0C;-&#x7C7B;&#x7531;&#x524D;&#x7F6E;&#x7684;&#x70B9;&#x53F7;--&#x8868;&#x793A;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x6240;&#x6709;&#x5305;&#x542B;&#x7C7B;&#x5C5E;&#x6027;&#x503C;&#x4E3A;awesome&#x7684;&#x6240;&#x6709;html&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x62EC;div&#x5143;&#x7D20;&#x548C;&#x6BB5;&#x843D;&#x5143;&#x7D20;
+css
+awesome---
+html
+
+
+
+id&#x9009;&#x62E9;&#x5668;
+id&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x52A0;&#x7CBE;&#x51C6;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x6307;&#x5411;&#x4E00;&#x4E2A;html&#x5143;&#x7D20;&#x3002;-&#x548C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x505A;&#x4E3A;&#x9009;&#x62E9;&#x5668;&#x4E00;&#x6837;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x7684;id&#x5C5E;&#x6027;&#x503C;&#x4F5C;&#x4E3A;&#x9009;&#x62E9;&#x5668;
+
+&#x65E0;&#x8BBA;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;id&#x5C5E;&#x6027;&#x503C;&#x5728;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF0C;if-used-they-should-be-reserved-for-significant-elements
+
+&#x5728;css&#x4E2D;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x7531;&#x524D;&#x7F6E;&#x7684;-&#x8DDF;&#x4E0A;id&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;id&#x9009;&#x62E9;&#x5668;&#x53EA;&#x4F1A;&#x9009;&#x62E9;id&#x5C5E;&#x6027;&#x503C;&#x4E3A;shayhowe&#x7684;html&#x5143;&#x7D20;
+
+css
+shayhowe---
+
+html
+
+
+&#x5176;&#x4ED6;&#x9009;&#x62E9;&#x5668;
+&#x9009;&#x62E9;&#x5668;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E0A;&#x9762;&#x6240;&#x793A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x5230;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x9009;&#x62E9;&#x5668;&#x4E5F;&#x4EC5;&#x4EC5;&#x662F;&#x5F00;&#x59CB;&#x3002;&#x6B64;&#x5916;&#x6709;&#x8BB8;&#x591A;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF08;httplearnshayhowecomadvancedhtmlcsscomplexselectors&#xFF09;&#x5F53;&#x4F60;&#x5BF9;&#x4EE5;&#x4E0A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x81EA;&#x5982;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x770B;&#x770B;&#x8FD9;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;
+&#x5F15;&#x7528;css
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;&#x6211;&#x4EEC;&#x7684;css&#x548C;html&#x80FD;&#x4EA4;&#x6D41;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;html&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x7528;css&#x6587;&#x4EF6;&#x3002;-&#x5F15;&#x7528;css&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x6211;&#x4EEC;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#xFF0C;the-best-practice-for-referencing-our-css-is-to-include-all-of-our-styles-in-a-single-external-style-sheet-which-is-referenced-from-within-the--element-of-our-html-document--&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;&#x4E2D;&#x4F7F;&#x7528;&#x5E76;&#x9AD8;&#x6548;&#x4FEE;&#x6539;
+&#x6DFB;&#x52A0;css&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;
+other-options-for-referencing-css-include-using-internal-and-inline-styles-you-may-come-across-these-options-in-the-wild-but-they-are-generally-frowned-upon-as-they-make-updating-websites-cumbersome-and-unwieldy
+&#x521B;&#x5EFA;css&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x6587;&#x4EF6;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;css&#x540E;&#x7F00;&#xFF0C;-css&#x6587;&#x4EF6;&#x5E94;&#x4FDD;&#x5B58;&#x5728;html&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76F8;&#x540C;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x5B50;&#x76EE;&#x5F55;&#x3002;
+&#x5728;html&#x6587;&#x6863;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x7528;&#x6765;&#x5B9A;&#x4E49;html&#x6587;&#x4EF6;&#x548C;css&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FDE;&#x63A5;&#x5230;css&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;rel&#x5C5E;&#x6027;&#x503C;&#x4E3A;stylesheet&#x6765;&#x6307;&#x5B9A;&#x5B83;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6B64;&#x5916;&#xFF0C;hrefhyperlink-reference&#x5C5E;&#x6027;&#x7528;&#x6765;&#x8868;&#x793A;css&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x6216;&#x8DEF;&#x5F84;&#x3002;within-the--element-of-the-html-document-the--element-is-used-to-define-the-relationship-between-the-html-file-and-the-css-file-because-we-are-linking-to-css-we-use-the-rel-attribute-with-a-value-of-stylesheet-to-specify-their-relationship-furthermore-the-href-or-hyperlink-reference-attribute-is-used-to-identify-the-location-or-path-of-the-css-file
+&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;
+
+--
+
+
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;css&#x6B63;&#x5E38;&#x6E32;&#x67D3;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x6240;&#x8868;&#x793A;&#x7684;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E3A;&#x6211;&#x4EEC;&#x4FDD;&#x5B58;&#x7684;css&#x6587;&#x4EF6;&#x3002;&#x5728;&#x5982;&#x4E0A;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;&#x548C;html&#x76F8;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x6839;&#x76EE;&#x5F55;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;css&#x6587;&#x4EF6;&#x653E;&#x5728;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x9700;&#x8981;&#x76F8;&#x5E94;&#x53D8;&#x5316;&#x3002;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x5C06;&#x6587;&#x4EF6;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;sytlesheets&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;href&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5C31;&#x662F;stylesheetsmaincss&#x3002;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x55EF;&#x7684;&#x9875;&#x9762;&#x5F00;&#x59CB;&#x6162;&#x6162;&#x7684;&#x6709;&#x751F;&#x6C14;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x6DF1;&#x5165;css&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x610F;&#x8BC6;&#x5230;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;css&#xFF0C;&#x4E00;&#x4E9B;html&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x7528;&#x4E86;&#x5176;&#x504F;&#x597D;&#x7684;&#x4E00;&#x4E9B;css&#x6837;&#x5F0F;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x91CD;&#x5199;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C31;&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;&#xFF08;&#x521D;&#x59CB;&#x5316;&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x3002;
+&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;
+&#x6BCF;&#x4E2A;web&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x90FD;&#x6709;&#x5176;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;google-chrome&#x6D4F;&#x89C8;&#x5668;&#x548C;ie&#x6D4F;&#x89C8;&#x5668;&#x5982;&#x6076;&#x5316;&#x6E32;&#x67D3;&#x6807;&#x9898;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x5217;&#x8868;&#x7B49;&#x7B49;&#x4E5F;&#x8BB8;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;-&#x4E3A;&#x4E86;&#x5305;&#x88C5;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x517C;&#x5BB9;&#xFF0C;css&#x91CD;&#x7F6E;&#x5C31;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x3002;
+css&#x91CD;&#x7F6E;&#x5C06;&#x6BCF;&#x4E2A;html&#x5143;&#x7D20;&#x8D4B;&#x4E88;&#x9884;&#x8BBE;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5E76;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EDF;&#x4E00;&#x7684;&#x3002;-&#x8FD9;&#x4E9B;&#x91CD;&#x7F6E;&#x4E00;&#x822C;&#x5305;&#x62EC;&#x79FB;&#x9664;&#x4EFB;&#x4F55;sizing-margins-paddings&#x6216;&#x5176;&#x4ED6;&#x6837;&#x5F0F;&#x5E76;&#x8C03;&#x6574;&#x8FD9;&#x4E9B;&#x503C;&#x3002;-&#x7531;&#x4E8E;css&#x6837;&#x5F0F;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x89E3;&#x6790;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x91CD;&#x7F6E;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x653E;&#x5230;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x6700;&#x4E0A;&#x65B9;&#x3002;doing-so-ensures-that-those-styles-are-read-first-and-that-all-of-the-different-web-browsers-are-working-from-a-common-baseline&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x88AB;&#x5148;&#x8BFB;&#x53D6;&#xFF0C;&#x7136;&#x540E;&#x6240;&#x6709;&#x7684;web&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8D77;&#x70B9;&#x90FD;&#x76F8;&#x540C;&#x3002;
+&#x6211;&#x4EEC;&#x6709;&#x5F88;&#x591A;&#x7684;&#x91CD;&#x7F6E;&#x65B9;&#x6848;&#x4EE5;&#x4F9B;&#x9009;&#x62E9;&#xFF0C;&#x5B83;&#x4EEC;&#x5404;&#x6709;&#x6240;&#x957F;&#xFF0C;&#x6700;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x7684;&#x662F;-eric-meyers-rest-&#xFF08;httpmeyerwebcomerictoolscssreset&#xFF09;-which-has-been-adapted-to-include-styles-for-the-new-html5-elements-&#x53EF;&#x4EE5;&#x9002;&#x7528;html5&#x5143;&#x7D20;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x63A2;&#x7D22;&#xFF0C;&#x8FD8;&#x6709;nicolas-gallagher&#x521B;&#x5EFA;&#x7684;normaizecss&#xFF08;httpnecolasgithubionormalizecss&#xFF09;--normalizecss-focuses-not-on-using-a-hard-reset-for-all-common-elements-but-instead-on-setting-common-styles-for-these-elements-it-requires-a-stronger-understanding-of-css-as-well-as-awareness-of-what-youd-like-your-styles-to-be
+&#x5938;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x548C;&#x6D4B;&#x8BD5;
+&#x6B63;&#x5982;&#x4E4B;&#x524D;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6E32;&#x67D3;html&#x5143;&#x7D20;&#xFF0C;-&#x867D;&#x7136;&#x4E0D;&#x8981;&#x6C42;&#x7F51;&#x7AD9;&#x5728;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x770B;&#x8D77;&#x6765;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x81F3;&#x5C11;&#x5F97;&#x975E;&#x5E38;&#x63A5;&#x8FD1;&#xFF0C;
+as-previously-mentioned-different-browsers-render-elements-in-different-ways-its-important-to-recognize-the-value-in-crossbrowser-compatibility-and-testing-websites-dont-need-to-look-exactly-the-same-in-every-browser-but-they-should-be-close-which-browsers-you-wish-to-support-and-to-what-degree-is-a-decision-you-will-need-to-make-based-on-what-is-best-for-your-website
+in-all-there-are-a-handful-of&#xFF08;&#x5C11;&#x91CF;&#x7684;&#xFF09;-things-to-be-on-the-lookout-for-when-writing-css-the-good-news-is-that-anything-is-possible-and-with-a-little-patience-well-figure-it-all-out
+&#x5B9E;&#x8DF5;
+&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x7684;conference-website&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x70B9;css
+
+&#x5728;stylesconference&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x79F0;&#x4E3A;assets&#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#x7B49;&#x7B49;&#xFF0C;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x547D;&#x540D;stylesheets
+&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230;stylesheets&#x6587;&#x4EF6;&#x5939;&#x4E2D;
+&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;indexhtml&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;-&#x548C;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x7684;css&#x6837;&#x5F0F;&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x548C;&#x95F4;&#x8DDD;&#x3002;-&#x4F7F;&#x7528;eric-meyer&#x7684;&#x91CD;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x8282;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x8BA9;&#x5176;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8D77;&#x70B9;&#x3002;&#x53BB;eric&#x7684;&#x7F51;&#x7AD9;&#x590D;&#x5236;&#x5176;&#x91CD;&#x7F6E;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#x3002;
+
+-httpmeyerwebcomerictoolscssreset-2-v20--20110126
+--license-none-public-domain
+
+html-body-div-span-applet-object-iframe
+h1-h2-h3-h4-h5-h6-p-blockquote-pre
+a-abbr-acronym-address-big-cite-code
+del-dfn-em-img-ins-kbd-q-s-samp
+small-strike-strong-sub-sup-tt-var
+b-u-i-center
+dl-dt-dd-ol-ul-li
+fieldset-form-label-legend
+table-caption-tbody-tfoot-thead-tr-th-td
+article-aside-canvas-details-embed
+figure-figcaption-footer-header-hgroup
+menu-nav-output-ruby-section-summary
+time-mark-audio-video-
+--margin-0
+--padding-0
+--border-0
+--fontsize-100
+--font-inherit
+--verticalalign-baseline
+
+-html5-displayrole-reset-for-older-browsers-
+article-aside-details-figcaption-figure
+footer-header-hgroup-menu-nav-section-
+--display-block
+
+body-
+--lineheight-1
+
+ol-ul-
+--liststyle-none
+
+blockquote-q-
+--quotes-none
+
+blockquotebefore-blockquoteafter
+qbefore-qafter-
+--content-
+--content-none
+
+table-
+--bordercollapse-collapse
+--borderspacing-0
+
+
+&#x968F;&#x7740;&#x6211;&#x4EEC;&#x5F80;css&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x548C;indexhtml&#x6587;&#x4EF6;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x540E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x3002;
+&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x5143;&#x7D20;&#x6C47;&#x603B;&#x5F15;&#x7528;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x90A3;&#x4E48;&#x6765;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x5C5E;&#x6027;&#xFF0C;rel-&#x6307;&#x5B9A;&#x503C;&#x4E3A;stylesheet
+&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#x5F15;&#x7528;&#xFF0C;&#x4F7F;&#x7528;href&#x5C5E;&#x6027;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;maincss&#x6587;&#x4EF6;&#xFF0C;&#x8BB0;&#x4F4F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;assets&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;stylesheets&#x6587;&#x4EF6;&#x5939;&#x3002;&#x56E0;&#x6B64;href&#x5C5E;&#x6027;&#x503C;&#x4E3A;assetsstylesheetsmaincss
+
+
+--
+--styles-conference
+--
+
+
+&#x8BE5;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x7684;&#x6210;&#x679C;&#x4E86;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#x3002;
+&#x56FE;-104
+our-styles-conference-website-with-a-css-reset
+demo&#x548C;&#x6E90;&#x4EE3;&#x7801;
+&#x4E0B;&#x9762;&#x7684;&#x8FDE;&#x63A5;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;style-conference&#x7F51;&#x7AD9;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x6E90;&#x4EE3;&#x7801;
+httplearnshayhowecompracticebuildingyourfirstwebpageindexhtml
+httplearnshayhowecompracticebuildingyourfirstwebpagezip
+&#x603B;&#x7ED3;
+&#x76EE;&#x524D;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x9519;&#xFF01;&#x5728;&#x672C;&#x8BFE;&#x4E2D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8D70;&#x4E86;&#x5F88;&#x5927;&#x4E00;&#x6B65;&#x4E86;&#x3002;
+&#x56DE;&#x5934;&#x770B;&#x770B;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;html&#x548C;css&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x901A;&#x8FC7;&#x7EE7;&#x7EED;&#x52AA;&#x529B;&#xFF0C;&#x4F60;&#x82B1;&#x4E9B;&#x65F6;&#x95F4;&#x6765;&#x5199;html&#x548C;csss&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x66F4;&#x52A0;&#x719F;&#x6089;&#x4E24;&#x95E8;&#x8BED;&#x8A00;&#x3002;
+&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF0C;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x6240;&#x8986;&#x76D6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;
+&#xF06C;----html&#x548C;css&#x7684;&#x533A;&#x522B;
+&#xF06C;----&#x719F;&#x6089;html&#x5143;&#x7D20;&#x3001;&#x6807;&#x7B7E;&#x548C;&#x5C5E;&#x6027;
+&#xF06C;----&#x8BBE;&#x7F6E;&#x7F51;&#x9875;&#x7ED3;&#x6784;
+&#xF06C;----&#x719F;&#x6089;css&#x9009;&#x62E9;&#x5668;&#x3001;&#x5C5E;&#x6027;&#x548C;&#x503C;
+&#xF06C;----&#x4F7F;&#x7528;css&#x9009;&#x62E9;&#x5668;
+&#xF06C;----&#x5728;html&#x4E2D;&#x5F15;&#x7528;css
+&#xF06C;----css&#x91CD;&#x7F6E;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x4E86;&#x89E3;&#x4E0B;html&#x5E76;&#x5B66;&#x70B9;&#x8BED;&#x610F;&#x65B9;&#x9762;&#x7684;&#x77E5;&#x8BC6;&#x3002;
+&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;
+&#xF0A7;----common-html-terms-via-scripting-master
+&#xF0A7;----css-terms--definitions-via-impressive-webs
+&#xF0A7;----css-tools-reset-css-via-eric-meyer
+&#xF0A7;----normalizecss-via-nicolas-gallagher
+&#xF0A7;----an-intro-to-html--css-via-shay-howe
+">&#x6807;&#x8BC6;&#xFF09;&#x3001;&#x6BB5;&#x843D;&#x5143;&#x7D20;&#xFF08;&#x901A;&#x8FC7;<p>&#xFF09;&#xFF0C;&#x5F53;&#x7136;&#x8FD8;&#x5305;&#x62EC;<a> <div> <strong> <em>&#x5143;&#x7D20;&#x7B49;&#x7B49;</em></strong></div></a></p>
+<p>&#x5143;&#x7D20;&#x901A;&#x8FC7;&#x5C0F;&#x4E8E;&#x53F7;&#x548C;&#x5927;&#x4E8E;&#x53F7;&#x8868;&#x793A;&#x4E2D;&#x95F4;&#x662F;&#x5143;&#x7D20;&#x540D;&#x79F0;&#xFF0C;&#x56E0;&#x6B64;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+<a></a></p>
+<p>Tags
+The use of less-than and greater-than angle brackets surrounding an element creates what is known as a tag. Tags most commonly occur in pairs of opening and closing tags.</p>
+<p>&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x8868;&#x793A;&#x5143;&#x7D20;&#x7684;&#x5F00;&#x59CB;&#xFF0C; It consists of a less-than sign followed by an element&#x2019;s name, and then ends with a greater-than sign; for example, <div>.
+&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x8868;&#x793A;&#x5143;&#x7D20;&#x7684;&#x7ED3;&#x675F;&#xFF0C;It consists of a less-than sign followed by a forward slash and the element&#x2019;s name, and then ends with a greater-than sign; for example, </div>.</p>
+<p>&#x5728;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x548C;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x79F0;&#x4E3A;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#xFF0C;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#xFF0C;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;<a> &#x548C;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;</a>&#xFF0C;&#x5B83;&#x4EEC;&#x4E2D;&#x95F4;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x8D85;&#x94FE;&#x63A5;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x90A3;&#x4E48;&#x8D85;&#x94FE;&#x63A5;&#x7684;&#x6807;&#x7B7E;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+<a>...</a></p>
+<p>Attributes
+Attributes are properties used to provide additional information about an element. &#xFF08;Attributes&#x548C; properties&#x7684;&#x533A;&#x522B;<a href="http://jquery-howto.blogspot.com/2011/06/html-difference-between-attribute-and.html&#xFF0C;" target="_blank">http://jquery-howto.blogspot.com/2011/06/html-difference-between-attribute-and.html&#xFF0C;</a> &#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C; attributes &#x503C;&#x662F;&#x56FA;&#x5B9A;&#x7684;HTML&#x5C5E;&#x6027;&#x503C;&#xFF0C; properties&#x662F;DOM&#x4E2D;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7684;&#x5C5E;&#x6027;&#x503C;&#xFF09;&#x5E38;&#x89C1;&#x7684;&#x5C5E;&#x6027;&#x6709;id&#x5C5E;&#x6027;&#x7528;&#x6765;&#x6807;&#x8BC6;&#x5F53;&#x524D;&#x7684;&#x5143;&#x7D20;&#xFF0C;class&#x5C5E;&#x6027;&#x7528;&#x6765;&#x5BF9;&#x5143;&#x7D20;&#x5206;&#x7EC4;&#xFF0C;src&#x5C5E;&#x6027;&#x4E3A;&#x5D4C;&#x5165;&#x7684;&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x6E90;&#x6587;&#x4EF6;&#xFF0C;href &#x5C5E;&#x6027;&#x63D0;&#x4F9B;&#x4E86;&#x8D85;&#x94FE;&#x63A5;&#x3002;</p>
+<p>Attributes&#x5728;&#x5F00;&#x53E3;&#x6807;&#x7B7E;&#x4E2D;&#x5B9A;&#x4E49;&#xFF0C;&#x653E;&#x5728;&#x5143;&#x7D20;&#x540D;&#x79F0;&#x7684;&#x540E;&#x9762;&#xFF0C;&#x4E00;&#x822C;&#x5C5E;&#x6027;&#x5305;&#x62EC;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x548C;&#x503C;&#xFF0C;&#x8FD9;&#x4E9B;&#x8212;&#x5FC3;&#x7684;&#x683C;&#x5F0F;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x540D;&#x79F0; + &#x7B49;&#x4E8E;&#x53F7; + &#x62EC;&#x53F7;&#x62EC;&#x8D77;&#x6765;&#x7684;&#x503C;&#x3002;&#x4F8B;&#x5982;<a> &#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;href&#x5C5E;&#x6027;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+<a href="http://shayhowe.com/" target="_blank">Shay Howe</a></a></p>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4F1A;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#x663E;&#x793A;Shay Home&#x7684;&#x6587;&#x672C;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6587;&#x672C;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x8DF3;&#x8F6C;&#x5230; XX &#x94FE;&#x63A5;&#x3002;&#x951A;&#x5143;&#x7D20;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5F00;&#x53E3;&#x6807;&#x7B7E;<a> &#x548C;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;</a> &#x5305;&#x542B;&#x4E86;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x8D85;&#x94FE;&#x63A5;&#x5C5E;&#x6027; The anchor element is declared with the opening <a> and closing </a> tags encompassing the text, and the hyperlink reference attribute and value are declared with href=&quot;<a href="http://shayhowe.com" target="_blank">http://shayhowe.com</a>&quot; in the opening tag.</p>
+<p>&#x56FE;1.01
+HTML syntax outline including an element, attribute, and tag</p>
+<p>&#x73B0;&#x5728;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;HTML elements, tags, &#x548C; attributes&#x662F;&#x4EC0;&#x4E48;&#x4E86;&#xFF0C;let&#x2019;s take a look at putting together our first web page. &#x5982;&#x679C;&#x770B;&#x8D77;&#x6765;&#x90FD;&#x662F;&#x65B0;&#x7684;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x89E3;&#x6790;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;HTML&#x6587;&#x6863;&#x7ED3;&#x6784;
+HTML&#x6587;&#x6863;&#x5C31;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x4E3A;.html&#x6587;&#x4EF6;&#x800C;&#x4E0D;&#x662F;.txt&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x3002; &#x5F00;&#x59CB;&#x5199;HTML&#xFF0C;&#x4F60;&#x9996;&#x5148;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4F60;&#x719F;&#x6089;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;Microsoft Word&#x6216;Pages&#x90A3;&#x4E9B;&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x3002; &#x6709;&#x4E24;&#x4E2A;&#x6BD4;&#x8F83;&#x6D41;&#x884C;&#x7684;&#x7528;&#x6765;&#x5199;HTML&#x548C;CSS&#x7684;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x662F;Dreamweaver&#x548C;Sublime Text&#x3002; &#x5176;&#x4ED6;&#x7C7B;&#x4F3C;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x5982;Windows&#x4E0A;&#x7684;Notepad++ &#x548C;Mac&#x4E0A;&#x7684;TextWrangler&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#x3002;</p>
+<p>&#x6240;&#x6709;&#x7684;HTML&#x6587;&#x6863;&#x90FD;&#x6709;&#x8981;&#x6C14;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x542B;&#x5982;&#x4E0B;&#x7684;&#x5B9A;&#x4E49;&#x548C;&#x5143;&#x7D20;&#xFF1A;
+&lt;!DOCTYPE html&gt; <html> <head> </head><body>
+&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x6216;&#x8005; &lt;!DOCTYPE html&gt;&#x544A;&#x8BC9;Web&#x6D4F;&#x89C8;&#x5668;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x7684;HTML&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x653E;&#x5728;HTML&#x7684;&#x6700;&#x9876;&#x7AEF;&#x3002; &#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x7684;HTML&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x7B80;&#x5355;&#x5C31;&#x662F;&lt;!DOCTYPE html&gt; &#x5728;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x4E4B;&#x540E;&#x5C31;&#x662F;<html>&#x5143;&#x7D20;&#x7528;&#x6765;&#x8868;&#x793A;&#x6587;&#x6863;&#x5F00;&#x59CB;&#x3002;</html></body></html></p>
+<p>&#x5728;<html>&#x5143;&#x7D20;&#x5185;&#x90E8;&#xFF0C;<head>&#x5143;&#x7D20;&#x8868;&#x793A;&#x6587;&#x6863;&#x7684;&#x9876;&#x90E8;&#xFF0C;&#x5305;&#x62EC;&#x4E00;&#x4E9B;&#x5143;&#x6570;&#x636E;&#xFF08;metadata&#xFF0C; &#x9644;&#x5E26;&#x9875;&#x9762;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF09; <head>&#x5143;&#x7D20;&#x5185;&#x90E8;&#x7684;&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#xFF0C;&#x5B83;&#x4F1A;&#x5305;&#x542B;&#x6587;&#x6863;&#x7684;&#x6807;&#x9898;&#xFF08;&#x4F1A;&#x73B0;&#x5B9E;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x6807;&#x9898;&#x680F;&#x4E0A;&#xFF09;&#xFF0C;&#x5916;&#x90E8;&#x6587;&#x4EF6;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x6709;&#x7528;&#x5143;&#x6570;&#x636E;&#x3002;</head></head></html></p>
+<p>&#x7F51;&#x9875;&#x91CC;&#x6240;&#x6709;&#x53EF;&#x89C1;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x4F1A;&#x5728;<body>&#x5143;&#x7D20;&#x5185;&#xFF0C; &#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;HTML&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#xFF1A;
+&lt;!DOCTYPE html&gt;</body></p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+  </head>
+  <body>
+    <h1 id="hello-world">Hello World</h1>
+    <p>This is a web page.</p>
+  </body>
+</html>
+
+<p>&#x4EE5;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x6587;&#x6863;&#x7531;&#x6587;&#x6863;&#x7C7B;&#x578B;&lt;!DOCTYPE html&gt;&#x58F0;&#x660E;&#x5F00;&#x59CB;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7D27;&#x8DDF;<html>&#x5143;&#x7D20;&#xFF0C;&#x5728;<html>&#x5143;&#x7D20;&#x4E2D;&#x5305;&#x542B;&#x4E86;<head>&#x548C;</head><body>&#x5143;&#x7D20;&#x3002;<head>&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x901A;&#x8FC7;<meta charset="&#x201D;utf-8&#x201D;">&#x6807;&#x7B7E;&#x6307;&#x5B9A;&#x4E86;&#x5B57;&#x7B26;&#x96C6;&#x7F16;&#x7801;&#x5DF2;&#x7ECF;<title>&#x6307;&#x5B9A;&#x4E86;&#x6587;&#x6863;&#x7684;&#x6807;&#x9898;&#x3002;<body>&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E86;&#x901A;&#x8FC7;<h1 id="&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x7684;&#x6807;&#x9898;&#x4EE5;&#x53CA;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x7684;&#x6BB5;&#x843D;&#x3002;&#x56E0;&#x4E3A;&#x6807;&#x9898;&#x548C;&#x6BB5;&#x843D;&#x5D4C;&#x5957;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x4EEC;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;
+&#x5F53;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x65B9;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5185;&#x90E8;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5D4C;&#x5957;&#xFF0C;&#x7528;&#x539F;&#x6765;&#x8868;&#x793A;&#x6587;&#x6863;&#x7ED3;&#x6784;&#x7EC4;&#x7EC7;&#x548C;&#x7ED3;&#x6784;&#x6E05;&#x6670;when-an-element-is-placed-inside-of-another-element-also-known-as-nested-it-is-a-good-idea-to-indent-that-element-to-keep-the-document-structure-well-organized-and-legible
+&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x548C;&#x6807;&#x7B7E;&#x5D4C;&#x5957;&#x5E76;&#x7F29;&#x8FDB;&#x5728;&#x5143;&#x7D20;&#x91CC;&#x3002;in-the-previous-code-both-the--and--elements-were-nested&#x2014;and-indented&#x2014;inside-the--element-the-pattern-of-indenting-for-elements-continues-as-new-elements-are-added-inside-the--and--elements
+&#x81EA;&#x95ED;&#x5408;&#x5143;&#x7D20;
+&#x5728;&#x4E4B;&#x524D;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x6CA1;&#x6709;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x8FD9;&#x662F;&#x6545;&#x610F;&#x7684;&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5305;&#x542B;&#x5F00;&#x53E3;&#x5143;&#x7D20;&#x548C;&#x95ED;&#x5408;&#x5143;&#x7D20;&#xFF0C;some-elements-simply-receive-their-content-or-behavior-from-attributes-within-a-single-tag-the--element-is-one-of-these-elements-the-content-of-the-previous--element-is-assigned-with-the-use-of-the-charset-attribute-and-value-other-common-selfclosing-elements-include
+
+
+
+
+
+
+
+
+
+
+&#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;doctype-hmtl&#x4F5C;&#x4E3A;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x4E86;&#x548C;&#x5143;&#x7D20;&#xFF0C;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;
+&#x4EE3;&#x7801;&#x9A8C;&#x8BC1;
+&#x5728;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x7BA1;&#x6211;&#x4EEC;&#x591A;&#x4E48;&#x5C0F;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x72AF;&#x9519;&#x8BEF;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5199;html&#x548C;css&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x6709;&#x9A8C;&#x8BC1;&#x7A0B;&#x5E8F;&#x6765;&#x68C0;&#x6D4B;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x3002;the-w3c-has-built-both-html-and-css-validators-that-will-scan-code-for-mistakes-validating-our-code-not-only-helps-it-render-properly-across-all-browsers-but-also-helps-teach-us-the-best-practices-for-writing-code
+&#x5B9E;&#x8DF5;
+&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;web&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#x548C;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4EBA;&#x5458;we-have-the-luxury-of-attending-a-number-of-great-conferences-dedicated-to-our-craft-&#x6211;&#x4EEC;&#x5C06;&#x7EC4;&#x7EC7;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x4F1A;&#x8BAE;&#xFF0C;-&#x6837;&#x5F0F;&#x4F1A;&#x8BAE;&#xFF0C;&#x5E76;&#x5EFA;&#x7ACB;&#x4E3A;&#x4E4B;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x3002;&#x5F00;&#x59CB;&#x5427;&#xFF01;
+
+&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x521B;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x4E3A;indexhtml&#xFF0C;-&#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x5FD8;&#x8BB0;&#x7684;&#x5730;&#x65B9;&#x3002;&#x6211;&#x5C06;&#x5728;&#x6211;&#x7684;&#x684C;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x547D;&#x540D;&#x4E3A;styleconference-&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x8BE5;&#x6587;&#x4EF6;&#x3002;
+&#x5728;indexhtml&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x6587;&#x6863;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;doctype-html&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x548C;--&#x548C;-&#x5143;&#x7D20;
+doctype-html
+
+
+
+
+
+
+
+&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x548C;&#x5143;&#x7D20;&#xFF0C;-&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x62EC;&#x6070;&#x5F53;&#x7684;charset&#x5C5E;&#x6027;&#x548C;&#x503C;&#xFF0C;&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x7F51;&#x9875;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x547D;&#x540D;&#x4E3A;style-conference
+
+
+
+--
+--styles-conference
+
+
+
+&#x5728;-&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;-&#x548C;-&#x5143;&#x7D20;&#xFF0C;-&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5305;&#x542B;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F7F;&#x7528;-styles-conference&#xFF0C;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6BB5;&#x843D;&#x7528;&#x4E8E;&#x4ECB;&#x7ECD;&#x6211;&#x4EEC;&#x7684;&#x4F1A;&#x8BAE;&#x3002;
+
+
+--styles-conference
+--every-year-the-brightest-web-designers-and-frontend-developers-descend-on-chicago-to-discuss-the-latest-technologies-join-us-this-august
+
+
+
+
+&#x5148;&#x5728;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x600E;&#x4E48;&#x6837;&#xFF01;&#x627E;&#x5230;&#x6211;&#x4EEC;&#x7684;indexhtml&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x8BE5;&#x6587;&#x4EF6;&#x3002;
+
+&#x56FE;102
+our-first-steps-into-building-our-styles-conference-website
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5207;&#x6362;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x7684;&#x88C5;&#x5907;&#xFF0C;&#x770B;&#x770B;css&#xFF0C;&#x8BB0;&#x4F4F;&#xFF1A;html&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x7ED3;&#x6784;&#xFF0C;css&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x89C6;&#x89C9;&#x98CE;&#x683C;&#x548C;&#x5916;&#x89C2;&#x3002;
+&#x4E86;&#x89E3;&#x5E38;&#x89C1;&#x7684;css&#x672F;&#x8BED;
+&#x9664;&#x4E86;html&#x672F;&#x8BED;&#x5916;&#xFF0C;&#x6709;&#x51E0;&#x4E2A;&#x5E38;&#x89C1;&#x7684;css&#x672F;&#x8BED;&#x4F60;&#x9700;&#x8981;&#x719F;&#x6089;&#x3002;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x5305;&#x62EC;&#x9009;&#x62E9;&#x5668;selectors&#xFF0C;-&#x5C5E;&#x6027;properties-&#x548C;&#x503C;values&#xFF0C;&#x548C;html&#x4E2D;&#x7684;&#x672F;&#x8BED;&#x4E00;&#x6837;&#xFF0C;&#x4F7F;&#x7528;css&#x8D8A;&#x591A;&#xFF0C;&#x4F60;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x8D8A;&#x719F;&#x6089;&#x3002;
+&#x9009;&#x62E9;&#x5668;selectors
+&#x4E00;&#x4E2A;&#x6DFB;&#x52A0;&#x5230;&#x7F51;&#x9875;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;css&#x6765;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#xFF0C;
+as-elements-are-added-to-a-web-page-they-may-be-styled-using-css-a-selector-designates-exactly-which-element-or-elements-within-our-html-to-target-and-apply-styles-such-as-color-size-and-position-to-selectors-may-include-a-combination-of-different-qualifiers-to-select-unique-elements-all-depending-on-how-specific-we-wish-to-be-for-example-we-may-want-to-select-every-paragraph-on-a-page-or-we-may-want-to-select-only-one-specific-paragraph-on-a-page
+&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x7F51;&#x9875;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#xFF0C;&#x6216;&#x8005;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x3002;
+&#x9009;&#x62E9;&#x5668;&#x4E00;&#x822C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x6BD4;&#x5982;id&#x6216;class&#x7684;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x6307;&#x5411;&#x5143;&#x7D20;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;-&#x7B49;
+&#x5728;css&#x4E2D;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;&#x8DDF;&#x7684;&#x662F;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;-&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x5230;&#x6240;&#x9009;&#x62E9;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5982;&#x4E0B;&#x7684;&#x9009;&#x62E9;&#x5668;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#x3002;
+p---
+&#x5C5E;&#x6027;-properties
+&#x4E00;&#x65E6;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x540E;&#xFF0C;&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x4E86;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x8FD0;&#x7528;&#x5230;&#x8BE5;&#x5143;&#x7D20;&#x3002;-&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x540E;&#xFF0C;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x90E8;&#xFF0C;&#x5192;&#x53F7;&#x4E4B;&#x524D;&#xFF0C;&#x6709;&#x8BB8;&#x591A;&#x5C5E;&#x6027;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;background-color-fontsize-height&#x5DF2;&#x7ECF;width&#x7B49;&#x7B49;&#xFF0C;&#x6B64;&#x5916;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x4E0D;&#x65AD;&#x589E;&#x52A0;&#x3002;-&#x5728;&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x5143;&#x7D20;&#x5185;&#x7684;color&#x548C;fontsize&#x5C5E;&#x6027;
+p-
+--color-
+--fontsize-
+
+&#x503C;-values
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x6765;&#x786E;&#x5B9A;&#x6211;&#x4EEC;&#x5C06;&#x5E94;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x5F0F;&#x3002;-&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x503C;&#x6765;&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x7684;&#x884C;&#x4E3A;&#x4E86;&#x3002;-&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6587;&#x672C;&#x8868;&#x793A;&#xFF0C;&#x653E;&#x5728;&#x5192;&#x53F7;&#x548C;&#x5206;&#x53F7;&#x4E4B;&#x95F4;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x4E86;color&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;orange&#xFF0C;-fontsize&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;16pixels
+p-
+--color-orange
+--fontsize-16px
+
+&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#xFF0C;&#x5728;css&#x4E2D;&#x6211;&#x4EEC;&#x7684;&#x89C4;&#x5219;&#x662F;&#xFF0C;&#x5148;&#x4ECE;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#xFF0C;&#x6BCF;&#x4E2A;&#x58F0;&#x660E;&#x90FD;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x5F00;&#x59CB;&#xFF0C;&#x8DDF;&#x4E0A;&#x5192;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5206;&#x53F7;
+it-is-a-common-practice-to-indent-property-and-value-pairs-within-the-curly-brackets-as-with-html-these-indentations-help-keep-our-code-organized-and-legible
+&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x7F29;&#x8FDB;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x6B63;&#x5982;html&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F29;&#x8FDB;&#x53EF;&#x4EE5;&#x663E;&#x5F97;&#x4EE3;&#x7801;&#x6709;&#x7EC4;&#x7EC7;&#xFF0C;&#x5E76;&#x4E14;&#x6E05;&#x6670;&#x53EF;&#x8BFB;&#x3002;
+&#x56FE;-103
+css&#x8BED;&#x6CD5;css-syntax-outline-including-a-selector-properties-and-values
+&#x638C;&#x63E1;&#x4E86;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x672F;&#x8BED;&#x548C;css&#x7684;&#x901A;&#x7528;&#x8BED;&#x6CD5;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x4F46;&#x5728;&#x6DF1;&#x5165;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x5B66;&#x70B9;&#x66F4;&#x591A;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;css&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x600E;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+&#x4F7F;&#x7528;selectors
+&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6B63;&#x5982;&#x4E0A;&#x6587;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x6807;&#x8BC6;&#x54EA;&#x4E2A;html&#x5143;&#x7D20;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#x3002;it-is-important-to-fully-understand-how-to-use-selectors-and-how-they-can-be-leveraged-the-first-step-is-to-become-familiar-with-the-different-types-of-selectors-well-start-with-the-most-common-selectors-type-class-and-id-selectors-&#x5145;&#x5206;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x5668;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x600E;&#x6837;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;-&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x5148;&#x719F;&#x6089;&#x6709;&#x54EA;&#x51E0;&#x7C7B;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&#x5E38;&#x89C1;&#x7684;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x7C7B;&#xFF0C;id&#x9009;&#x62E9;&#x5668;
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;-type
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x6765;&#x6307;&#x5411;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x6307;&#x5411;&#x6240;&#x6709;&#x7684;&#x5757;&#x5143;&#x7D20;-&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;div&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x3002;-&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;div&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;&#x5DF2;&#x7ECF;&#x5176;&#x5BF9;&#x5E94;&#x6307;&#x5411;&#x7684;html
+css
+div---
+html
+----------
+
+
+&#x7C7B;&#x9009;&#x62E9;&#x5668;class
+&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x6765;&#x9009;&#x62E9;html&#x5143;&#x7D20;&#x3002;-&#x7531;&#x4E8E;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E00;&#x7EC4;&#x7279;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x5177;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x3002;
+&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x5728;&#x591A;&#x4E2A;html&#x5143;&#x7D20;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7ED9;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x8FD0;&#x7528;&#x76F8;&#x540C;&#x7684;&#x6837;&#x5F0F;&#x3002;
+&#x5728;css&#x4E2D;&#xFF0C;-&#x7C7B;&#x7531;&#x524D;&#x7F6E;&#x7684;&#x70B9;&#x53F7;--&#x8868;&#x793A;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x6240;&#x6709;&#x5305;&#x542B;&#x7C7B;&#x5C5E;&#x6027;&#x503C;&#x4E3A;awesome&#x7684;&#x6240;&#x6709;html&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x62EC;div&#x5143;&#x7D20;&#x548C;&#x6BB5;&#x843D;&#x5143;&#x7D20;
+css
+awesome---
+html
+
+
+
+id&#x9009;&#x62E9;&#x5668;
+id&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x52A0;&#x7CBE;&#x51C6;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x6307;&#x5411;&#x4E00;&#x4E2A;html&#x5143;&#x7D20;&#x3002;-&#x548C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x505A;&#x4E3A;&#x9009;&#x62E9;&#x5668;&#x4E00;&#x6837;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x7684;id&#x5C5E;&#x6027;&#x503C;&#x4F5C;&#x4E3A;&#x9009;&#x62E9;&#x5668;
+
+&#x65E0;&#x8BBA;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;id&#x5C5E;&#x6027;&#x503C;&#x5728;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF0C;if-used-they-should-be-reserved-for-significant-elements
+
+&#x5728;css&#x4E2D;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x7531;&#x524D;&#x7F6E;&#x7684;-&#x8DDF;&#x4E0A;id&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;id&#x9009;&#x62E9;&#x5668;&#x53EA;&#x4F1A;&#x9009;&#x62E9;id&#x5C5E;&#x6027;&#x503C;&#x4E3A;shayhowe&#x7684;html&#x5143;&#x7D20;
+
+css
+shayhowe---
+
+html
+
+
+&#x5176;&#x4ED6;&#x9009;&#x62E9;&#x5668;
+&#x9009;&#x62E9;&#x5668;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E0A;&#x9762;&#x6240;&#x793A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x5230;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x9009;&#x62E9;&#x5668;&#x4E5F;&#x4EC5;&#x4EC5;&#x662F;&#x5F00;&#x59CB;&#x3002;&#x6B64;&#x5916;&#x6709;&#x8BB8;&#x591A;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF08;httplearnshayhowecomadvancedhtmlcsscomplexselectors&#xFF09;&#x5F53;&#x4F60;&#x5BF9;&#x4EE5;&#x4E0A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x81EA;&#x5982;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x770B;&#x770B;&#x8FD9;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;
+&#x5F15;&#x7528;css
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;&#x6211;&#x4EEC;&#x7684;css&#x548C;html&#x80FD;&#x4EA4;&#x6D41;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;html&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x7528;css&#x6587;&#x4EF6;&#x3002;-&#x5F15;&#x7528;css&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x6211;&#x4EEC;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#xFF0C;the-best-practice-for-referencing-our-css-is-to-include-all-of-our-styles-in-a-single-external-style-sheet-which-is-referenced-from-within-the--element-of-our-html-document--&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;&#x4E2D;&#x4F7F;&#x7528;&#x5E76;&#x9AD8;&#x6548;&#x4FEE;&#x6539;
+&#x6DFB;&#x52A0;css&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;
+other-options-for-referencing-css-include-using-internal-and-inline-styles-you-may-come-across-these-options-in-the-wild-but-they-are-generally-frowned-upon-as-they-make-updating-websites-cumbersome-and-unwieldy
+&#x521B;&#x5EFA;css&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x6587;&#x4EF6;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;css&#x540E;&#x7F00;&#xFF0C;-css&#x6587;&#x4EF6;&#x5E94;&#x4FDD;&#x5B58;&#x5728;html&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76F8;&#x540C;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x5B50;&#x76EE;&#x5F55;&#x3002;
+&#x5728;html&#x6587;&#x6863;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x7528;&#x6765;&#x5B9A;&#x4E49;html&#x6587;&#x4EF6;&#x548C;css&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FDE;&#x63A5;&#x5230;css&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;rel&#x5C5E;&#x6027;&#x503C;&#x4E3A;stylesheet&#x6765;&#x6307;&#x5B9A;&#x5B83;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6B64;&#x5916;&#xFF0C;hrefhyperlink-reference&#x5C5E;&#x6027;&#x7528;&#x6765;&#x8868;&#x793A;css&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x6216;&#x8DEF;&#x5F84;&#x3002;within-the--element-of-the-html-document-the--element-is-used-to-define-the-relationship-between-the-html-file-and-the-css-file-because-we-are-linking-to-css-we-use-the-rel-attribute-with-a-value-of-stylesheet-to-specify-their-relationship-furthermore-the-href-or-hyperlink-reference-attribute-is-used-to-identify-the-location-or-path-of-the-css-file
+&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;
+
+--
+
+
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;css&#x6B63;&#x5E38;&#x6E32;&#x67D3;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x6240;&#x8868;&#x793A;&#x7684;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E3A;&#x6211;&#x4EEC;&#x4FDD;&#x5B58;&#x7684;css&#x6587;&#x4EF6;&#x3002;&#x5728;&#x5982;&#x4E0A;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;&#x548C;html&#x76F8;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x6839;&#x76EE;&#x5F55;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;css&#x6587;&#x4EF6;&#x653E;&#x5728;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x9700;&#x8981;&#x76F8;&#x5E94;&#x53D8;&#x5316;&#x3002;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x5C06;&#x6587;&#x4EF6;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;sytlesheets&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;href&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5C31;&#x662F;stylesheetsmaincss&#x3002;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x55EF;&#x7684;&#x9875;&#x9762;&#x5F00;&#x59CB;&#x6162;&#x6162;&#x7684;&#x6709;&#x751F;&#x6C14;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x6DF1;&#x5165;css&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x610F;&#x8BC6;&#x5230;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;css&#xFF0C;&#x4E00;&#x4E9B;html&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x7528;&#x4E86;&#x5176;&#x504F;&#x597D;&#x7684;&#x4E00;&#x4E9B;css&#x6837;&#x5F0F;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x91CD;&#x5199;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C31;&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;&#xFF08;&#x521D;&#x59CB;&#x5316;&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x3002;
+&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;
+&#x6BCF;&#x4E2A;web&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x90FD;&#x6709;&#x5176;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;google-chrome&#x6D4F;&#x89C8;&#x5668;&#x548C;ie&#x6D4F;&#x89C8;&#x5668;&#x5982;&#x6076;&#x5316;&#x6E32;&#x67D3;&#x6807;&#x9898;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x5217;&#x8868;&#x7B49;&#x7B49;&#x4E5F;&#x8BB8;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;-&#x4E3A;&#x4E86;&#x5305;&#x88C5;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x517C;&#x5BB9;&#xFF0C;css&#x91CD;&#x7F6E;&#x5C31;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x3002;
+css&#x91CD;&#x7F6E;&#x5C06;&#x6BCF;&#x4E2A;html&#x5143;&#x7D20;&#x8D4B;&#x4E88;&#x9884;&#x8BBE;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5E76;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EDF;&#x4E00;&#x7684;&#x3002;-&#x8FD9;&#x4E9B;&#x91CD;&#x7F6E;&#x4E00;&#x822C;&#x5305;&#x62EC;&#x79FB;&#x9664;&#x4EFB;&#x4F55;sizing-margins-paddings&#x6216;&#x5176;&#x4ED6;&#x6837;&#x5F0F;&#x5E76;&#x8C03;&#x6574;&#x8FD9;&#x4E9B;&#x503C;&#x3002;-&#x7531;&#x4E8E;css&#x6837;&#x5F0F;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x89E3;&#x6790;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x91CD;&#x7F6E;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x653E;&#x5230;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x6700;&#x4E0A;&#x65B9;&#x3002;doing-so-ensures-that-those-styles-are-read-first-and-that-all-of-the-different-web-browsers-are-working-from-a-common-baseline&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x88AB;&#x5148;&#x8BFB;&#x53D6;&#xFF0C;&#x7136;&#x540E;&#x6240;&#x6709;&#x7684;web&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8D77;&#x70B9;&#x90FD;&#x76F8;&#x540C;&#x3002;
+&#x6211;&#x4EEC;&#x6709;&#x5F88;&#x591A;&#x7684;&#x91CD;&#x7F6E;&#x65B9;&#x6848;&#x4EE5;&#x4F9B;&#x9009;&#x62E9;&#xFF0C;&#x5B83;&#x4EEC;&#x5404;&#x6709;&#x6240;&#x957F;&#xFF0C;&#x6700;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x7684;&#x662F;-eric-meyers-rest-&#xFF08;httpmeyerwebcomerictoolscssreset&#xFF09;-which-has-been-adapted-to-include-styles-for-the-new-html5-elements-&#x53EF;&#x4EE5;&#x9002;&#x7528;html5&#x5143;&#x7D20;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x63A2;&#x7D22;&#xFF0C;&#x8FD8;&#x6709;nicolas-gallagher&#x521B;&#x5EFA;&#x7684;normaizecss&#xFF08;httpnecolasgithubionormalizecss&#xFF09;--normalizecss-focuses-not-on-using-a-hard-reset-for-all-common-elements-but-instead-on-setting-common-styles-for-these-elements-it-requires-a-stronger-understanding-of-css-as-well-as-awareness-of-what-youd-like-your-styles-to-be
+&#x5938;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x548C;&#x6D4B;&#x8BD5;
+&#x6B63;&#x5982;&#x4E4B;&#x524D;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6E32;&#x67D3;html&#x5143;&#x7D20;&#xFF0C;-&#x867D;&#x7136;&#x4E0D;&#x8981;&#x6C42;&#x7F51;&#x7AD9;&#x5728;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x770B;&#x8D77;&#x6765;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x81F3;&#x5C11;&#x5F97;&#x975E;&#x5E38;&#x63A5;&#x8FD1;&#xFF0C;
+as-previously-mentioned-different-browsers-render-elements-in-different-ways-its-important-to-recognize-the-value-in-crossbrowser-compatibility-and-testing-websites-dont-need-to-look-exactly-the-same-in-every-browser-but-they-should-be-close-which-browsers-you-wish-to-support-and-to-what-degree-is-a-decision-you-will-need-to-make-based-on-what-is-best-for-your-website
+in-all-there-are-a-handful-of&#xFF08;&#x5C11;&#x91CF;&#x7684;&#xFF09;-things-to-be-on-the-lookout-for-when-writing-css-the-good-news-is-that-anything-is-possible-and-with-a-little-patience-well-figure-it-all-out
+&#x5B9E;&#x8DF5;
+&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x7684;conference-website&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x70B9;css
+
+&#x5728;stylesconference&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x79F0;&#x4E3A;assets&#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#x7B49;&#x7B49;&#xFF0C;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x547D;&#x540D;stylesheets
+&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230;stylesheets&#x6587;&#x4EF6;&#x5939;&#x4E2D;
+&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;indexhtml&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;-&#x548C;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x7684;css&#x6837;&#x5F0F;&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x548C;&#x95F4;&#x8DDD;&#x3002;-&#x4F7F;&#x7528;eric-meyer&#x7684;&#x91CD;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x8282;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x8BA9;&#x5176;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8D77;&#x70B9;&#x3002;&#x53BB;eric&#x7684;&#x7F51;&#x7AD9;&#x590D;&#x5236;&#x5176;&#x91CD;&#x7F6E;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#x3002;
+
+-httpmeyerwebcomerictoolscssreset-2-v20--20110126
+--license-none-public-domain
+
+html-body-div-span-applet-object-iframe
+h1-h2-h3-h4-h5-h6-p-blockquote-pre
+a-abbr-acronym-address-big-cite-code
+del-dfn-em-img-ins-kbd-q-s-samp
+small-strike-strong-sub-sup-tt-var
+b-u-i-center
+dl-dt-dd-ol-ul-li
+fieldset-form-label-legend
+table-caption-tbody-tfoot-thead-tr-th-td
+article-aside-canvas-details-embed
+figure-figcaption-footer-header-hgroup
+menu-nav-output-ruby-section-summary
+time-mark-audio-video-
+--margin-0
+--padding-0
+--border-0
+--fontsize-100
+--font-inherit
+--verticalalign-baseline
+
+-html5-displayrole-reset-for-older-browsers-
+article-aside-details-figcaption-figure
+footer-header-hgroup-menu-nav-section-
+--display-block
+
+body-
+--lineheight-1
+
+ol-ul-
+--liststyle-none
+
+blockquote-q-
+--quotes-none
+
+blockquotebefore-blockquoteafter
+qbefore-qafter-
+--content-
+--content-none
+
+table-
+--bordercollapse-collapse
+--borderspacing-0
+
+
+&#x968F;&#x7740;&#x6211;&#x4EEC;&#x5F80;css&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x548C;indexhtml&#x6587;&#x4EF6;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x540E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x3002;
+&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x5143;&#x7D20;&#x6C47;&#x603B;&#x5F15;&#x7528;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x90A3;&#x4E48;&#x6765;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x5C5E;&#x6027;&#xFF0C;rel-&#x6307;&#x5B9A;&#x503C;&#x4E3A;stylesheet
+&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#x5F15;&#x7528;&#xFF0C;&#x4F7F;&#x7528;href&#x5C5E;&#x6027;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;maincss&#x6587;&#x4EF6;&#xFF0C;&#x8BB0;&#x4F4F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;assets&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;stylesheets&#x6587;&#x4EF6;&#x5939;&#x3002;&#x56E0;&#x6B64;href&#x5C5E;&#x6027;&#x503C;&#x4E3A;assetsstylesheetsmaincss
+
+
+--
+--styles-conference
+--
+
+
+&#x8BE5;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x7684;&#x6210;&#x679C;&#x4E86;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#x3002;
+&#x56FE;-104
+our-styles-conference-website-with-a-css-reset
+demo&#x548C;&#x6E90;&#x4EE3;&#x7801;
+&#x4E0B;&#x9762;&#x7684;&#x8FDE;&#x63A5;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;style-conference&#x7F51;&#x7AD9;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x6E90;&#x4EE3;&#x7801;
+httplearnshayhowecompracticebuildingyourfirstwebpageindexhtml
+httplearnshayhowecompracticebuildingyourfirstwebpagezip
+&#x603B;&#x7ED3;
+&#x76EE;&#x524D;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x9519;&#xFF01;&#x5728;&#x672C;&#x8BFE;&#x4E2D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8D70;&#x4E86;&#x5F88;&#x5927;&#x4E00;&#x6B65;&#x4E86;&#x3002;
+&#x56DE;&#x5934;&#x770B;&#x770B;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;html&#x548C;css&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x901A;&#x8FC7;&#x7EE7;&#x7EED;&#x52AA;&#x529B;&#xFF0C;&#x4F60;&#x82B1;&#x4E9B;&#x65F6;&#x95F4;&#x6765;&#x5199;html&#x548C;csss&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x66F4;&#x52A0;&#x719F;&#x6089;&#x4E24;&#x95E8;&#x8BED;&#x8A00;&#x3002;
+&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF0C;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x6240;&#x8986;&#x76D6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;
+&#xF06C;----html&#x548C;css&#x7684;&#x533A;&#x522B;
+&#xF06C;----&#x719F;&#x6089;html&#x5143;&#x7D20;&#x3001;&#x6807;&#x7B7E;&#x548C;&#x5C5E;&#x6027;
+&#xF06C;----&#x8BBE;&#x7F6E;&#x7F51;&#x9875;&#x7ED3;&#x6784;
+&#xF06C;----&#x719F;&#x6089;css&#x9009;&#x62E9;&#x5668;&#x3001;&#x5C5E;&#x6027;&#x548C;&#x503C;
+&#xF06C;----&#x4F7F;&#x7528;css&#x9009;&#x62E9;&#x5668;
+&#xF06C;----&#x5728;html&#x4E2D;&#x5F15;&#x7528;css
+&#xF06C;----css&#x91CD;&#x7F6E;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x4E86;&#x89E3;&#x4E0B;html&#x5E76;&#x5B66;&#x70B9;&#x8BED;&#x610F;&#x65B9;&#x9762;&#x7684;&#x77E5;&#x8BC6;&#x3002;
+&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;
+&#xF0A7;----common-html-terms-via-scripting-master
+&#xF0A7;----css-terms--definitions-via-impressive-webs
+&#xF0A7;----css-tools-reset-css-via-eric-meyer
+&#xF0A7;----normalizecss-via-nicolas-gallagher
+&#xF0A7;----an-intro-to-html--css-via-shay-howe
+">&#x5143;&#x7D20;&#x6307;&#x5B9A;&#x7684;&#x6807;&#x9898;&#x4EE5;&#x53CA;&#x901A;&#x8FC7;<p>&#x6307;&#x5B9A;&#x7684;&#x6BB5;&#x843D;&#x3002;&#x56E0;&#x4E3A;&#x6807;&#x9898;&#x548C;&#x6BB5;&#x843D;&#x5D4C;&#x5957;&#x5728;<body>&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x4EEC;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x90FD;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;</body></p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x65B9;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5185;&#x90E8;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5D4C;&#x5957;&#xFF0C;&#x7528;&#x539F;&#x6765;&#x8868;&#x793A;&#x6587;&#x6863;&#x7ED3;&#x6784;&#x7EC4;&#x7EC7;&#x548C;&#x7ED3;&#x6784;&#x6E05;&#x6670;When an element is placed inside of another element, also known as nested, it is a good idea to indent that element to keep the document structure well organized and legible.
+&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<head>&#x548C;</head><body>&#x6807;&#x7B7E;&#x5D4C;&#x5957;&#x5E76;&#x7F29;&#x8FDB;&#x5728;<html>&#x5143;&#x7D20;&#x91CC;&#x3002;In the previous code, both the <head> and </head><body> elements were nested&#x2014;and indented&#x2014;inside the <html> element. The pattern of indenting for elements continues as new elements are added inside the <head> and </head><body> elements.
+&#x81EA;&#x95ED;&#x5408;&#x5143;&#x7D20;</body></html></body></html></body></p>
+<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;<meta>&#x5143;&#x7D20;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x6CA1;&#x6709;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#xFF0C;&#x4E0D;&#x8981;&#x62C5;&#x5FC3;&#xFF0C;&#x8FD9;&#x662F;&#x6545;&#x610F;&#x7684;&#x3002;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x5305;&#x542B;&#x5F00;&#x53E3;&#x5143;&#x7D20;&#x548C;&#x95ED;&#x5408;&#x5143;&#x7D20;&#xFF0C;Some elements simply receive their content or behavior from attributes within a single tag. The <meta> element is one of these elements. The content of the previous <meta> element is assigned with the use of the charset attribute and value. Other common selfclosing elements include
+<br></p>
+<p><embed></p>
+<p><hr>
+<img></p>
+<p><input></p>
+<p><link></p>
+<p><meta></p>
+<p><param></p>
+<p><source>
+<wbr></p>
+<p>&#x4E0A;&#x9762;&#x5C55;&#x793A;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&lt;!DOCTYPE hmtl&gt;&#x4F5C;&#x4E3A;&#x6587;&#x6863;&#x7C7B;&#x578B;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x4E86;<html><head>&#x548C;</head><body>&#x5143;&#x7D20;&#xFF0C;&#x5F88;&#x5E38;&#x89C1;&#xFF0C;</body></html></p>
+<p>&#x4EE3;&#x7801;&#x9A8C;&#x8BC1;
+&#x5728;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x7BA1;&#x6211;&#x4EEC;&#x591A;&#x4E48;&#x5C0F;&#x5FC3;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x72AF;&#x9519;&#x8BEF;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5199;HTML&#x548C;CSS&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x6709;&#x9A8C;&#x8BC1;&#x7A0B;&#x5E8F;&#x6765;&#x68C0;&#x6D4B;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x3002;The W3C has built both HTML and CSS validators that will scan code for mistakes. Validating our code not only helps it render properly across all browsers, but also helps teach us the best practices for writing code.</p>
+<p>&#x5B9E;&#x8DF5;
+&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;Web&#x8BBE;&#x8BA1;&#x4EBA;&#x5458;&#x548C;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4EBA;&#x5458;we have the luxury of attending a number of great conferences dedicated to our craft. &#x6211;&#x4EEC;&#x5C06;&#x7EC4;&#x7EC7;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x4F1A;&#x8BAE;&#xFF0C; &#x6837;&#x5F0F;&#x4F1A;&#x8BAE;&#xFF0C;&#x5E76;&#x5EFA;&#x7ACB;&#x4E3A;&#x4E4B;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x3002;&#x5F00;&#x59CB;&#x5427;&#xFF01;</p>
+<ol>
+<li>&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x521B;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x4E3A;index.html&#xFF0C; &#x4FDD;&#x5B58;&#x5230;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x5FD8;&#x8BB0;&#x7684;&#x5730;&#x65B9;&#x3002;&#x6211;&#x5C06;&#x5728;&#x6211;&#x7684;&#x684C;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x547D;&#x540D;&#x4E3A;&#x201D;style-conference&#x201D; &#x7528;&#x6765;&#x4FDD;&#x5B58;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</li>
+<li><p>&#x5728;index.html&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x6587;&#x6863;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;&lt;!DOCTYPE html&gt;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x548C;<html> <head> &#x548C;</head><body> &#x5143;&#x7D20;
+&lt;!DOCTYPE html&gt;</body></html></p>
+<html lang="en">
+<head>
+</head>
+<body>
+</body>
+</html>
+</li>
+<li><p>&#x5728;<head>&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;<meta>&#x548C;<title>&#x5143;&#x7D20;&#xFF0C;<meta> &#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x62EC;&#x6070;&#x5F53;&#x7684;charset&#x5C5E;&#x6027;&#x548C;&#x503C;&#xFF0C;<title>&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x7F51;&#x9875;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x547D;&#x540D;&#x4E3A;Style Conference</title></title></head></p>
+</li>
+</ol>
+<head>
+  <meta charset="utf-8">
+  <title>Styles Conference</title>
+</head>
+
+<ol>
+<li>&#x5728;<body> &#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;<h1 id="&#x548C;-&#x5143;&#x7D20;&#xFF0C;-&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5305;&#x542B;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F7F;&#x7528;-styles-conference&#xFF0C;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6BB5;&#x843D;&#x7528;&#x4E8E;&#x4ECB;&#x7ECD;&#x6211;&#x4EEC;&#x7684;&#x4F1A;&#x8BAE;&#x3002;"> &#x548C;<p> &#x5143;&#x7D20;&#xFF0C;</p><h1 id="&#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5305;&#x542B;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F7F;&#x7528;-styles-conference&#xFF0C;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6BB5;&#x843D;&#x7528;&#x4E8E;&#x4ECB;&#x7ECD;&#x6211;&#x4EEC;&#x7684;&#x4F1A;&#x8BAE;&#x3002;"> &#x5143;&#x7D20;&#x5E94;&#x8BE5;&#x5305;&#x542B;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5305;&#x542B;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F7F;&#x7528; &#x201C;Styles Conference&#x201D;&#xFF0C;&#x4F7F;&#x7528;<p>&#x5143;&#x7D20;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6BB5;&#x843D;&#x7528;&#x4E8E;&#x4ECB;&#x7ECD;&#x6211;&#x4EEC;&#x7684;&#x4F1A;&#x8BAE;&#x3002;</p></h1></h1></body></li>
+</ol>
+<body>
+  <h1 id="styles-conference">Styles Conference</h1>
+  <p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest technologies. Join us this August!</p>
+</body>
+
+
+<ol>
+<li>&#x5148;&#x5728;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x600E;&#x4E48;&#x6837;&#xFF01;&#x627E;&#x5230;&#x6211;&#x4EEC;&#x7684;index.html&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</li>
+</ol>
+<p>&#x56FE;1.02
+Our first steps into building our Styles Conference website</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5207;&#x6362;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x7684;&#x88C5;&#x5907;&#xFF0C;&#x770B;&#x770B;CSS&#xFF0C;&#x8BB0;&#x4F4F;&#xFF1A;HTML&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#x548C;&#x7ED3;&#x6784;&#xFF0C;CSS&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7F51;&#x9875;&#x7684;&#x89C6;&#x89C9;&#x98CE;&#x683C;&#x548C;&#x5916;&#x89C2;&#x3002;</p>
+<p>&#x4E86;&#x89E3;&#x5E38;&#x89C1;&#x7684;CSS&#x672F;&#x8BED;
+&#x9664;&#x4E86;HTML&#x672F;&#x8BED;&#x5916;&#xFF0C;&#x6709;&#x51E0;&#x4E2A;&#x5E38;&#x89C1;&#x7684;CSS&#x672F;&#x8BED;&#x4F60;&#x9700;&#x8981;&#x719F;&#x6089;&#x3002;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x5305;&#x62EC;&#x9009;&#x62E9;&#x5668;(selectors)&#xFF0C; &#x5C5E;&#x6027;(properties) &#x548C;&#x503C;(values)&#xFF0C;&#x548C;HTML&#x4E2D;&#x7684;&#x672F;&#x8BED;&#x4E00;&#x6837;&#xFF0C;&#x4F7F;&#x7528;CSS&#x8D8A;&#x591A;&#xFF0C;&#x4F60;&#x4F1A;&#x5BF9;&#x8FD9;&#x4E9B;&#x672F;&#x8BED;&#x8D8A;&#x719F;&#x6089;&#x3002;</p>
+<p>&#x9009;&#x62E9;&#x5668;Selectors
+&#x4E00;&#x4E2A;&#x6DFB;&#x52A0;&#x5230;&#x7F51;&#x9875;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;CSS&#x6765;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#xFF0C;
+As elements are added to a web page, they may be styled using CSS. A selector designates exactly which element or elements within our HTML to target and apply styles (such as color, size, and position) to. Selectors may include a combination of different qualifiers to select unique elements, all depending on how specific we wish to be. For example, we may want to select every paragraph on a page, or we may want to select only one specific paragraph on a page.
+&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x7F51;&#x9875;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#xFF0C;&#x6216;&#x8005;&#x6211;&#x4EEC;&#x60F3;&#x9009;&#x62E9;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x6BB5;&#x843D;&#x3002;</p>
+<p>&#x9009;&#x62E9;&#x5668;&#x4E00;&#x822C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x6BD4;&#x5982;id&#x6216;class&#x7684;&#x503C;&#xFF0C;&#x6216;&#x8005;&#x6307;&#x5411;&#x5143;&#x7D20;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x5982;</p><h1 id="&#xFF0C;-&#x7B49;
+&#x5728;css&#x4E2D;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;&#x8DDF;&#x7684;&#x662F;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;-&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x5230;&#x6240;&#x9009;&#x62E9;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5982;&#x4E0B;&#x7684;&#x9009;&#x62E9;&#x5668;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#x3002;
+p---
+&#x5C5E;&#x6027;-properties
+&#x4E00;&#x65E6;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x540E;&#xFF0C;&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x4E86;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x8FD0;&#x7528;&#x5230;&#x8BE5;&#x5143;&#x7D20;&#x3002;-&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x540E;&#xFF0C;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x90E8;&#xFF0C;&#x5192;&#x53F7;&#x4E4B;&#x524D;&#xFF0C;&#x6709;&#x8BB8;&#x591A;&#x5C5E;&#x6027;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;background-color-fontsize-height&#x5DF2;&#x7ECF;width&#x7B49;&#x7B49;&#xFF0C;&#x6B64;&#x5916;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x4E0D;&#x65AD;&#x589E;&#x52A0;&#x3002;-&#x5728;&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x5143;&#x7D20;&#x5185;&#x7684;color&#x548C;fontsize&#x5C5E;&#x6027;
+p-
+--color-
+--fontsize-
+
+&#x503C;-values
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x6765;&#x786E;&#x5B9A;&#x6211;&#x4EEC;&#x5C06;&#x5E94;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x5F0F;&#x3002;-&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x503C;&#x6765;&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x7684;&#x884C;&#x4E3A;&#x4E86;&#x3002;-&#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6587;&#x672C;&#x8868;&#x793A;&#xFF0C;&#x653E;&#x5728;&#x5192;&#x53F7;&#x548C;&#x5206;&#x53F7;&#x4E4B;&#x95F4;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x6240;&#x6709;&#x7684;-&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x4E86;color&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;orange&#xFF0C;-fontsize&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;16pixels
+p-
+--color-orange
+--fontsize-16px
+
+&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#xFF0C;&#x5728;css&#x4E2D;&#x6211;&#x4EEC;&#x7684;&#x89C4;&#x5219;&#x662F;&#xFF0C;&#x5148;&#x4ECE;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#xFF0C;&#x6BCF;&#x4E2A;&#x58F0;&#x660E;&#x90FD;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x5F00;&#x59CB;&#xFF0C;&#x8DDF;&#x4E0A;&#x5192;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5206;&#x53F7;
+it-is-a-common-practice-to-indent-property-and-value-pairs-within-the-curly-brackets-as-with-html-these-indentations-help-keep-our-code-organized-and-legible
+&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x7F29;&#x8FDB;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x6B63;&#x5982;html&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F29;&#x8FDB;&#x53EF;&#x4EE5;&#x663E;&#x5F97;&#x4EE3;&#x7801;&#x6709;&#x7EC4;&#x7EC7;&#xFF0C;&#x5E76;&#x4E14;&#x6E05;&#x6670;&#x53EF;&#x8BFB;&#x3002;
+&#x56FE;-103
+css&#x8BED;&#x6CD5;css-syntax-outline-including-a-selector-properties-and-values
+&#x638C;&#x63E1;&#x4E86;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x672F;&#x8BED;&#x548C;css&#x7684;&#x901A;&#x7528;&#x8BED;&#x6CD5;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x4F46;&#x5728;&#x6DF1;&#x5165;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x5B66;&#x70B9;&#x66F4;&#x591A;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;css&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x600E;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;
+&#x4F7F;&#x7528;selectors
+&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6B63;&#x5982;&#x4E0A;&#x6587;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x6807;&#x8BC6;&#x54EA;&#x4E2A;html&#x5143;&#x7D20;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#x3002;it-is-important-to-fully-understand-how-to-use-selectors-and-how-they-can-be-leveraged-the-first-step-is-to-become-familiar-with-the-different-types-of-selectors-well-start-with-the-most-common-selectors-type-class-and-id-selectors-&#x5145;&#x5206;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x5668;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x600E;&#x6837;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;-&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x5148;&#x719F;&#x6089;&#x6709;&#x54EA;&#x51E0;&#x7C7B;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&#x5E38;&#x89C1;&#x7684;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x7C7B;&#xFF0C;id&#x9009;&#x62E9;&#x5668;
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;-type
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x6765;&#x6307;&#x5411;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x6307;&#x5411;&#x6240;&#x6709;&#x7684;&#x5757;&#x5143;&#x7D20;-&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;div&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x3002;-&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;div&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;&#x5DF2;&#x7ECF;&#x5176;&#x5BF9;&#x5E94;&#x6307;&#x5411;&#x7684;html
+css
+div---
+html
+----------
+
+
+&#x7C7B;&#x9009;&#x62E9;&#x5668;class
+&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x6765;&#x9009;&#x62E9;html&#x5143;&#x7D20;&#x3002;-&#x7531;&#x4E8E;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E00;&#x7EC4;&#x7279;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x5177;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x3002;
+&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x5728;&#x591A;&#x4E2A;html&#x5143;&#x7D20;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7ED9;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x8FD0;&#x7528;&#x76F8;&#x540C;&#x7684;&#x6837;&#x5F0F;&#x3002;
+&#x5728;css&#x4E2D;&#xFF0C;-&#x7C7B;&#x7531;&#x524D;&#x7F6E;&#x7684;&#x70B9;&#x53F7;--&#x8868;&#x793A;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x6240;&#x6709;&#x5305;&#x542B;&#x7C7B;&#x5C5E;&#x6027;&#x503C;&#x4E3A;awesome&#x7684;&#x6240;&#x6709;html&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x62EC;div&#x5143;&#x7D20;&#x548C;&#x6BB5;&#x843D;&#x5143;&#x7D20;
+css
+awesome---
+html
+
+
+
+id&#x9009;&#x62E9;&#x5668;
+id&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x52A0;&#x7CBE;&#x51C6;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x6307;&#x5411;&#x4E00;&#x4E2A;html&#x5143;&#x7D20;&#x3002;-&#x548C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;html&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x505A;&#x4E3A;&#x9009;&#x62E9;&#x5668;&#x4E00;&#x6837;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x7684;id&#x5C5E;&#x6027;&#x503C;&#x4F5C;&#x4E3A;&#x9009;&#x62E9;&#x5668;
+
+&#x65E0;&#x8BBA;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;id&#x5C5E;&#x6027;&#x503C;&#x5728;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF0C;if-used-they-should-be-reserved-for-significant-elements
+
+&#x5728;css&#x4E2D;&#xFF0C;id&#x9009;&#x62E9;&#x5668;&#x7531;&#x524D;&#x7F6E;&#x7684;-&#x8DDF;&#x4E0A;id&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;id&#x9009;&#x62E9;&#x5668;&#x53EA;&#x4F1A;&#x9009;&#x62E9;id&#x5C5E;&#x6027;&#x503C;&#x4E3A;shayhowe&#x7684;html&#x5143;&#x7D20;
+
+css
+shayhowe---
+
+html
+
+
+&#x5176;&#x4ED6;&#x9009;&#x62E9;&#x5668;
+&#x9009;&#x62E9;&#x5668;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E0A;&#x9762;&#x6240;&#x793A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x5230;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x9009;&#x62E9;&#x5668;&#x4E5F;&#x4EC5;&#x4EC5;&#x662F;&#x5F00;&#x59CB;&#x3002;&#x6B64;&#x5916;&#x6709;&#x8BB8;&#x591A;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF08;httplearnshayhowecomadvancedhtmlcsscomplexselectors&#xFF09;&#x5F53;&#x4F60;&#x5BF9;&#x4EE5;&#x4E0A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x81EA;&#x5982;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x770B;&#x770B;&#x8FD9;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;
+&#x5F15;&#x7528;css
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;&#x6211;&#x4EEC;&#x7684;css&#x548C;html&#x80FD;&#x4EA4;&#x6D41;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;html&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x7528;css&#x6587;&#x4EF6;&#x3002;-&#x5F15;&#x7528;css&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x6211;&#x4EEC;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#xFF0C;the-best-practice-for-referencing-our-css-is-to-include-all-of-our-styles-in-a-single-external-style-sheet-which-is-referenced-from-within-the--element-of-our-html-document--&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;&#x4E2D;&#x4F7F;&#x7528;&#x5E76;&#x9AD8;&#x6548;&#x4FEE;&#x6539;
+&#x6DFB;&#x52A0;css&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;
+other-options-for-referencing-css-include-using-internal-and-inline-styles-you-may-come-across-these-options-in-the-wild-but-they-are-generally-frowned-upon-as-they-make-updating-websites-cumbersome-and-unwieldy
+&#x521B;&#x5EFA;css&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x6587;&#x4EF6;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;css&#x540E;&#x7F00;&#xFF0C;-css&#x6587;&#x4EF6;&#x5E94;&#x4FDD;&#x5B58;&#x5728;html&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76F8;&#x540C;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x5B50;&#x76EE;&#x5F55;&#x3002;
+&#x5728;html&#x6587;&#x6863;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x7528;&#x6765;&#x5B9A;&#x4E49;html&#x6587;&#x4EF6;&#x548C;css&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FDE;&#x63A5;&#x5230;css&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;rel&#x5C5E;&#x6027;&#x503C;&#x4E3A;stylesheet&#x6765;&#x6307;&#x5B9A;&#x5B83;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6B64;&#x5916;&#xFF0C;hrefhyperlink-reference&#x5C5E;&#x6027;&#x7528;&#x6765;&#x8868;&#x793A;css&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x6216;&#x8DEF;&#x5F84;&#x3002;within-the--element-of-the-html-document-the--element-is-used-to-define-the-relationship-between-the-html-file-and-the-css-file-because-we-are-linking-to-css-we-use-the-rel-attribute-with-a-value-of-stylesheet-to-specify-their-relationship-furthermore-the-href-or-hyperlink-reference-attribute-is-used-to-identify-the-location-or-path-of-the-css-file
+&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;
+
+--
+
+
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;css&#x6B63;&#x5E38;&#x6E32;&#x67D3;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x6240;&#x8868;&#x793A;&#x7684;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E3A;&#x6211;&#x4EEC;&#x4FDD;&#x5B58;&#x7684;css&#x6587;&#x4EF6;&#x3002;&#x5728;&#x5982;&#x4E0A;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;&#x548C;html&#x76F8;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x6839;&#x76EE;&#x5F55;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;css&#x6587;&#x4EF6;&#x653E;&#x5728;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x9700;&#x8981;&#x76F8;&#x5E94;&#x53D8;&#x5316;&#x3002;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x5C06;&#x6587;&#x4EF6;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;sytlesheets&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;href&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5C31;&#x662F;stylesheetsmaincss&#x3002;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x55EF;&#x7684;&#x9875;&#x9762;&#x5F00;&#x59CB;&#x6162;&#x6162;&#x7684;&#x6709;&#x751F;&#x6C14;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x6DF1;&#x5165;css&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x610F;&#x8BC6;&#x5230;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;css&#xFF0C;&#x4E00;&#x4E9B;html&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x7528;&#x4E86;&#x5176;&#x504F;&#x597D;&#x7684;&#x4E00;&#x4E9B;css&#x6837;&#x5F0F;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x91CD;&#x5199;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C31;&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;&#xFF08;&#x521D;&#x59CB;&#x5316;&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x3002;
+&#x4F7F;&#x7528;css&#x91CD;&#x7F6E;
+&#x6BCF;&#x4E2A;web&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;html&#x5143;&#x7D20;&#x90FD;&#x6709;&#x5176;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;google-chrome&#x6D4F;&#x89C8;&#x5668;&#x548C;ie&#x6D4F;&#x89C8;&#x5668;&#x5982;&#x6076;&#x5316;&#x6E32;&#x67D3;&#x6807;&#x9898;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x5217;&#x8868;&#x7B49;&#x7B49;&#x4E5F;&#x8BB8;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002;-&#x4E3A;&#x4E86;&#x5305;&#x88C5;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x517C;&#x5BB9;&#xFF0C;css&#x91CD;&#x7F6E;&#x5C31;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x3002;
+css&#x91CD;&#x7F6E;&#x5C06;&#x6BCF;&#x4E2A;html&#x5143;&#x7D20;&#x8D4B;&#x4E88;&#x9884;&#x8BBE;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5E76;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EDF;&#x4E00;&#x7684;&#x3002;-&#x8FD9;&#x4E9B;&#x91CD;&#x7F6E;&#x4E00;&#x822C;&#x5305;&#x62EC;&#x79FB;&#x9664;&#x4EFB;&#x4F55;sizing-margins-paddings&#x6216;&#x5176;&#x4ED6;&#x6837;&#x5F0F;&#x5E76;&#x8C03;&#x6574;&#x8FD9;&#x4E9B;&#x503C;&#x3002;-&#x7531;&#x4E8E;css&#x6837;&#x5F0F;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x89E3;&#x6790;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x91CD;&#x7F6E;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x653E;&#x5230;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x6700;&#x4E0A;&#x65B9;&#x3002;doing-so-ensures-that-those-styles-are-read-first-and-that-all-of-the-different-web-browsers-are-working-from-a-common-baseline&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x88AB;&#x5148;&#x8BFB;&#x53D6;&#xFF0C;&#x7136;&#x540E;&#x6240;&#x6709;&#x7684;web&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8D77;&#x70B9;&#x90FD;&#x76F8;&#x540C;&#x3002;
+&#x6211;&#x4EEC;&#x6709;&#x5F88;&#x591A;&#x7684;&#x91CD;&#x7F6E;&#x65B9;&#x6848;&#x4EE5;&#x4F9B;&#x9009;&#x62E9;&#xFF0C;&#x5B83;&#x4EEC;&#x5404;&#x6709;&#x6240;&#x957F;&#xFF0C;&#x6700;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x7684;&#x662F;-eric-meyers-rest-&#xFF08;httpmeyerwebcomerictoolscssreset&#xFF09;-which-has-been-adapted-to-include-styles-for-the-new-html5-elements-&#x53EF;&#x4EE5;&#x9002;&#x7528;html5&#x5143;&#x7D20;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x63A2;&#x7D22;&#xFF0C;&#x8FD8;&#x6709;nicolas-gallagher&#x521B;&#x5EFA;&#x7684;normaizecss&#xFF08;httpnecolasgithubionormalizecss&#xFF09;--normalizecss-focuses-not-on-using-a-hard-reset-for-all-common-elements-but-instead-on-setting-common-styles-for-these-elements-it-requires-a-stronger-understanding-of-css-as-well-as-awareness-of-what-youd-like-your-styles-to-be
+&#x5938;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x548C;&#x6D4B;&#x8BD5;
+&#x6B63;&#x5982;&#x4E4B;&#x524D;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6E32;&#x67D3;html&#x5143;&#x7D20;&#xFF0C;-&#x867D;&#x7136;&#x4E0D;&#x8981;&#x6C42;&#x7F51;&#x7AD9;&#x5728;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x770B;&#x8D77;&#x6765;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x81F3;&#x5C11;&#x5F97;&#x975E;&#x5E38;&#x63A5;&#x8FD1;&#xFF0C;
+as-previously-mentioned-different-browsers-render-elements-in-different-ways-its-important-to-recognize-the-value-in-crossbrowser-compatibility-and-testing-websites-dont-need-to-look-exactly-the-same-in-every-browser-but-they-should-be-close-which-browsers-you-wish-to-support-and-to-what-degree-is-a-decision-you-will-need-to-make-based-on-what-is-best-for-your-website
+in-all-there-are-a-handful-of&#xFF08;&#x5C11;&#x91CF;&#x7684;&#xFF09;-things-to-be-on-the-lookout-for-when-writing-css-the-good-news-is-that-anything-is-possible-and-with-a-little-patience-well-figure-it-all-out
+&#x5B9E;&#x8DF5;
+&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x7684;conference-website&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x70B9;css
+
+&#x5728;stylesconference&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x79F0;&#x4E3A;assets&#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#x7B49;&#x7B49;&#xFF0C;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x547D;&#x540D;stylesheets
+&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230;stylesheets&#x6587;&#x4EF6;&#x5939;&#x4E2D;
+&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;indexhtml&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;-&#x548C;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x7684;css&#x6837;&#x5F0F;&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x548C;&#x95F4;&#x8DDD;&#x3002;-&#x4F7F;&#x7528;eric-meyer&#x7684;&#x91CD;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x8282;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x8BA9;&#x5176;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8D77;&#x70B9;&#x3002;&#x53BB;eric&#x7684;&#x7F51;&#x7AD9;&#x590D;&#x5236;&#x5176;&#x91CD;&#x7F6E;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#x3002;
+
+-httpmeyerwebcomerictoolscssreset-2-v20--20110126
+--license-none-public-domain
+
+html-body-div-span-applet-object-iframe
+h1-h2-h3-h4-h5-h6-p-blockquote-pre
+a-abbr-acronym-address-big-cite-code
+del-dfn-em-img-ins-kbd-q-s-samp
+small-strike-strong-sub-sup-tt-var
+b-u-i-center
+dl-dt-dd-ol-ul-li
+fieldset-form-label-legend
+table-caption-tbody-tfoot-thead-tr-th-td
+article-aside-canvas-details-embed
+figure-figcaption-footer-header-hgroup
+menu-nav-output-ruby-section-summary
+time-mark-audio-video-
+--margin-0
+--padding-0
+--border-0
+--fontsize-100
+--font-inherit
+--verticalalign-baseline
+
+-html5-displayrole-reset-for-older-browsers-
+article-aside-details-figcaption-figure
+footer-header-hgroup-menu-nav-section-
+--display-block
+
+body-
+--lineheight-1
+
+ol-ul-
+--liststyle-none
+
+blockquote-q-
+--quotes-none
+
+blockquotebefore-blockquoteafter
+qbefore-qafter-
+--content-
+--content-none
+
+table-
+--bordercollapse-collapse
+--borderspacing-0
+
+
+&#x968F;&#x7740;&#x6211;&#x4EEC;&#x5F80;css&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x548C;indexhtml&#x6587;&#x4EF6;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x5143;&#x7D20;&#x540E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x3002;
+&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x5143;&#x7D20;&#x6C47;&#x603B;&#x5F15;&#x7528;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x90A3;&#x4E48;&#x6765;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x5C5E;&#x6027;&#xFF0C;rel-&#x6307;&#x5B9A;&#x503C;&#x4E3A;stylesheet
+&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#x5F15;&#x7528;&#xFF0C;&#x4F7F;&#x7528;href&#x5C5E;&#x6027;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;maincss&#x6587;&#x4EF6;&#xFF0C;&#x8BB0;&#x4F4F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;assets&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;stylesheets&#x6587;&#x4EF6;&#x5939;&#x3002;&#x56E0;&#x6B64;href&#x5C5E;&#x6027;&#x503C;&#x4E3A;assetsstylesheetsmaincss
+
+
+--
+--styles-conference
+--
+
+
+&#x8BE5;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x7684;&#x6210;&#x679C;&#x4E86;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;indexhtml&#x6587;&#x4EF6;&#x3002;
+&#x56FE;-104
+our-styles-conference-website-with-a-css-reset
+demo&#x548C;&#x6E90;&#x4EE3;&#x7801;
+&#x4E0B;&#x9762;&#x7684;&#x8FDE;&#x63A5;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;style-conference&#x7F51;&#x7AD9;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x6E90;&#x4EE3;&#x7801;
+httplearnshayhowecompracticebuildingyourfirstwebpageindexhtml
+httplearnshayhowecompracticebuildingyourfirstwebpagezip
+&#x603B;&#x7ED3;
+&#x76EE;&#x524D;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x9519;&#xFF01;&#x5728;&#x672C;&#x8BFE;&#x4E2D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8D70;&#x4E86;&#x5F88;&#x5927;&#x4E00;&#x6B65;&#x4E86;&#x3002;
+&#x56DE;&#x5934;&#x770B;&#x770B;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;html&#x548C;css&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x901A;&#x8FC7;&#x7EE7;&#x7EED;&#x52AA;&#x529B;&#xFF0C;&#x4F60;&#x82B1;&#x4E9B;&#x65F6;&#x95F4;&#x6765;&#x5199;html&#x548C;csss&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x66F4;&#x52A0;&#x719F;&#x6089;&#x4E24;&#x95E8;&#x8BED;&#x8A00;&#x3002;
+&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF0C;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x6240;&#x8986;&#x76D6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;
+&#xF06C;----html&#x548C;css&#x7684;&#x533A;&#x522B;
+&#xF06C;----&#x719F;&#x6089;html&#x5143;&#x7D20;&#x3001;&#x6807;&#x7B7E;&#x548C;&#x5C5E;&#x6027;
+&#xF06C;----&#x8BBE;&#x7F6E;&#x7F51;&#x9875;&#x7ED3;&#x6784;
+&#xF06C;----&#x719F;&#x6089;css&#x9009;&#x62E9;&#x5668;&#x3001;&#x5C5E;&#x6027;&#x548C;&#x503C;
+&#xF06C;----&#x4F7F;&#x7528;css&#x9009;&#x62E9;&#x5668;
+&#xF06C;----&#x5728;html&#x4E2D;&#x5F15;&#x7528;css
+&#xF06C;----css&#x91CD;&#x7F6E;
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x4E86;&#x89E3;&#x4E0B;html&#x5E76;&#x5B66;&#x70B9;&#x8BED;&#x610F;&#x65B9;&#x9762;&#x7684;&#x77E5;&#x8BC6;&#x3002;
+&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;
+&#xF0A7;----common-html-terms-via-scripting-master
+&#xF0A7;----css-terms--definitions-via-impressive-webs
+&#xF0A7;----css-tools-reset-css-via-eric-meyer
+&#xF0A7;----normalizecss-via-nicolas-gallagher
+&#xF0A7;----an-intro-to-html--css-via-shay-howe
+">&#xFF0C; <p>&#x7B49;</p>
+<p>&#x5728;CSS&#x4E2D;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#x540E;&#x9762;&#x8DDF;&#x7684;&#x662F;&#x82B1;&#x62EC;&#x53F7;{}&#xFF0C; &#x5176;&#x4E2D;&#x5305;&#x62EC;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x88AB;&#x5E94;&#x7528;&#x5230;&#x6240;&#x9009;&#x62E9;&#x7684;&#x5143;&#x7D20;&#x3002;&#x5982;&#x4E0B;&#x7684;&#x9009;&#x62E9;&#x5668;&#x9488;&#x5BF9;&#x6240;&#x6709;&#x7684;</p><p> &#x5143;&#x7D20;&#x3002;
+p { ... }</p>
+<p>&#x5C5E;&#x6027; Properties
+&#x4E00;&#x65E6;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x540E;&#xFF0C;&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x4E86;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6837;&#x5F0F;&#x4F1A;&#x8FD0;&#x7528;&#x5230;&#x8BE5;&#x5143;&#x7D20;&#x3002; &#x5C5E;&#x6027;&#x540D;&#x79F0;&#x5728;&#x9009;&#x62E9;&#x5668;&#x4E4B;&#x540E;&#xFF0C;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x90E8;&#xFF0C;&#x5192;&#x53F7;&#x4E4B;&#x524D;&#xFF0C;&#x6709;&#x8BB8;&#x591A;&#x5C5E;&#x6027;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;background, color, font-size, height&#x5DF2;&#x7ECF;width&#x7B49;&#x7B49;&#xFF0C;&#x6B64;&#x5916;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x4E0D;&#x65AD;&#x589E;&#x52A0;&#x3002; &#x5728;&#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;</p><p>&#x5143;&#x7D20;&#x5185;&#x7684;color&#x548C;font-size&#x5C5E;&#x6027;
+p {
+  color: ...;
+  font-size: ...;
+}</p>
+<p>&#x503C; Values
+&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x6765;&#x786E;&#x5B9A;&#x6211;&#x4EEC;&#x5C06;&#x5E94;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x5F0F;&#x3002; &#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x503C;&#x6765;&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x7684;&#x884C;&#x4E3A;&#x4E86;&#x3002; &#x503C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6587;&#x672C;&#x8868;&#x793A;&#xFF0C;&#x653E;&#x5728;&#x5192;&#x53F7;&#x548C;&#x5206;&#x53F7;&#x4E4B;&#x95F4;&#xFF0C;&#x4EE5;&#x4E0B;&#x662F;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x6240;&#x6709;&#x7684;</p><p> &#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x4E86;color&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;orange&#xFF0C; font-size&#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x4E3A;16pixels.
+p {
+  color: orange;
+  font-size: 16px;
+}</p>
+<p>&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#xFF0C;&#x5728;CSS&#x4E2D;&#x6211;&#x4EEC;&#x7684;&#x89C4;&#x5219;&#x662F;&#xFF0C;&#x5148;&#x4ECE;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x82B1;&#x62EC;&#x53F7;&#xFF0C;&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x4E2D;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#xFF0C;&#x6BCF;&#x4E2A;&#x58F0;&#x660E;&#x90FD;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x5F00;&#x59CB;&#xFF0C;&#x8DDF;&#x4E0A;&#x5192;&#x53F7;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5206;&#x53F7;
+It is a common practice to indent property and value pairs within the curly brackets. As with HTML, these indentations help keep our code organized and legible.
+&#x5728;&#x82B1;&#x62EC;&#x53F7;&#x5185;&#x7F29;&#x8FDB;&#x5C5E;&#x6027;&#x548C;&#x503C;&#x5BF9;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x505A;&#x6CD5;&#xFF0C;&#x6B63;&#x5982;HTML&#x4E2D;&#xFF0C;&#x8FD9;&#x4E9B;&#x7F29;&#x8FDB;&#x53EF;&#x4EE5;&#x663E;&#x5F97;&#x4EE3;&#x7801;&#x6709;&#x7EC4;&#x7EC7;&#xFF0C;&#x5E76;&#x4E14;&#x6E05;&#x6670;&#x53EF;&#x8BFB;&#x3002;</p>
+<p>&#x56FE; 1.03
+CSS&#x8BED;&#x6CD5;CSS syntax outline including a selector, properties, and values</p>
+<p>&#x638C;&#x63E1;&#x4E86;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x672F;&#x8BED;&#x548C;CSS&#x7684;&#x901A;&#x7528;&#x8BED;&#x6CD5;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x4F46;&#x5728;&#x6DF1;&#x5165;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x5B66;&#x70B9;&#x66F4;&#x591A;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x77E5;&#x9053;CSS&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x600E;&#x6837;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;</p>
+<p>&#x4F7F;&#x7528;Selectors
+&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6B63;&#x5982;&#x4E0A;&#x6587;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x6807;&#x8BC6;&#x54EA;&#x4E2A;HTML&#x5143;&#x7D20;&#x6539;&#x53D8;&#x6837;&#x5F0F;&#x3002;It is important to fully understand how to use selectors and how they can be leveraged. The first step is to become familiar with the different types of selectors. We&#x2019;ll start with the most common selectors: type, class, and ID selectors. &#x5145;&#x5206;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x5668;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x600E;&#x6837;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002; &#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x5148;&#x719F;&#x6089;&#x6709;&#x54EA;&#x51E0;&#x7C7B;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&#x5E38;&#x89C1;&#x7684;&#x9009;&#x62E9;&#x5668;&#x5F00;&#x59CB;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x7C7B;&#xFF0C;Id&#x9009;&#x62E9;&#x5668;</p>
+<p>&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668; Type
+&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x6765;&#x6307;&#x5411;&#x5143;&#x7D20;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x6307;&#x5411;&#x6240;&#x6709;&#x7684;&#x5757;&#x5143;&#x7D20;<div> &#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;div&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x3002; &#x5982;&#x4E0B;&#x7684;&#x4EE3;&#x7801;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E2A;div&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;&#x5DF2;&#x7ECF;&#x5176;&#x5BF9;&#x5E94;&#x6307;&#x5411;&#x7684;HTML
+CSS
+div { ... }</div></p>
+<p>HTML</p>
+<div>...</div>          
+<div>...</div>
+
+<p>&#x7C7B;&#x9009;&#x62E9;&#x5668;Class
+&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;HTML&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x6765;&#x9009;&#x62E9;HTML&#x5143;&#x7D20;&#x3002; &#x7531;&#x4E8E;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x4E00;&#x7EC4;&#x7279;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x5177;&#x6709;&#x9488;&#x5BF9;&#x6027;&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x5728;&#x591A;&#x4E2A;HTML&#x5143;&#x7D20;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7ED9;&#x4E0D;&#x540C;&#x7684;HTML&#x5143;&#x7D20;&#x8FD0;&#x7528;&#x76F8;&#x540C;&#x7684;&#x6837;&#x5F0F;&#x3002;</p>
+<p>&#x5728;CSS&#x4E2D;&#xFF0C; &#x7C7B;&#x7531;&#x524D;&#x7F6E;&#x7684;&#x70B9;&#x53F7; . &#x8868;&#x793A;&#x540E;&#x9762;&#x8DDF;&#x4E0A;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x6240;&#x6709;&#x5305;&#x542B;&#x7C7B;&#x5C5E;&#x6027;&#x503C;&#x4E3A;awesome&#x7684;&#x6240;&#x6709;HTML&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x62EC;div&#x5143;&#x7D20;&#x548C;&#x6BB5;&#x843D;&#x5143;&#x7D20;
+CSS
+.awesome { ... }</p>
+<p>HTML</p>
+<div class="awesome">...</div>
+<p class="awesome">...</p>
+
+ID&#x9009;&#x62E9;&#x5668;
+ID&#x9009;&#x62E9;&#x5668;&#x6BD4;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x66F4;&#x52A0;&#x7CBE;&#x51C6;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x6307;&#x5411;&#x4E00;&#x4E2A;HTML&#x5143;&#x7D20;&#x3002; &#x548C;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;HTML&#x5143;&#x7D20;&#x7684;class&#x5C5E;&#x6027;&#x503C;&#x505A;&#x4E3A;&#x9009;&#x62E9;&#x5668;&#x4E00;&#x6837;&#xFF0C;ID&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x5143;&#x7D20;&#x7684;ID&#x5C5E;&#x6027;&#x503C;&#x4F5C;&#x4E3A;&#x9009;&#x62E9;&#x5668;
+
+&#x65E0;&#x8BBA;&#x662F;&#x4EC0;&#x4E48;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#xFF0C;ID&#x5C5E;&#x6027;&#x503C;&#x5728;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF0C;If used they should be reserved for significant elements.
+
+&#x5728;CSS&#x4E2D;&#xFF0C;ID&#x9009;&#x62E9;&#x5668;&#x7531;&#x524D;&#x7F6E;&#x7684;# &#x8DDF;&#x4E0A;ID&#x5C5E;&#x6027;&#x503C;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x4E2D;&#x7684;ID&#x9009;&#x62E9;&#x5668;&#x53EA;&#x4F1A;&#x9009;&#x62E9;ID&#x5C5E;&#x6027;&#x503C;&#x4E3A;shayhowe&#x7684;HTML&#x5143;&#x7D20;
+
+CSS
+#shayhowe { ... }
+
+HTML
+<div id="shayhowe">...</div>
+
+<p>&#x5176;&#x4ED6;&#x9009;&#x62E9;&#x5668;
+&#x9009;&#x62E9;&#x5668;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E0A;&#x9762;&#x6240;&#x793A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x5230;&#x7684;&#x3002;&#x8FD9;&#x4E9B;&#x9009;&#x62E9;&#x5668;&#x4E5F;&#x4EC5;&#x4EC5;&#x662F;&#x5F00;&#x59CB;&#x3002;&#x6B64;&#x5916;&#x6709;&#x8BB8;&#x591A;&#x66F4;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#xFF08;<a href="http://learn.shayhowe.com/advanced-html-css/complex-selectors/&#xFF09;&#x5F53;&#x4F60;&#x5BF9;&#x4EE5;&#x4E0A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x81EA;&#x5982;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x770B;&#x770B;&#x8FD9;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;" target="_blank">http://learn.shayhowe.com/advanced-html-css/complex-selectors/&#xFF09;&#x5F53;&#x4F60;&#x5BF9;&#x4EE5;&#x4E0A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4F7F;&#x7528;&#x81EA;&#x5982;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x770B;&#x770B;&#x8FD9;&#x4E9B;&#x9AD8;&#x7EA7;&#x7684;&#x9009;&#x62E9;&#x5668;&#x3002;</a></p>
+<p>&#x5F15;&#x7528;CSS
+&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;&#x6211;&#x4EEC;&#x7684;CSS&#x548C;HTML&#x80FD;&#x4EA4;&#x6D41;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;HTML&#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x7528;CSS&#x6587;&#x4EF6;&#x3002; &#x5F15;&#x7528;CSS&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;&#x6211;&#x4EEC;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x4E2D;&#xFF0C;The best practice for referencing our CSS is to include all of our styles in a single external style sheet, which is referenced from within the <head> element of our HTML document.  &#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x7684;&#x6837;&#x5F0F;&#x8868;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x6574;&#x4E2A;&#x7F51;&#x7AD9;&#x4E2D;&#x4F7F;&#x7528;&#x5E76;&#x9AD8;&#x6548;&#x4FEE;&#x6539;
+&#x6DFB;&#x52A0;CSS&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;</head></p>
+<p>Other options for referencing CSS include using internal and inline styles. You may come across these options in the wild, but they are generally frowned upon, as they make updating websites cumbersome and unwieldy.</p>
+<p>&#x521B;&#x5EFA;CSS&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x6587;&#x4EF6;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A;.css&#x540E;&#x7F00;&#xFF0C; CSS&#x6587;&#x4EF6;&#x5E94;&#x4FDD;&#x5B58;&#x5728;HTML&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76F8;&#x540C;&#x76EE;&#x5F55;&#x6216;&#x8005;&#x5B50;&#x76EE;&#x5F55;&#x3002;
+&#x5728;HTML&#x6587;&#x6863;&#x4E2D;&#x7684;<head>&#x5143;&#x7D20;&#x4E2D;&#xFF0C;<link>&#x5143;&#x7D20;&#x7528;&#x6765;&#x5B9A;&#x4E49;HTML&#x6587;&#x4EF6;&#x548C;CSS&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FDE;&#x63A5;&#x5230;CSS&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;rel&#x5C5E;&#x6027;&#x503C;&#x4E3A;stylesheet&#x6765;&#x6307;&#x5B9A;&#x5B83;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x6B64;&#x5916;&#xFF0C;href(hyperlink reference)&#x5C5E;&#x6027;&#x7528;&#x6765;&#x8868;&#x793A;CSS&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x6216;&#x8DEF;&#x5F84;&#x3002;Within the <head> element of the HTML document, the <link> element is used to define the relationship between the HTML file and the CSS file. Because we are linking to CSS, we use the rel attribute with a value of stylesheet to specify their relationship. Furthermore, the href (or hyperlink reference) attribute is used to identify the location, or path, of the CSS file.</head></head></p>
+<p>&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;</p>
+<head>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<p>&#x4E3A;&#x4E86;&#x80FD;&#x4F7F;CSS&#x6B63;&#x5E38;&#x6E32;&#x67D3;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x6240;&#x8868;&#x793A;&#x7684;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E3A;&#x6211;&#x4EEC;&#x4FDD;&#x5B58;&#x7684;CSS&#x6587;&#x4EF6;&#x3002;&#x5728;&#x5982;&#x4E0A;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;main.css&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;&#x548C;HTML&#x76F8;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x6839;&#x76EE;&#x5F55;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;CSS&#x6587;&#x4EF6;&#x653E;&#x5728;&#x5B50;&#x76EE;&#x5F55;&#xFF0C;href&#x5C5E;&#x6027;&#x503C;&#x9700;&#x8981;&#x76F8;&#x5E94;&#x53D8;&#x5316;&#x3002;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x5C06;&#x6587;&#x4EF6;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;sytlesheets&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x90A3;&#x4E48;href&#x7684;&#x5C5E;&#x6027;&#x503C;&#x5C31;&#x662F;stylesheets/main.css&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x55EF;&#x7684;&#x9875;&#x9762;&#x5F00;&#x59CB;&#x6162;&#x6162;&#x7684;&#x6709;&#x751F;&#x6C14;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x6DF1;&#x5165;CSS&#x592A;&#x591A;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x610F;&#x8BC6;&#x5230;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;CSS&#xFF0C;&#x4E00;&#x4E9B;HTML&#x5143;&#x7D20;&#x5DF2;&#x7ECF;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x7528;&#x4E86;&#x5176;&#x504F;&#x597D;&#x7684;&#x4E00;&#x4E9B;CSS&#x6837;&#x5F0F;&#xFF0C;&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x91CD;&#x5199;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C31;&#x4F7F;&#x7528;CSS&#x91CD;&#x7F6E;&#xFF08;&#x521D;&#x59CB;&#x5316;&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x4F7F;&#x7528;CSS&#x91CD;&#x7F6E;
+&#x6BCF;&#x4E2A;Web&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;HTML&#x5143;&#x7D20;&#x90FD;&#x6709;&#x5176;&#x9ED8;&#x8BA4;&#x7684;&#x6837;&#x5F0F;&#x3002;Google Chrome&#x6D4F;&#x89C8;&#x5668;&#x548C;IE&#x6D4F;&#x89C8;&#x5668;&#x5982;&#x6076;&#x5316;&#x6E32;&#x67D3;&#x6807;&#x9898;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x5217;&#x8868;&#x7B49;&#x7B49;&#x4E5F;&#x8BB8;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x3002; &#x4E3A;&#x4E86;&#x5305;&#x88C5;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x517C;&#x5BB9;&#xFF0C;CSS&#x91CD;&#x7F6E;&#x5C31;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x3002;</p>
+<p>CSS&#x91CD;&#x7F6E;&#x5C06;&#x6BCF;&#x4E2A;HTML&#x5143;&#x7D20;&#x8D4B;&#x4E88;&#x9884;&#x8BBE;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x5E76;&#x4E3A;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8BBE;&#x7F6E;&#x4E3A;&#x7EDF;&#x4E00;&#x7684;&#x3002; &#x8FD9;&#x4E9B;&#x91CD;&#x7F6E;&#x4E00;&#x822C;&#x5305;&#x62EC;&#x79FB;&#x9664;&#x4EFB;&#x4F55;sizing, margins, paddings&#x6216;&#x5176;&#x4ED6;&#x6837;&#x5F0F;&#x5E76;&#x8C03;&#x6574;&#x8FD9;&#x4E9B;&#x503C;&#x3002; &#x7531;&#x4E8E;CSS&#x6837;&#x5F0F;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#x89E3;&#x6790;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x91CD;&#x7F6E;&#x6587;&#x4EF6;&#x5FC5;&#x987B;&#x653E;&#x5230;&#x6837;&#x5F0F;&#x8868;&#x7684;&#x6700;&#x4E0A;&#x65B9;&#x3002;Doing so ensures that those styles are read first and that all of the different web browsers are working from a common baseline.&#x8FD9;&#x6837;&#x505A;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;&#x88AB;&#x5148;&#x8BFB;&#x53D6;&#xFF0C;&#x7136;&#x540E;&#x6240;&#x6709;&#x7684;Web&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x8D77;&#x70B9;&#x90FD;&#x76F8;&#x540C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6709;&#x5F88;&#x591A;&#x7684;&#x91CD;&#x7F6E;&#x65B9;&#x6848;&#x4EE5;&#x4F9B;&#x9009;&#x62E9;&#xFF0C;&#x5B83;&#x4EEC;&#x5404;&#x6709;&#x6240;&#x957F;&#xFF0C;&#x6700;&#x5E7F;&#x4E3A;&#x4F7F;&#x7528;&#x7684;&#x662F; Eric Meyer&#x2019;s rest &#xFF08;<a href="http://meyerweb.com/eric/tools/css/reset/&#xFF09;" target="_blank">http://meyerweb.com/eric/tools/css/reset/&#xFF09;</a> which has been adapted to include styles for the new HTML5 elements. &#x53EF;&#x4EE5;&#x9002;&#x7528;HTML5&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x63A2;&#x7D22;&#xFF0C;&#x8FD8;&#x6709;Nicolas Gallagher&#x521B;&#x5EFA;&#x7684;Normaize.css&#xFF08;<a href="http://necolas.github.io/normalize.css/&#xFF09;" target="_blank">http://necolas.github.io/normalize.css/&#xFF09;</a>  Normalize.css focuses not on using a hard reset for all common elements, but instead on setting common styles for these elements. It requires a stronger understanding of CSS, as well as awareness of what you&#x2019;d like your styles to be.</p>
+<p>&#x5938;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x548C;&#x6D4B;&#x8BD5;
+&#x6B63;&#x5982;&#x4E4B;&#x524D;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x6E32;&#x67D3;HTML&#x5143;&#x7D20;&#xFF0C; &#x867D;&#x7136;&#x4E0D;&#x8981;&#x6C42;&#x7F51;&#x7AD9;&#x5728;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x770B;&#x8D77;&#x6765;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x81F3;&#x5C11;&#x5F97;&#x975E;&#x5E38;&#x63A5;&#x8FD1;&#xFF0C;</p>
+<p>As previously mentioned, different browsers render elements in different ways. It&#x2019;s important to recognize the value in cross-browser compatibility and testing. Websites don&#x2019;t need to look exactly the same in every browser, but they should be close. Which browsers you wish to support, and to what degree, is a decision you will need to make based on what is best for your website.
+In all there are a handful of&#xFF08;&#x5C11;&#x91CF;&#x7684;&#xFF09; things to be on the lookout for when writing CSS. The good news is that anything is possible, and with a little patience we&#x2019;ll figure it all out.</p>
+<p>&#x5B9E;&#x8DF5;
+&#x56DE;&#x5230;&#x6211;&#x4EEC;&#x7684;conference website&#xFF0C;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x70B9;CSS</p>
+<ol>
+<li>&#x5728;styles-conference&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x540D;&#x79F0;&#x4E3A;assets&#xFF0C;&#x7528;&#x6765;&#x4FDD;&#x5B58;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#x7B49;&#x7B49;&#xFF0C;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x547D;&#x540D;stylesheets</li>
+<li>&#x4F7F;&#x7528;&#x7EAF;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;main.css&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5230;stylesheets&#x6587;&#x4EF6;&#x5939;&#x4E2D;</li>
+<li>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x6211;&#x4EEC;&#x7684;index.html&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;<h1 id="&#x548C;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x7684;css&#x6837;&#x5F0F;&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x548C;&#x95F4;&#x8DDD;&#x3002;-&#x4F7F;&#x7528;eric-meyer&#x7684;&#x91CD;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x8282;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x8BA9;&#x5176;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8D77;&#x70B9;&#x3002;&#x53BB;eric&#x7684;&#x7F51;&#x7AD9;&#x590D;&#x5236;&#x5176;&#x91CD;&#x7F6E;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x6211;&#x4EEC;&#x7684;maincss&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#x3002;"> &#x548C;<p>&#x5143;&#x7D20;&#x90FD;&#x6709;&#x9ED8;&#x8BA4;&#x7684;CSS&#x6837;&#x5F0F;&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x5B83;&#x4EEC;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x548C;&#x95F4;&#x8DDD;&#x3002; &#x4F7F;&#x7528;Eric Meyer&#x7684;&#x91CD;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x8282;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#xFF0C;&#x8BA9;&#x5176;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x8D77;&#x70B9;&#x3002;&#x53BB;Eric&#x7684;&#x7F51;&#x7AD9;&#x590D;&#x5236;&#x5176;&#x91CD;&#x7F6E;&#xFF0C;&#x7C98;&#x8D34;&#x5230;&#x6211;&#x4EEC;&#x7684;main.css&#x6587;&#x4EF6;&#x7684;&#x9876;&#x90E8;&#x3002;</p></h1></li>
+</ol>
+<p>/<em> <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">http://meyerweb.com/eric/tools/css/reset/</a> 2. v2.0 | 20110126
+  License: none (public domain)
+</em>/</p>
+<p>html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/<em> HTML5 display-role reset for older browsers </em>/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: &apos;&apos;;
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}</p>
+<ol>
+<li>&#x968F;&#x7740;&#x6211;&#x4EEC;&#x5F80;CSS&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x548C;index.html&#x6587;&#x4EF6;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#xFF0C;&#x6253;&#x5F00;index.html&#x6587;&#x4EF6;&#xFF0C;&#x5728;<head>&#x5143;&#x7D20;&#x4E2D;&#xFF0C;<title>&#x5143;&#x7D20;&#x540E;&#x6DFB;&#x52A0;<link>&#x5143;&#x7D20;&#x3002;</title></head></li>
+<li>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x5728;<link>&#x5143;&#x7D20;&#x6C47;&#x603B;&#x5F15;&#x7528;&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x90A3;&#x4E48;&#x6765;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#x5C5E;&#x6027;&#xFF0C;rel &#x6307;&#x5B9A;&#x503C;&#x4E3A;stylesheet</li>
+<li>&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8D85;&#x94FE;&#x63A5;&#x5F15;&#x7528;&#xFF0C;&#x4F7F;&#x7528;href&#x5C5E;&#x6027;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;main.css&#x6587;&#x4EF6;&#xFF0C;&#x8BB0;&#x4F4F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;main.css&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x5728;assets&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;stylesheets&#x6587;&#x4EF6;&#x5939;&#x3002;&#x56E0;&#x6B64;href&#x5C5E;&#x6027;&#x503C;&#x4E3A;assets/stylesheets/main.css</li>
+</ol>
+<head>
+  <meta charset="utf-8">
+  <title>Styles Conference</title>
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+
+<p>&#x8BE5;&#x770B;&#x770B;&#x6211;&#x4EEC;&#x7684;&#x6210;&#x679C;&#x4E86;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00;index.html&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x56FE; 1.04
+Our Styles Conference website with a CSS reset</p>
+<p>Demo&#x548C;&#x6E90;&#x4EE3;&#x7801;
+&#x4E0B;&#x9762;&#x7684;&#x8FDE;&#x63A5;&#x4F60;&#x53EF;&#x4EE5;&#x67E5;&#x770B;Style Conference&#x7F51;&#x7AD9;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x6E90;&#x4EE3;&#x7801;
+<a href="http://learn.shayhowe.com/practice/building-your-first-web-page/index.html" target="_blank">http://learn.shayhowe.com/practice/building-your-first-web-page/index.html</a>
+<a href="http://learn.shayhowe.com/practice/building-your-first-web-page.zip" target="_blank">http://learn.shayhowe.com/practice/building-your-first-web-page.zip</a></p>
+<p>&#x603B;&#x7ED3;
+&#x76EE;&#x524D;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x9519;&#xFF01;&#x5728;&#x672C;&#x8BFE;&#x4E2D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8D70;&#x4E86;&#x5F88;&#x5927;&#x4E00;&#x6B65;&#x4E86;&#x3002;
+&#x56DE;&#x5934;&#x770B;&#x770B;&#xFF0C;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;HTML&#x548C;CSS&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x901A;&#x8FC7;&#x7EE7;&#x7EED;&#x52AA;&#x529B;&#xFF0C;&#x4F60;&#x82B1;&#x4E9B;&#x65F6;&#x95F4;&#x6765;&#x5199;HTML&#x548C;CSSS&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x66F4;&#x52A0;&#x719F;&#x6089;&#x4E24;&#x95E8;&#x8BED;&#x8A00;&#x3002;</p>
+<p>&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#xFF0C;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x6240;&#x8986;&#x76D6;&#x7684;&#x5185;&#x5BB9;&#xFF1A;
+&#xF06C;    HTML&#x548C;CSS&#x7684;&#x533A;&#x522B;
+&#xF06C;    &#x719F;&#x6089;HTML&#x5143;&#x7D20;&#x3001;&#x6807;&#x7B7E;&#x548C;&#x5C5E;&#x6027;
+&#xF06C;    &#x8BBE;&#x7F6E;&#x7F51;&#x9875;&#x7ED3;&#x6784;
+&#xF06C;    &#x719F;&#x6089;CSS&#x9009;&#x62E9;&#x5668;&#x3001;&#x5C5E;&#x6027;&#x548C;&#x503C;
+&#xF06C;    &#x4F7F;&#x7528;CSS&#x9009;&#x62E9;&#x5668;
+&#xF06C;    &#x5728;HTML&#x4E2D;&#x5F15;&#x7528;CSS
+&#xF06C;    CSS&#x91CD;&#x7F6E;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x4E86;&#x89E3;&#x4E0B;HTML&#x5E76;&#x5B66;&#x70B9;&#x8BED;&#x610F;&#x65B9;&#x9762;&#x7684;&#x77E5;&#x8BC6;&#x3002;</p>
+<p>&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;
+&#xF0A7;    Common HTML terms via Scripting Master
+&#xF0A7;    CSS Terms &amp; Definitions via Impressive Webs
+&#xF0A7;    CSS Tools: Reset CSS via Eric Meyer
+&#xF0A7;    Normalize.css via Nicolas Gallagher
+&#xF0A7;    An Intro to HTML &amp; CSS via Shay Howe</p>
+</h1></h1></body></title></head></body></html></html></p></h6></h1>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../docs/12_Writing_Your_Best_Code.html" class="navigation navigation-prev " aria-label="Previous page: 写出你最好的代码"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../docs/14_Detailed_Positioning.html" class="navigation navigation-next " aria-label="Next page: 定位详解"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
