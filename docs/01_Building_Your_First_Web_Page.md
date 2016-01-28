@@ -1,5 +1,6 @@
 # 课程01：创建你的第一个网页
-===
+----
+
 在互联网发明之前，网站是不存在的，书籍，印在纸上的文件是我们的主要信息源头，It took a considerable amount of effort—and reading—to track down the exact piece of information you were after.
 
 如今你可以打开浏览器，选择你常用的搜索引擎来搜索信息，任何可以想象到的信息在指尖下。And chances are someone somewhere has built a website with your exact search in mind.
@@ -48,7 +49,7 @@ Attributes在开口标签中定义，放在元素名称的后面，一般属性�
 ```
 
 上述代码会在网页上显示Shay Home的文本，当用户点击文本的时候会跳转到 XX 链接。锚元素是通过一个开口标签<a> 和一个闭合标签</a> 包含了文本，并且超链接属性 The anchor element is declared with the opening `<a>` and closing `</a>`tags encompassing the text, and the hyperlink reference attribute and value are declared with href="http://shayhowe.com" in the opening tag.
- 
+
 ![HTML术语](https://raw.githubusercontent.com/hexcola/Learn_to_Code_HTML_And_CSS_zh/master/Fundamentals/images/Fig01.01.png)
 
 图1.01 HTML syntax outline including an element, attribute, and tag
@@ -87,7 +88,7 @@ HTML文档就是纯文本文件保存为.html文件而不是.txt文件后缀。 
 在上面的代码中，`<head>` 和 `<body>` 标签嵌套并缩进在 `<html>` 元素里。In the previous code, both the `<head>` and `<body>` elements were nested—and indented—inside the `<html>` element. The pattern of indenting for elements continues as new elements are added inside the `<head>` and `<body>` elements.
 
 > 自闭合元素
-> 
+>
 > 在之前的示例中，<meta>元素只有一个标签，没有闭合标签，不要担心，这是故意的。不是所有的元素都包含开口元素和闭合元素，Some elements simply receive their content or behavior from attributes within a single tag. The <meta> element is one of these elements. The content of the previous <meta> element is assigned with the use of the charset attribute and value. Other common selfclosing elements include
 
 * `<br>`
@@ -187,7 +188,7 @@ p {
 回顾一下，在CSS中我们的规则是，先从选择器开始，后面跟上花括号，在花括号中定义属性和值对，每个声明都通过属性开始，跟上冒号，然后是值，然后是分号
 It is a common practice to indent property and value pairs within the curly brackets. As with HTML, these indentations help keep our code organized and legible.
 在花括号内缩进属性和值对是常见的做法，正如HTML中，这些缩进可以显得代码有组织，并且清晰可读。
- 
+
 ![CSS术语](https://raw.githubusercontent.com/hexcola/Learn_to_Code_HTML_And_CSS_zh/master/Fundamentals/images/Fig01.03.png)
 
 图 1.03 CSS语法CSS syntax outline including a selector, properties, and values
@@ -258,7 +259,7 @@ HTML
 为了能使我们的CSS和HTML能交流，我们需要在HTML文件中引用CSS文件。 引用CSS最好的方式是将我们所有的样式放到一个外部的样式表中，The best practice for referencing our CSS is to include all of our styles in a single external style sheet, which is referenced from within the `<head>` element of our HTML document.  使用一个外部的样式表可以让我们在整个网站中使用并高效修改
 
 > 添加CSS的其他方式
-> 
+>
 > Other options for referencing CSS include using internal and inline styles. You may come across these options in the wild, but they are generally frowned upon, as they make updating websites cumbersome and unwieldy.
 
 创建CSS样式表，使用纯文本编辑器新建一个空白文件，保存为.css后缀， CSS文件应保存在HTML文件所在的相同目录或者子目录。
@@ -364,7 +365,7 @@ table {
 ```
 
 该看看我们的成果了，在浏览器中打开index.html文件。
- 
+
 ![CSS重置效果](https://raw.githubusercontent.com/hexcola/Learn_to_Code_HTML_And_CSS_zh/master/Fundamentals/images/Fig01.04.png)
 
 图 1.04 Our Styles Conference website with a CSS reset

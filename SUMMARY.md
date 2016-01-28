@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * 基础
 	* [新建一个网页](docs/01_Building_Your_First_Web_Page.md)
 	* [了解HTML](docs/02_Getting_to_Know_HTML.md)
