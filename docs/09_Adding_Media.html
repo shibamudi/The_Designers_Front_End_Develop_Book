@@ -53,7 +53,7 @@
         data-chapter-title="添加多媒体"
         data-filepath="docs/09_Adding_Media.md"
         data-basepath=".."
-        data-revision="Thu Jan 28 2016 11:09:53 GMT+0800 (China Standard Time)"
+        data-revision="Fri Jan 29 2016 17:34:20 GMT+0800 (China Standard Time)"
         data-innerlanguage="">
     
 
@@ -472,6 +472,267 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="&#x8BFE;&#x7A0B;09&#xFF1A;&#x6DFB;&#x52A0;&#x591A;&#x5A92;&#x4F53;">&#x8BFE;&#x7A0B;09&#xFF1A;&#x6DFB;&#x52A0;&#x591A;&#x5A92;&#x4F53;</h1>
+<h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
+<ul>
+<li>&#x6DFB;&#x52A0;&#x56FE;&#x7247;</li>
+<li>&#x6DFB;&#x52A0;&#x97F3;&#x9891;</li>
+<li>&#x6DFB;&#x52A0;&#x89C6;&#x9891;</li>
+<li>&#x6DFB;&#x52A0;&#x5D4C;&#x5165;&#x5F0F;&#x6846;&#x67B6;</li>
+<li>Figures &amp; Captions</li>
+</ul>
+<h2 id="&#x6DFB;&#x52A0;&#x56FE;&#x7247;">&#x6DFB;&#x52A0;&#x56FE;&#x7247;</h2>
+<hr>
+<h3 id="&#x4FEE;&#x6539;&#x56FE;&#x7247;&#x5C3A;&#x5BF8;">&#x4FEE;&#x6539;&#x56FE;&#x7247;&#x5C3A;&#x5BF8;</h3>
+<h3 id="&#x56FE;&#x7247;&#x5B9A;&#x4F4D;">&#x56FE;&#x7247;&#x5B9A;&#x4F4D;</h3>
+<h4 id="&#x884C;&#x5185;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;">&#x884C;&#x5185;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;</h4>
+<h4 id="&#x5757;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;">&#x5757;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;</h4>
+<h4 id="&#x56FE;&#x7247;&#x5DE6;&#x5BF9;&#x9F50;&#x6216;&#x53F3;&#x5BF9;&#x9F50;">&#x56FE;&#x7247;&#x5DE6;&#x5BF9;&#x9F50;&#x6216;&#x53F3;&#x5BF9;&#x9F50;</h4>
+<h2 id="&#x5B9E;&#x8DF5;">&#x5B9E;&#x8DF5;</h2>
+<hr>
+<p>Now that we know how to add and position images on a page, let&#x2019;s take a look at our Styles Conference website and see where we can add a few images.</p>
+<ol>
+<li>Let&#x2019;s begin by adding some images to our home page. Specifically, we&#x2019;ll add an image within each of the teaser sections promoting a few of our pages.</li>
+</ol>
+<p>Before we jump into the code, though, let&#x2019;s create a new folder named &#x201C;images&#x201D; within our &#x201C;assets&#x201D; folder. Then, within the &#x201C;images&#x201D; folder, let&#x2019;s create another folder named &#x201C;home&#x201D; specifically for our home page images. Within the &#x201C;home&#x201D; folder we&#x2019;ll add three images: speakers.jpg, schedule.jpg, and venue.jpg. (For reference, these images may be downloaded within a zip file.)</p>
+<p>Then, inside our index.html file, each teaser section has an <a> element wrapping both an <h3 id="and-an--element-lets-move-the--element-above-the--element-and-replace-it-with-an--element-the-src-attribute-value-for-each--element-will-correspond-to-the-folder-structure-and-filename-we-set-up-and-the-alt-attribute-value-will-describe-the-contents-of-each-image"> and an <h5 id="element-lets-move-the--element-above-the--element-and-replace-it-with-an--element-the-src-attribute-value-for-each--element-will-correspond-to-the-folder-structure-and-filename-we-set-up-and-the-alt-attribute-value-will-describe-the-contents-of-each-image"> element. Let&#x2019;s move the <h5 id="element-above-the--element-and-replace-it-with-an--element-the-src-attribute-value-for-each--element-will-correspond-to-the-folder-structure-and-filename-we-set-up-and-the-alt-attribute-value-will-describe-the-contents-of-each-image"> element above the <a> element and replace it with an <img> element. The src attribute value for each <img> element will correspond to the folder structure and filename we set up, and the alt attribute value will describe the contents of each image.</a></h5></h5></h3></a></p>
+<p>The HTML for our first teaser, for the Speakers page, will look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;teaser col-1-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>Speakers<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;speakers.html&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;assets/images/home/speakers.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;Professional Speaker&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>World-Class Speakers<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>Let&#x2019;s continue this pattern for both the Schedule and Venue page teasers, too.</p>
+<ol>
+<li>Now that we&#x2019;ve added a few images to our home page, we&#x2019;ll need to clean up their styles a bit and make sure they properly fit into the layout of our page.</li>
+</ol>
+<p>Since images are inline-level elements by default, let&#x2019;s change our images within the teaser sections to block-level elements. Let&#x2019;s also set their maximum width to 100% to ensure they don&#x2019;t exceed the width of their respective columns. Changing this width value is important as it allows our images to adjust with the width of the columns as necessary.</p>
+<p>Lastly, let&#x2019;s round the corners of the images slightly and apply 22 pixels of bottom margin to the images, providing a little breathing room.</p>
+<p>Once we add these new styles to our existing home page styles (using the teaser class as a qualifying selector for the <img> elements), our CSS will look like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.teaser</span> <span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">5px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">22px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span>
+}
+</span></span></span></code></pre>
+<ol>
+<li>Next up, let&#x2019;s add images of all of the speakers to the Speakers page. We&#x2019;ll begin by creating a &#x201C;speakers&#x201D; folder within our &#x201C;images&#x201D; folder and placing images of all of the speakers there.</li>
+</ol>
+<p>Within the speakers.html file, let&#x2019;s add an <img> element within each of the speaker information <aside> elements. Let&#x2019;s place each <img> element inside the <div> element with the class attribute value of speaker-info, just above the <ul> element.</ul></div></aside></p>
+<p>The src attribute value of each image will correspond to the &#x201C;speakers&#x201D; folder we set up and the speaker&#x2019;s name; the alt attribute value will be the speaker&#x2019;s name.</p>
+<p>The <aside> element for myself, as a speaker, will look like this:</aside></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;speaker-info&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;assets/images/speakers/shay-howe.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;Shay Howe&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;https://twitter.com/shayhowe&quot;</span>&gt;</span>@shayhowe<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://learn.shayhowe.com/&quot;</span>&gt;</span>learn.shayhowe.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+</code></pre>
+<p>This same pattern for adding an image should then be applied to all other speakers.</p>
+<ol>
+<li>As we did with the images on our home page, we&#x2019;ll want to apply some styles to the images on the Speakers page.</li>
+</ol>
+<p>Let&#x2019;s begin by applying the border-radius property with a value of 50%, turning our images into circles. From there, let&#x2019;s set a fixed height of 130 pixels to each image and set them to be vertically aligned to the top of the line they reside within.</p>
+<p>With the height and vertical alignment in place, let&#x2019;s apply vertical margins to the images. Using a negative 66-pixel margin on the top of the images, we&#x2019;ll pull them slightly out of the <aside> element and make them vertically centered with the top border of the <div> element with a class attribute value of speaker-info. Then, applying a 22-pixel margin on the bottom of the image provides space between the image and the <ul> element below it.</ul></div></aside></p>
+<p>When we add these new styles to our existing Speakers page styles (using the speaker-info class as a qualifying selector for the <img> elements), our CSS will look like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.speaker-info</span> <span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">130px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> -<span class="hljs-number">66px</span> <span class="hljs-number">0</span> <span class="hljs-number">22px</span> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> top</span></span>;
+}</span>
+</code></pre>
+<ol>
+<li>Since we are using an aggressive negative margin on the <img> element within the <div> element with a class attribute value of speaker-info, we need to remove the padding on the top of that <div> element.</div></div></li>
+</ol>
+<p>Previously we were using the padding property with a value of 22px 0, thus placing 22 pixels of padding on the top and bottom and 0 pixels of padding on the left and right of the <div> element. Let&#x2019;s swap this property and value out for the padding-bottom property, as that&#x2019;s the only padding we need to identify, and use a value of 22 pixels.</div></p>
+<p>The new speaker-info class rule set looks like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.speaker-info</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#dfe2e5</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">5px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">88px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-number">22px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center</span></span>;
+}</span>
+</code></pre>
+<p>Now both our home and Speaker pages are looking pretty sharp.
+<img src="Fig09.02.png" alt="">
+Fig 9
+Our Styles Conference home page after adding images to each section that teases another page</p>
+<p><img src="Fig09.03.png" alt=""></p>
+<h2 id="&#x6DFB;&#x52A0;&#x97F3;&#x9891;">&#x6DFB;&#x52A0;&#x97F3;&#x9891;</h2>
+<hr>
+<h3 id="&#x97F3;&#x9891;&#x5C5E;&#x6027;">&#x97F3;&#x9891;&#x5C5E;&#x6027;</h3>
+<h3 id="audio-fallbacks--multiple-sources">Audio Fallbacks &amp; Multiple Sources</h3>
+<h2 id="&#x6DFB;&#x52A0;&#x89C6;&#x9891;">&#x6DFB;&#x52A0;&#x89C6;&#x9891;</h2>
+<hr>
+<h3 id="poster-attribute">Poster Attribute</h3>
+<h3 id="video-fallbacks">Video Fallbacks</h3>
+<h2 id="&#x6DFB;&#x52A0;&#x884C;&#x5185;&#x6846;&#x67B6;">&#x6DFB;&#x52A0;&#x884C;&#x5185;&#x6846;&#x67B6;</h2>
+<h3 id="&#x65E0;&#x7F1D;&#x884C;&#x5185;&#x6846;&#x67B6;">&#x65E0;&#x7F1D;&#x884C;&#x5185;&#x6846;&#x67B6;</h3>
+<h2 id="&#x65F6;&#x95F4;">&#x65F6;&#x95F4;</h2>
+<p>Inline frames provide a great way to add dynamic content to a page. Let&#x2019;s give this a shot by updating our Venue page with some maps.</p>
+<ol>
+<li>Before adding any maps or inline frames, let&#x2019;s first prepare our Venue page for a two-column grid. Below the leading section of the page we&#x2019;ll add a <section> element with the class attribute value of row to identify a new section of the page, and we&#x2019;ll include some general styles, such as a white background and some vertical padding.</section></li>
+</ol>
+<p>Directly inside this <section> element let&#x2019;s add a <div> element with the class attribute value of grid. The class of grid centers our content on the page and prepares for the one-third and two-thirds columns to follow.</div></section></p>
+<p>So far the main section of our venue.html file looks like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Within the <div> element with the class attribute value of grid we&#x2019;ll have two new sections, one for the conference venue and one for the conference hotel. Let&#x2019;s add two new <section> elements and give each of these <section> elements a unique class that corresponds to its content. We&#x2019;ll use these classes to add margins to the bottom of each section.</section></section></div></li>
+</ol>
+<p>Our HTML should now look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-hotel&quot;</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Now that we have a few classes to work with, let&#x2019;s create a new section within our main.css file for Venue page styles. We&#x2019;ll add a 66-pixel margin to the bottom of the <section> element with the class attribute value of venue-theatre to insert some space between it and the <section> element below it.</section></section></li>
+</ol>
+<p>Then, we&#x2019;ll add a 22-pixel margin to the bottom of the <section> element with the class attribute value of venue-hotel to provide some space between it and the <footer> element below it.</footer></section></p>
+<p>The new venue section within the main.css file looks like the following:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/*
+  ========================================
+  Venue
+  ========================================
+*/</span>
+
+<span class="hljs-class">.venue-theatre</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">66px</span></span></span>;
+}</span>
+<span class="hljs-class">.venue-hotel</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">22px</span></span></span>;
+}</span>
+</code></pre>
+<p>The <section> element with the class attribute value of venue-hotel has a smaller bottom margin than the <section> element with the class attribute value of venue-theatre because it sits next to the padding from the bottom of the <section> element with the class attribute of row. Adding that margin and padding together gives us the same value as the bottom margin on the <section> element with the class attribute value of venue-theatre.</section></section></section></section></p>
+<ol>
+<li>Now it&#x2019;s time to create the two columns within each of the new <section> elements. We&#x2019;ll start by adding a <div> element with a class attribute value of col-1-3 to establish a one-third column. After it we&#x2019;ll add an <iframe> element with a class attribute value of col-2-3 to establish a two-thirds column.</iframe></div></section></li>
+</ol>
+<p>Keeping in mind that the column classes make both the <div> and <iframe> elements inline-block elements, we need to remove the empty space that will appear between them. To do so we’ll open an HTML comment directly after the closing <div> tag, and we&#x2019;ll close the HTML comment immediately before the opening <iframe> tag.</iframe></div></iframe></div></p>
+<p>In all, our HTML for the columns looks like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+      --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-hotel&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+      --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Within each of the <div> elements with a class attribute value of col-1-3 let&#x2019;s add the venue&#x2019;s name within an <h2 id="element-followed-by-two--elements-in-the-first--element-lets-include-the-venues-address-and-in-the-second--element-lets-include-the-venues-website-within-an-anchor-link-and-phone-number"> element, followed by two <p> elements. In the first </p><p> element let&#x2019;s include the venue&#x2019;s address, and in the second </p><p> element let&#x2019;s include the venue&#x2019;s website (within an anchor link) and phone number.</p></h2></div></li>
+</ol>
+<p>Within each of the paragraphs, let&#x2019;s use the line-break element, <br>, to place breaks within the address and in between the website and phone number.</p>
+<p>For the <section> element with the class attribute value of venue-theatre, the HTML looks like this:</section></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Chicago Theatre<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>175 N State St <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> Chicago, IL 60601<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://www.thechicagotheatre.com/&quot;</span>&gt;</span>thechicagotheatre.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> (312) 462-6300<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>The same pattern shown here for the theatre should also be applied to the hotel (using, of course, the proper address, website, and phone number).</p>
+<p>We can search for these addresses in Google Maps. Once we locate an address</p>
+<ol>
+<li>We can search for these addresses in Google Maps. Once we locate an address and create a customized map, we have the ability to embed that map into our page. Following the instructions on Google Maps for how to share and embed a map will provide us with the HTML for an <iframe> element.</iframe></li>
+</ol>
+<p>Let&#x2019;s copy the HTML&#x2014;<iframe> element, src attribute, and all—onto our page where our existing <iframe> element resides. We’ll do this for each location, using two different <iframe> elements.</iframe></iframe></iframe></p>
+<p>In copying over the <iframe> element from Google Maps we need to make sure we preserve the class attribute and value, col-2-3, from our existing <iframe> element. We also need to be careful not to harm the HTML comment that closes directly before our opening <iframe> tag.</iframe></iframe></iframe></p>
+<p>Looking directly at the <section> element with the class attribute value of venue-theatre again, the HTML looks like this:</section></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Chicago Theatre<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>175 N State St <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> Chicago, IL 60601<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://www.thechicagotheatre.com/&quot;</span>&gt;</span>thechicagotheatre.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> (312) 462-6300<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Lastly, we&#x2019;ll want to make sure that both <iframe> elements that reference Google Maps share the same height. To do this, we’ll create a new class, venue-map, and apply it to each of the <iframe> elements alongside the existing col-2-3 class attribute value.</iframe></iframe></li>
+</ol>
+<p>The HTML for the <section> element with the class attribute value of venue-theatre now looks like this:</section></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Chicago Theatre<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>175 N State St <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> Chicago, IL 60601<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://www.thechicagotheatre.com/&quot;</span>&gt;</span>thechicagotheatre.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> (312) 462-6300<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-map col-2-3&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>Once the venue-map class is applied to each <iframe> element, let’s create the venue-map class rule set within our main.css file. It includes the height property with a value of 264 pixels.</iframe></p>
+<p>The venue-map class rule set looks like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.venue-map</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">264px</span></span></span>;
+}</span>
+</code></pre>
+<p>We now have a Venue page, complete with maps for the different locations of our conference.
+<img src="Fig09.04.png" alt="">
+Fig 9
+Our Styles Conference Venue page, which now includes inline frames</p>
+<h2 id="demo&#x548C;&#x6E90;&#x7801;">Demo&#x548C;&#x6E90;&#x7801;</h2>
+<ul>
+<li><a href="http://learn.shayhowe.com/practice/adding-media/index.html" target="_blank">Demo</a></li>
+<li><a href="http://learn.shayhowe.com/practice/adding-media.zip" target="_blank">&#x6E90;&#x7801;</a></li>
+</ul>
+<h2 id="semantically-identifying-figures--captions">Semantically Identifying Figures &amp; Captions</h2>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<h2 id="&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;">&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" target="_blank">Using HTML5 audio and video</a> via Mozilla Developer Network</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Audio HTML5 Element</a> via Mozilla Developer Network</li>
+<li><a href="http://dev.opera.com/articles/introduction-html5-video/" target="_blank">Introduction to HTML5 Video</a> via Dev.Opera</li>
+<li><a href="http://html5doctor.com/the-figure-figcaption-elements/" target="_blank">The figure &amp; figcaption elements</a> via HTML5 Doctor</li>
+</ul>
 <h2 id="&#x8BFE;&#x7A0B;&#x94FE;&#x63A5;">&#x8BFE;&#x7A0B;&#x94FE;&#x63A5;</h2>
 <ul>
 <li><a href="https://github.com/hexcola/Learn_to_Code_HTML_And_CSS_zh/blob/master/Fundamentals/docs/Lesson_08_Creating_Lists.md" target="_blank">&#x8BFE;&#x7A0B;08&#xFF1A;&#x521B;&#x5EFA;&#x5217;&#x8868;</a></li>
