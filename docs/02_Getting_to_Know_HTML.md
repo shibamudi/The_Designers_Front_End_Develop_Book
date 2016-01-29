@@ -269,7 +269,7 @@ Fig 2
 Our home page after adding more content and structure
 
 
-特殊字符编码
+#### 特殊字符编码
 上面的案例中，`<header>`中的 `<h3>`元素，以及`<footer>`中的 `<small>` 元素中有些很有意思的东西。
 
 特殊字符包括各种标点符号，重音字符及标志，如果我们直接在HTML里输入，可能会被误解，因此需要编码
@@ -281,63 +281,74 @@ Our home page after adding more content and structure
 
 在我们的主页有点形状之后，让我们来学习如何创建超链接，那样我们就可以添加其他页面并编辑我们网站的其他部分了。
 
-创建链接
-除了文本外，互联网一个核心组件就是超链接，它提供了链接一个网页或资源到另一个网页或资源的能力。通过行内元素锚点<a>可以创建超链接，要从一个页面链接到另外一个页面，需要用到href，也就是hyperlink reference，其值表示链接目标。
+## 创建链接
+---
 
-如下，点击文本Shay，会跳转到http://shayhowe.com 网站
+除了文本外，互联网一个核心组件就是超链接，它提供了链接一个网页或资源到另一个网页或资源的能力。通过行内元素锚点`<a>`可以创建超链接，要从一个页面链接到另外一个页面，需要用到`href`，也就是`hyperlink reference`，其值表示链接目标。
+
+如下，点击文本Shay，会跳转到http://shayhowe.com 网站:
+
+```html
 <a href="http://shayhowe.com">Shay</a>
+```
 
-使用锚元素包含块状元素
+> 使用锚元素包含块状元素
+> 默认情况下，锚元素`<a>`是一行内元素，而行内元素是不可以包裹块状元素的。 然而根据HTML5介绍， 锚元素比较特殊，可以包裹块、行内或其他级别的元素。虽然打破了标准，但我们可以是页面中的一个块作为链接。
 
-默认情况下，锚元素<a>是一行内元素，而行内元素是不可以包裹块状元素的。 然而根据HTML5介绍， 锚元素比较特殊，可以包裹块、行内或其他级别的元素。虽然打破了标准，但我们可以是页面中的一个块作为链接。
-
-相对路径与绝对路径
+### 相对路径与绝对路径
 最常见的两种链接类型是链接到统一网站的其他页面和链接到其他网站。将通过href属性值表示这些链接，也成为路径。
 
-链接到相同网站的其他页面可以使用相对路径，也就是在href属性值中不包括域(.com, .org, .edu. 等)，由于链接指向同一网站的其他页面，href属性值仅需要包含链接页面的文件名称例如about.html
+链接到相同网站的其他页面可以使用相对路径，也就是在href属性值中不包括域(`.com`, `.org`, `.edu` 等)，由于链接指向同一网站的其他页面，href属性值仅需要包含链接页面的文件名称例如about.html
 
-对于位于不同文件夹的文件，其链接需要相应的调整，假设about.html文件位于Pages文件夹下，那么相对路径就是 pages/about.html
-
-链接到其他网站则需要绝对路径，也就是href属性值需要包含全域名，假设链接到Google主页，其属性值是http://google.com
+对于位于不同文件夹的文件，其链接需要相应的调整，假设`about.html`文件位于Pages文件夹下，那么相对路径就是 `pages/about.html` 链接到其他网站则需要绝对路径，也就是href属性值需要包含全域名，假设链接到Google主页，其属性值是http://google.com
 
 如下的代码分布展示了如何使用相对路径和绝对路径
+
+```html
 <!-- Relative Path -->
 <a href="about.html">About</a>
 
 <!-- Absolute Path -->
 <a href="http://www.google.com/">Google</a>
+```
 
-链接到Email地址
+### 链接到Email地址
 会打开本地的Email客户端，不仅仅可以包含邮件地址，还可以包括邮件主题和正文内容。
 创建Email链接的方法（https://yoast.com/dev-blog/guide-mailto-links/） 也就是href属性值为`mailto:hexcola@google.com` 如果还需要主题和正文内容，可以如下：
 mailto:hexcola@google.com?subject=Reaching%20Out&body=How%20are%20you
 
-打开新的窗口
+### 打开新的窗口
 默认情况下会在当前浏览器窗口打开新页面，想在新页面中打开，可以使用target属性，例如：
 ```html
 <a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
 ```
 
-链接到页面的不同部分
+### 链接到页面的不同部分
 常见的是，回到页面顶部等，先通过id来设置要回到的位置，然后在href属性值中指定，例如：
+```html
 <body id="top">
   ...
   <a href="#top">Back to top</a>
   ...
 </body>
+```
 
 
+## 实践
+---
+是时候该将`Style Conference`从单页网站进化成多页网站了，所有的网页将会通过超链接链接起来。
 
-实践
-是时候该将Style Conference从单页网站进化成多页网站了，所有的网页将会通过超链接链接起来。
+1.  首先将`<header>`中的`Style Conference`元素链接到`index.html`页面，虽然我们在`index.html`页面中做这样的链接显得很多余，但是`header`会被复制到其他页面，在其他页面链接回来就显得很有意义。
 
-1.  首先将<header>中的Style Conference元素链接到index.html页面，虽然我们在index.html页面中做这样的链接显得很多余，但是header会被复制到其他页面，在其他页面链接回来就显得很有意义。
-
+```html
 <h1>
   <a href="index.html">Styles Conference</a>
 </h1>
-2.  为了实现导航到各个不同的页面，我们需要添加导航菜单，在<header>元素中使用<nav> 元素。
+```
 
+2.  为了实现导航到各个不同的页面，我们需要添加导航菜单，在`<header>`元素中使用`<nav>` 元素。
+
+```html
 <header>
 
   ...
@@ -351,9 +362,11 @@ mailto:hexcola@google.com?subject=Reaching%20Out&body=How%20are%20you
   </nav>
 
 </header>
+```
 
-3.  同时也将导航菜单添加到Footer
+3.  同时也将导航菜单添加到`Footer`
 
+```html
 <footer>
 
   ...
@@ -367,10 +380,11 @@ mailto:hexcola@google.com?subject=Reaching%20Out&body=How%20are%20you
   </nav>
 
 </footer>
+```
 
+4.  在介绍会议的`<section>`元素中，我们需要添加一个链接到注册会议的链接。
 
-4.  在介绍会议的<section>元素中，我们需要添加一个链接到注册会议的链接。
-
+```html
 <section>
 
   ...
@@ -378,9 +392,11 @@ mailto:hexcola@google.com?subject=Reaching%20Out&body=How%20are%20you
   <a href="register.html">Register Now</a>
 
 </section>
+```
 
-5.  同时也不要忘了We can’t forget to add links to all of the sections teasing our other pages. Inside each section, let’s wrap both the <h3> and <h5> elements within an anchor element linking to the proper page. We’ll want to make sure we do this for every section accordingly.
+5.  同时也不要忘了We can’t forget to add links to all of the sections teasing our other pages. Inside each section, let’s wrap both the `<h3>` and `<h5>` elements within an anchor element linking to the proper page. We’ll want to make sure we do this for every section accordingly.
 
+```html
 <section>
 
   <section>
@@ -394,36 +410,37 @@ mailto:hexcola@google.com?subject=Reaching%20Out&body=How%20are%20you
   ...
 
 </section>
+```
 
-6.  现在我们需要创建几个页面，speaker.html, schedule.html, venue.html, register.html，这些文件和index.html处于同一个目录，为了确保我们的页面看起来一致，需要保证所有页面的结构相同以及和index.html页面相同的<header>和<footer>元素
+6.  现在我们需要创建几个页面，`speaker.html`, `schedule.html`, `venue.html`, `register.html`，这些文件和`index.html`处于同一个目录，为了确保我们的页面看起来一致，需要保证所有页面的结构相同以及和`index.html`页面相同的`<header>`和`<footer>`元素
 
 
 Fig 2
 Our home page after all of the different links and navigation have been added
 
 
-Demo和源码
-http://learn.shayhowe.com/practice/getting-to-know-html/index.html
-http://learn.shayhowe.com/practice/getting-to-know-html.zip
+## Demo和源码
+* [Demo](http://learn.shayhowe.com/practice/getting-to-know-html/index.html)
+* [源码](http://learn.shayhowe.com/practice/getting-to-know-html.zip)
 
 
 ## 总结
 在本节内容所讨论的语意，对HTML的结构和意义至关重要。在之后我们会介绍新的元素，它们都有各自的语意，这些元素的意义给我们的内容提供了很多意义。
 
- 本节内容包含了如下：
- 什么是语意以及为什么很重要
- <div>和<span> 块状元素和行内元素的区别
- 什么文本的元素最适合表示元素内容
- HTML5结构化元素以及如何定义结构和组织页面内容
- 如何使用超链接
+* 本节内容包含了如下：
+* 什么是语意以及为什么很重要
+* <div>和<span> 块状元素和行内元素的区别
+* 什么文本的元素最适合表示元素内容
+* HTML5结构化元素以及如何定义结构和组织页面内容
+* 如何使用超链接
 
 还需要学习很多内容，下一节我们讨论一下CSS
 
 ## 资源和链接
- Semantic code: What? Why? How?via Boagworld
- The i, b, em, & strong elements via HTML5 Doctor
- New Structural Elements in HTML5via Dev.Opera
- The Full mailto Link Syntax via Joost de Valk
+* [Semantic code: What? Why? How?](http://boagworld.com/dev/semantic-code-what-why-how/)via Boagworld
+* [The i, b, em, & strong elements](http://html5doctor.com/i-b-em-strong-element/) via HTML5 Doctor
+* [New Structural Elements in HTML5](http://dev.opera.com/articles/new-structural-elements-in-html5/)via Dev.Opera
+* [The Full mailto Link Syntax](https://yoast.com/guide-mailto-links/) via Joost de Valk
 
 ## 课程链接
 * [课程01：创建第一个网页](https://github.com/hexcola/Learn_to_Code_HTML_And_CSS_zh/blob/master/Fundamentals/docs/Lesson_01_Building_Your_First_Web_Page.md)
