@@ -1,16 +1,16 @@
-# Lesson 15: Complex Selectors
+# 课程15：复杂选择器
 
-Selectors are one of, if not, the most important parts of CSS. They shape the cascade and determine how styles are to be applied to elements on a page.
+选择器如果不是CSS中最重要的部分，也是其中之一。它们形成级联，并决定样式如何应用到页面中的元素上。
 
-Up until recently the focus of CSS never really touched on selectors. Occasionally there would be incremental updates within the selectors specification, but never any real ground breaking improvements. Fortunately, more attention has been given to selectors as of late, taking a look at how to select different types of elements and elements in different states of use.
+直到最近，对CSS的关注从未真正触及选择器。偶尔会有包含选择器规范在内的增量更新，但从没有任何突破性的改进。幸运的是，最近选择器得到了更多的关注，看看如何选择不同类型的元素和不同使用状态下的元素。
 
-CSS3 brought new selectors, opening a whole new world of opportunities and improvements to existing practices. Here we’ll discuss selectors, old and new, and how to best put them to use.
+CSS3提供了新的选择器、开启一个全新的世界的机会以并对原有做法的改善。在这里我们将讨论选择器，原有的和新增的，以及如何最好地利用它们。
 
 ## 普通选择器
 
-Before diving too deep into some of the more complex selectors, and those offered within CSS3, let’s take a quick look at some of the more common selectors seen today. These selectors include the type, class, and ID selectors.
+在深潜到一些更复杂的由CSS3提供的选择器之前，让我们先快速浏览一些今天看来更普通的选择器。这些选择器包括类型选择器、类选择器和ID选择器。
 
-The **type** selector identifies an element based on its type, specifically how that element is declared within HTML. The **class** selector identifies an element based on its class attribute value, which may be reused on multiple elements as necessary to help share popular styles. Lastly, the **ID** selector identifies an element based on its ID attribute value, which is unique and should only be used once per page.
+**类型选择器**基于自身类型匹配一个元素，确切地说就是元素如何在HTML中声明。**类选择器**基于自身class属性的值匹配一个元素，如有必要class属性的值可能重复用于多个元素以共用通用的样式。**ID选择器**基于自身id属性的值匹配一个元素，id属性的值是独一无二的，在一页中应只使用一次。
 
 CSS
 
@@ -29,25 +29,25 @@ HTML
 </section>
 ```
 
-### Common Selectors Overview
+### 普通选择器概览
 
-Example|Classification|Explanation
+示例|分类|说明
 ---|---|---
-`h1`|Type Selector|Selects an element by it’s type
-`.tagline`|Class Selector|Selects an element by the class attribute value, which may be reused multiple times per page
-`#intro`|ID Selector|Selects an element by the ID attribute value, which is unique and to only be used once per page
+`h1`|类型选择器|根据类型选择一个元素
+`.tagline`|类选择器|根据class属性的值选择一个元素，在一页中可以使用多次
+`#intro`|ID选择器|根据id属性的值选择一个元素，独一无二且在一页中只能使用一次
 
-##Child Selectors
+## 子选择器
 
-Child selectors provide a way to select elements that fall within one another, thus making them children of their parent element. These selections can be made two different ways, using either descendant or direct child selectors.
+子选择器提供了一个途径来选择包含在另一元素之中的元素，如此称这些元素为他们父元素的孩子。这种选择方式可以演变为两种不同的方法，后代选择器和直接子元素选择器。
 
-### Descendant Selector
+### 后代选择器
 
-The most common child selector is the descendant selector, which matches every element that follows an identified ancestor. The descendant element does not have to come directly after the ancestor element inside the document tree, such as a parent-child relationship, but may fall anywhere within the ancestor element. Descendant selectors are created by spacing apart elements within a selector, creating a new level of hierarchy for each element list.
+后代选择器是最常用的子选择器，它匹配继承了指定祖先的每个元素。在文档树内，后代元素不一定直接位于祖先元素之后，像父-子关系，而是可以位于祖先元素内的任意位置。后代选择器由选择器内以空格分隔的元素构成，每个元素列表创建一个新的层次结构。
 
-The `article h2` selector is a descendant selector, only selecting `h2` elements that fall inside of an `article` element. Notice, no matter where a `h2` element lives, so long as it is within the `article` element, it will always be selected. Additionally, any `h2` element outside of the `article` element is not selected.
+`article h2`是一个后代选择器，它只选择位于`article`元素之内的`h2`元素。注意，无论`h2`元素在哪，只要在`article`元素之内，它就会被选中。此外，任何`article`元素之外的`h2`元素都会回被选中。
 
-Below, the headings are lines 3 and 5 are selected.
+如下，第3行和第5行被选中。
 
 CSS
 
@@ -67,13 +67,13 @@ HTML
 </article>
 ```
 
-### Direct Child Selector
+### 直接子元素选择器
 
-Sometimes descendant selectors go a bit overboard, selecting more than hoped. At times only the direct children of a parent element need to be selected, not every instance of the element nested deeply inside of an ancestor. In this event the direct child selector may be used by placing a greater than sign, `>`, between the parent element and child element within the selector.
+有时后代选择器有点过于热心，选择的比希望的更多。有时只需要选择父元素的直接子类，而不是嵌套在祖先深处元素的每一个实例。此时可以在选择器中父元素与子元素之间放置一个大于号，`>`，使用直接子元素选择器。
 
-For example, `article > p` is a direct child selector only identifying `p` elements that fall directly within an `article` element. Any `p` element placed outside of an `article` element, or nested inside of another element other than the `article` element, will not be selected.
+例如，`article > p`是一个直接子元素选择器，它只匹配直接从属于`article`元素的`p`元素。任何`article`元素之外的`p`元素，或嵌套在其他元素而非`article`元素之内的`p`元素，都不会被选中。
 
-Below, the paragraph on line 3 is the only direct child of it’s parent article, thus selected.
+如下，第3行是父元素`article`唯一一个直接`p`子元素，因而被选中。
 
 CSS
 
@@ -93,12 +93,12 @@ HTML
 </article>
 ```
 
-### Child Selectors Overview
+### 子选择器概览
 
-Example|Classification|Explanation
+示例|分类|说明
 ---|---|---
-`article h2`|Descendant Selector|Selects an element that resides anywhere within an identified ancestor element
-`article > p`|Direct Child Selector|Selects an element that resides immediately inside an identified parent element
+`article h2`|后代选择器|选择位于指定祖先元素内任意位置的元素
+`article > p`|直接子选择器|选择指定父元素内紧邻的子元素
 
 ## Sibling Selectors
 
