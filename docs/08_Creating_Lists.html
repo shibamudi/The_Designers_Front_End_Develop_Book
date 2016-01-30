@@ -53,7 +53,7 @@
         data-chapter-title="创建列表"
         data-filepath="docs/08_Creating_Lists.md"
         data-basepath=".."
-        data-revision="Thu Jan 28 2016 11:09:53 GMT+0800 (China Standard Time)"
+        data-revision="Sun Jan 31 2016 03:15:39 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -472,6 +472,513 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="&#x8BFE;&#x7A0B;08&#xFF1A;&#x521B;&#x5EFA;&#x5217;&#x8868;">&#x8BFE;&#x7A0B;08&#xFF1A;&#x521B;&#x5EFA;&#x5217;&#x8868;</h1>
+<h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
+<hr>
+<p>&#x5217;&#x8868;&#x662F;&#x65E5;&#x5E38;&#x751F;&#x6D3B;&#x4E2D;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#x3001;&#x65B9;&#x5411;&#x5BFC;&#x822A;&#x5217;&#x8868;&#xFF0C;&#x83DC;&#x5355;&#x5217;&#x8868;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5728;&#x7F51;&#x7AD9;&#x4E2D;&#x4F7F;&#x7528;&#x5217;&#x8868;&#x6211;&#x4EEC;&#x6709;&#x4E09;&#x4E2A;&#x9009;&#x62E9;&#xFF1A;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x3001;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x548C;&#x89E3;&#x91CA;&#x5217;&#x8868;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5217;&#x8868;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x591A;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x8BBE;&#x7F6E;&#x5217;&#x8868;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x6807;&#x8BB0;&#xFF0C;&#x662F;&#x65B9;&#x5757;&#x3001;&#x5706;&#x70B9;&#xFF0C;&#x6570;&#x5B57;&#xFF0C;&#x5B57;&#x6BCD;&#x6216;&#x8005;&#x6839;&#x672C;&#x4E0D;&#x7528;&#x3002;&#x540C;&#x6837;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x662F;&#x6C34;&#x5E73;&#x663E;&#x793A;&#x8FD8;&#x662F;&#x5782;&#x76F4;&#x663E;&#x793A;&#x5217;&#x8868;&#x3002;</p>
+<p><code>HTML</code></p>
+<ul>
+<li>&#x65E0;&#x5E8F;&#x5217;&#x8868;</li>
+<li>&#x6709;&#x5E8F;&#x5217;&#x8868;</li>
+<li>&#x63CF;&#x8FF0;&#x5217;&#x8868;</li>
+<li>&#x5D4C;&#x5957;&#x5217;&#x8868;</li>
+</ul>
+<p><code>CSS</code></p>
+<ul>
+<li>&#x5217;&#x8868;&#x5143;&#x7D20;&#x6837;&#x5F0F;</li>
+<li>&#x6C34;&#x5E73;&#x663E;&#x793A;&#x5217;&#x8868;</li>
+</ul>
+<h2 id="&#x65E0;&#x5E8F;&#x5217;&#x8868;">&#x65E0;&#x5E8F;&#x5217;&#x8868;</h2>
+<hr>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>&lt;ul&gt;</code>&#x5757;&#x5143;&#x7D20;&#x6765;&#x521B;&#x5EFA;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x901A;&#x8FC7;<code>&lt;li&gt;</code>&#x521B;&#x5EFA;&#x3002;
+&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x7ED9;<code>&lt;ul&gt;</code> &#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5782;&#x76F4;<code>margin</code>&#x503C;&#x548C;&#x5DE6;&#x4FA7;<code>padding</code>&#x503C;&#xFF0C;&#x5E76;&#x8BA9;&#x6BCF;&#x4E2A;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x7528;&#x5B9E;&#x5FC3;&#x70B9;&#x5F00;&#x59CB;&#xFF0C;&#x8BE5;&#x5B9E;&#x5FC3;&#x70B9;&#x79F0;&#x4E3A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;CSS&#x6765;&#x4FEE;&#x6539;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<h2 id="&#x6709;&#x5E8F;&#x5217;&#x8868;">&#x6709;&#x5E8F;&#x5217;&#x8868;</h2>
+<hr>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>&lt;ol&gt;</code>&#x5143;&#x7D20;&#x6765;&#x521B;&#x5EFA;&#x6709;&#x5E8F;&#x5217;&#x8868;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x548C;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B83;&#x4E0D;&#x662F;&#x7528;&#x5B9E;&#x5FC3;&#x70B9;&#x6765;&#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x800C;&#x662F;&#x6570;&#x5B57;&#x3002;</p>
+<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Head north on N Halsted St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Turn right on W Diversey Pkwy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Turn left on N Orchard St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<p>&#x6709;&#x5E8F;&#x5217;&#x8868;&#x8FD8;&#x6709;&#x72EC;&#x7279;&#x7684;&#x5C5E;&#x6027;<code>start</code> &#x548C;<code>reversed</code></p>
+<h3 id="start&#x5C5E;&#x6027;"><code>start</code>&#x5C5E;&#x6027;</h3>
+<p><code>start</code>&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E86;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x4ECE;&#x4EC0;&#x4E48;&#x6570;&#x5B57;&#x5F00;&#x59CB;&#x6392;&#x5E8F;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;1&#xFF0C;&#x867D;&#x7136;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x503C;&#x7CFB;&#x7EDF;&#x4F8B;&#x5982;&#x7F57;&#x9A6C;&#x6570;&#x503C;&#xFF0C;&#x4F46;<code>start</code>&#x5C5E;&#x6027;&#x53EA;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x5B9E;&#x6570;&#x503C;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">start</span>=<span class="hljs-value">&quot;30&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Head north on N Halsted St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Turn right on W Diversey Pkwy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Turn left on N Orchard St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<h3 id="reversed&#x5C5E;&#x6027;"><code>reversed</code>&#x5C5E;&#x6027;</h3>
+<p><code>reversed</code> &#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x8BA9;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x53CD;&#x5411;&#x6392;&#x5E8F;&#xFF0C;<code>reversed</code> &#x5C5E;&#x6027;&#x662F;&#x5E03;&#x5C14;&#x503C;&#x5C5E;&#x6027;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x63A5;&#x6536;&#x5176;&#x4ED6;&#x503C;&#xFF0C;&#x8981;&#x4E48;true&#x8981;&#x4E48;false&#xFF0C;false&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x4EC5;&#x4EC5;&#x5728;&#x5C5E;&#x6027;&#x540D;&#x79F0;<code>reversed</code>&#x51FA;&#x73B0;&#x5728;<code>&lt;ol&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x65F6;&#x5019;&#x624D;&#x8868;&#x793A;<code>true</code>&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span> <span class="hljs-attribute">reversed</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Head north on N Halsted St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Turn right on W Diversey Pkwy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Turn left on N Orchard St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<h3 id="value&#x5C5E;&#x6027;"><code>value</code>&#x5C5E;&#x6027;</h3>
+<p><code>value</code> &#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x4E2D;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;<code>&lt;li&gt;</code> HTML &#x5143;&#x7D20;&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x4E86;<code>value</code>&#x5C5E;&#x6027;&#x503C;&#x4EE5;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;<code>value</code> &#x5C5E;&#x6027;&#x90FD;&#x4F1A;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5143;&#x7D20;&#x7684;<code>value</code>&#x5C5E;&#x6027;&#x503C;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;<code>9</code> &#x90A3;&#x4E48;&#x5B83;&#x7684;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#x5C31;&#x662F; <code>9</code> &#xFF0C;&#x5B83;&#x4EE5;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#x5C31;&#x4ECE;<code>9</code>&#x5F00;&#x59CB;&#x9012;&#x589E;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Head north on N Halsted St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;9&quot;</span>&gt;</span>Turn right on W Diversey Pkwy<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Turn left on N Orchard St<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<h2 id="&#x63CF;&#x8FF0;&#x5217;&#x8868;">&#x63CF;&#x8FF0;&#x5217;&#x8868;</h2>
+<hr>
+<p>&#x5728;&#x7F51;&#x4E0A;&#x89C1;&#x5230;&#x7684;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x5217;&#x8868;&#xFF08;&#x4E0D;&#x5982;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x548C;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x5E38;&#x89C1;&#xFF09;&#x662F;&#x63CF;&#x8FF0;&#x5217;&#x8868;&#x3002;&#x63CF;&#x8FF0;&#x5217;&#x8868;&#x5F80;&#x5F80;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x591A;&#x4E2A;&#x8BCD;&#x8BED;&#x4EE5;&#x53CA;&#x8BCD;&#x8BED;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x4F8B;&#x5982;&#x8BCD;&#x6C47;&#x8868;&#x4E4B;&#x7C7B;&#x7684;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5757;&#x5143;&#x7D20;<code>&lt;dl&gt;</code>&#x6765;&#x521B;&#x5EFA;&#x521B;&#x5EFA;&#x5217;&#x8868;&#xFF0C;&#x5B83;&#x7684;&#x5143;&#x7D20;&#x4E0D;&#x9002;&#x7528;<code>&lt;li&gt;</code> &#x5143;&#x7D20;&#xFF0C;&#x800C;&#x662F;&#x9002;&#x7528;&#x4E24;&#x4E2A;&#x5757;&#x5143;&#x7D20;&#xFF1A;<code>&lt;dt&gt;</code> &#x63CF;&#x8FF0;&#x672F;&#x8BED;(term)&#x5143;&#x7D20;&#xFF0C;<code>&lt;dd&gt;</code> &#x63CF;&#x8FF0;&#x5185;&#x5BB9;(description)&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x5217;&#x8868;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x672F;&#x8BED;&#x548C;&#x63CF;&#x8FF0;&#xFF0C;&#x6B64;&#x5916;&#xFF0C;&#x6BCF;&#x4E2A;&#x672F;&#x8BED;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x6216;&#x591A;&#x4E2A;&#x63CF;&#x8FF0;&#xFF0C;&#x4E00;&#x4E2A;&#x672F;&#x8BED;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#x610F;&#x601D;&#x548C;&#x591A;&#x4E2A;&#x63CF;&#x8FF0;&#xFF0C;&#x76F8;&#x53CD;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x4E5F;&#x53EF;&#x80FD;&#x5BF9;&#x5E94;&#x591A;&#x4E2A;&#x672F;&#x8BED;&#x3002;</p>
+<p>&#x5F53;&#x521B;&#x5EFA;&#x63CF;&#x8FF0;&#x5217;&#x8868;&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>&lt;dt&gt;</code>&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x5728;<code>&lt;dd&gt;</code>&#x5143;&#x7D20;&#x4E4B;&#x524D;&#x3002; &#x5B83;&#x4EEC;&#x7684;&#x663E;&#x793A;&#x987A;&#x5E8F;&#x4E0E;&#x5B9A;&#x4E49;&#x987A;&#x5E8F;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;<code>&lt;dl&gt;</code>&#x5143;&#x7D20;&#x548C;<code>&lt;ul&gt;</code> <code>&lt;ol&gt;</code>&#x5143;&#x7D20;&#x4E00;&#x6837;&#x4FDD;&#x62A4;&#x4E86;&#x5782;&#x76F4;margin&#xFF0C;&#x6B64;&#x5916;<code>&lt;dd&gt;</code>&#x5143;&#x7D20;&#x9ED8;&#x8BA4;&#x4FDD;&#x8BC1;&#x5DE6;<code>margin</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">dl</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>study<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>design<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>business<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>work<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>A person&apos;s regular occupation, profession, or trade<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
+</code></pre>
+<h2 id="&#x5D4C;&#x5165;&#x5217;&#x8868;">&#x5D4C;&#x5165;&#x5217;&#x8868;</h2>
+<hr>
+<p>&#x5217;&#x8868;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5F3A;&#x5927;&#x7684;&#x5C5E;&#x6027;&#x5C31;&#x662F;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x5D4C;&#x5957;&#x3002;But the potential to nest lists indefinitely doesn&#x2019;t provide free rein to do so. Lists should still be reserved specifically for where they hold the most semantic value.</p>
+<p>&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x5217;&#x8868;&#x7684;&#x4E00;&#x4E2A;&#x6280;&#x5DE7;&#x5C31;&#x662F;&#x77E5;&#x9053;&#x4ECE;&#x54EA;&#x513F;&#x5F00;&#x59CB;&#x4ECE;&#x54EA;&#x513F;&#x7ED3;&#x675F;&#x3002;&#x5E38;&#x5E38;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x7C7B;&#x522B;&#x7684;&#x662F;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x548C;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#xFF0C;&#x5305;&#x542B;<code>&lt;ul&gt;</code> <code>&lt;ol&gt;</code>&#x5143;&#x7D20;&#x7684;&#x4EC5;&#x4EC5;&#x662F;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Walk the dog<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Fold laundry<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+    Go to the grocery and buy:
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Milk<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Bread<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Cheese<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Mow the lawn<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Make dinner<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+</code></pre>
+<p>&#x5728;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x5217;&#x8868;&#x662F;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x5D4C;&#x5957;&#x5217;&#x8868;&#x7684;&#x5D4C;&#x5957;&#x7A0B;&#x5EA6;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#x4F1A;&#x76F8;&#x5E94;&#x7684;&#x53D8;&#x5316;&#x3002;</p>
+<h2 id="&#x5217;&#x8868;&#x5143;&#x7D20;&#x6837;&#x5F0F;">&#x5217;&#x8868;&#x5143;&#x7D20;&#x6837;&#x5F0F;</h2>
+<p>&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x548C;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x9ED8;&#x8BA4;&#x4F1A;&#x4F7F;&#x7528;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x3002;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x9ED8;&#x8BA4;&#x4F1A;&#x4F7F;&#x7528;&#x5B9E;&#x5FC3;&#x70B9;&#xFF0C;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x9ED8;&#x8BA4;&#x4F1A;&#x4F7F;&#x7528;&#x6570;&#x5B57;&#x3002;<a href="http://www.smashingmagazine.com/2009/12/11/styling-html-lists-with-css-techniques-and-resources/" target="_blank">&#x901A;&#x8FC7;CSS</a>&#xFF0C;&#x8FD9;&#x4E9B;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#x7684;&#x6837;&#x5F0F;&#x548C;&#x4F4D;&#x7F6E;&#x90FD;&#x53EF;&#x4EE5;&#x8C03;&#x6574;&#x3002;</p>
+<h3 id="&#x5217;&#x8868;&#x6837;&#x5F0F;&#x7C7B;&#x578B;&#x5C5E;&#x6027;">&#x5217;&#x8868;&#x6837;&#x5F0F;&#x7C7B;&#x578B;&#x5C5E;&#x6027;</h3>
+<p><code>list-style-type</code> &#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5176;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="_blank">&#x503C;&#x8303;&#x56F4;</a> &#x4ECE;&#x65B9;&#x5757;&#xFF0C;&#x6570;&#x503C;&#x4E00;&#x76F4;&#x5230;&#x4E9A;&#x7F8E;&#x5C3C;&#x4E9A;&#x7F16;&#x53F7;&#xFF0C;&#x8FD9;&#x4E9B;&#x6837;&#x5F0F;&#x53EF;&#x4EE5;&#x653E;&#x5230;<code>&lt;ul&gt;</code> <code>&lt;ol&gt;</code> <code>&lt;li&gt;</code>&#x4E2D;&#x3002;</p>
+<p>&#x4EFB;&#x4F55;<code>list-style-type</code>&#x5C5E;&#x6027;&#x503C;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x6216;&#x8005;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x4E2D;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x5BF9;&#x65E0;&#x5E8F;&#x5217;&#x4F7F;&#x7528;&#x6570;&#x503C;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9;&#x6709;&#x5E8F;&#x5217;&#x8868;&#x4F7F;&#x7528;&#x975E;&#x6570;&#x503C;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-tag">ul</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">list-style-type</span>:<span class="hljs-value"> square</span></span>;
+}</span>
+</code></pre>
+<h4 id="&#x5217;&#x8868;&#x6837;&#x5F0F;&#x7C7B;&#x578B;&#x503C;">&#x5217;&#x8868;&#x6837;&#x5F0F;&#x7C7B;&#x578B;&#x503C;</h4>
+<p>&#x6B63;&#x5982;&#x4E4B;&#x524D;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;<code>list-style-type</code>&#x5C5E;&#x6027;&#x51E0;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x503C;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5217;&#x8868;&#x6837;&#x5F0F;&#x503C;</th>
+<th>&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>none</code></td>
+<td>No list item</td>
+</tr>
+<tr>
+<td><code>disc</code></td>
+<td>A filled circle</td>
+</tr>
+<tr>
+<td><code>circle</code></td>
+<td>A hollow circle</td>
+</tr>
+<tr>
+<td><code>square</code></td>
+<td>A filled square</td>
+</tr>
+<tr>
+<td><code>decimal</code></td>
+<td>Decimal numbers</td>
+</tr>
+<tr>
+<td><code>decimal-leading-zero</code></td>
+<td>Decimal numbers padded by initial zeros</td>
+</tr>
+<tr>
+<td><code>lower-roman</code></td>
+<td>Lowercase roman numerals</td>
+</tr>
+<tr>
+<td><code>upper-roman</code></td>
+<td>Uppercase roman numerals</td>
+</tr>
+<tr>
+<td><code>lower-greek</code></td>
+<td>Lowercase classical Greek</td>
+</tr>
+<tr>
+<td><code>lower-alpha / lower-latin</code></td>
+<td>Lowercase ASCII letters</td>
+</tr>
+<tr>
+<td><code>upper-alpha / upper-latin</code></td>
+<td>Uppercase ASCII letters</td>
+</tr>
+<tr>
+<td><code>armenian</code></td>
+<td>Traditional Armenian numbering</td>
+</tr>
+<tr>
+<td><code>georgian</code></td>
+<td>Traditional Georgian numbering</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x4F7F;&#x7528;&#x56FE;&#x7247;&#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;">&#x4F7F;&#x7528;&#x56FE;&#x7247;&#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;</h3>
+<p>&#x6709;&#x4E9B;&#x65F6;&#x5019;<code>list-style-type</code>&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x6EE1;&#x8DB3;&#x6211;&#x4EEC;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x81EA;&#x5B9A;&#x4E49;&#x5217;&#x8868;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x6BCF;&#x4E2A;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x5B9E;&#x73B0;&#x7684;&#x8FC7;&#x7A0B;&#x662F;&#xFF0C;&#x5148;&#x4E00;&#x5904;&#x9ED8;&#x8BA4;&#x7684;<code>list-style-type</code>&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BB2;&#x5176;&#x5C5E;&#x6027;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;<code>none</code>&#xFF0C; &#x7136;&#x540E;&#x8BBE;&#x7F6E;<code>&lt;li&gt;</code> &#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x56FE;&#xFF0C;&#x5F53;&#x7136;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x4F8B;&#x5982;&#x7528;&#x4EC0;&#x4E48;&#x56FE;&#x7247;&#xFF0C;&#x4F4D;&#x7F6E;&#xFF0C;&#x5E73;&#x94FA;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x5FC5;&#x8981;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x8BBE;&#x7F6E;<code>padding</code>&#x503C;&#x3002;</p>
+<pre><code class="lang-HTML"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-tag">li</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">&quot;arrow.png&quot;</span>) <span class="hljs-number">0</span> <span class="hljs-number">50%</span> no-repeat</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">list-style-type</span>:<span class="hljs-value"> none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding-left</span>:<span class="hljs-value"> <span class="hljs-number">12px</span></span></span>;
+}</span>
+</code></pre>
+<h3 id="&#x5217;&#x8868;&#x6837;&#x5F0F;&#x5B9A;&#x4F4D;&#x5C5E;&#x6027;">&#x5217;&#x8868;&#x6837;&#x5F0F;&#x5B9A;&#x4F4D;&#x5C5E;&#x6027;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x4F4D;&#x4E8E;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x7684;&#x5DE6;&#x4FA7;&#xFF0C;&#x8FD9;&#x662F;&#x901A;&#x8FC7;<code>list-style-position</code>&#x7684;&#x5C5E;&#x6027;&#x503C;<code>outside</code> &#x6765;&#x6307;&#x5B9A;&#x7684;&#xFF0C;&#x5B83;&#x8868;&#x793A;&#x6240;&#x6709;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x5728;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x610F;&#x5916;&#xFF0C;&#x5E76;&#x4F4D;&#x4E8E;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x53F3;&#x4FA7;&#xFF0C;&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x4FEE;&#x6539;&#x4E3A;<code>inside</code> <code>inherit</code>&#x3002;</p>
+<p><code>inside</code>&#x5C5E;&#x6027;&#x503C;&#x5F88;&#x5C11;&#x4F7F;&#x7528;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#xFF1F;&#xFF1F;&#xFF1F;The inside property value (which is rarely seen or used) places the list item marker in line with the first line of the <li> element and allows other content to wrap below it as needed.</li></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Cupcakes...<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Sprinkles...<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-tag">ul</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">list-style-position</span>:<span class="hljs-value"> inside</span></span>;
+}</span>
+</code></pre>
+<h3 id="&#x5217;&#x8868;&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x7B80;&#x5199;&#x5F62;&#x5F0F;">&#x5217;&#x8868;&#x6837;&#x5F0F;&#x5C5E;&#x6027;&#x7B80;&#x5199;&#x5F62;&#x5F0F;</h3>
+<p>&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#x6211;&#x4EEC;&#x6240;&#x8BA8;&#x8BBA;&#x7684;&#x5217;&#x8868;&#x6837;&#x5F0F;&#x5C5E;&#x6027;<code>list-style-type</code> &#x548C;<code>list-style-position</code>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>list-style</code>&#x5C5E;&#x6027;&#x6765;&#x7B80;&#x5355;&#x8868;&#x793A;&#x3002;&#x5B83;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x503C;&#x6216;&#x591A;&#x4E2A;&#xFF0C;&#x503C;&#x5F97;&#x987A;&#x5E8F;&#x662F;<code>list-style-type</code> <code>list-style-position</code>&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-tag">ul</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">list-style</span>:<span class="hljs-value"> circle inside</span></span>;
+}</span>
+<span class="hljs-tag">ol</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">list-style</span>:<span class="hljs-value"> lower-roman</span></span>;
+}</span>
+</code></pre>
+<h2 id="&#x6C34;&#x5E73;&#x663E;&#x793A;&#x5217;&#x8868;">&#x6C34;&#x5E73;&#x663E;&#x793A;&#x5217;&#x8868;</h2>
+<p>&#x6709;&#x4E9B;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x60F3;&#x6C34;&#x5E73;&#x663E;&#x793A;&#x5217;&#x8868;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5C06;&#x5217;&#x8868;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x5217;&#x7528;&#x4E8E;&#x5EFA;&#x7ACB;&#x5BFC;&#x822A;&#x5217;&#x8868;&#xFF0C; &#x6216;&#x8005;&#x5C06;&#x5C11;&#x91CF;&#x5217;&#x8868;&#x5143;&#x7D20;&#x653E;&#x5230;&#x4E00;&#x884C;&#x3002; &#x53D6;&#x51B3;&#x4E0E;&#x5185;&#x5BB9;&#x548C;&#x5916;&#x89C2;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x51E0;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8BB2;&#x5217;&#x8868;&#x8BBE;&#x7F6E;&#x4E8E;&#x4E00;&#x884C;&#xFF0C;&#x4F8B;&#x5982;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E3A;<code>inline</code> &#x6216;
+<code>inline-block</code> &#x6216;&#x8005; &#x5C06;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6D6E;&#x52A8;&#x3002;</p>
+<h3 id="&#x663E;&#x793A;&#x5217;&#x8868;">&#x663E;&#x793A;&#x5217;&#x8868;</h3>
+<p>&#x5C06;&#x6240;&#x6709;&#x7684;&#x5217;&#x8868;&#x5143;&#x7D20;&#x4E00;&#x884C;&#x663E;&#x793A;&#x7684;&#x6700;&#x5FEB;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5C06;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x7684;<code>display</code>&#x5C5E;&#x6027;&#x503C;&#x4FEE;&#x6539;&#x4E3A;<code>inline</code>&#x6216;<code>inline-block</code>&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x662F;&#x6240;&#x6709;&#x7684;<code>&lt;li&gt;</code>&#x4F4D;&#x4E8E;&#x4E00;&#x884C;&#xFF0C;&#x6BCF;&#x4E2A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x9694;&#x662F;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;</p>
+<p>&#x5982;&#x679C;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x95F4;&#x8DDD;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5728;&#x7B2C;&#x4E94;&#x8BFE;&#x4E2D;&#x4F7F;&#x7528;&#x5F97;&#x6280;&#x672F;&#x6765;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;<code>inline-block</code>&#x503C;&#x800C;&#x975E;<code>inline</code>&#x5C5E;&#x6027;&#x503C;&#x3002;<code>inline-block</code>&#x5C5E;&#x6027;&#x503C;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x6613;&#x4E8E;&#x8BBE;&#x7F6E;&#x5782;&#x76F4;margin&#xFF0C;&#x4EE5;&#x53CA;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x5176;&#x4ED6;&#x95F4;&#x9694;&#x3002;</p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x5C06;<code>display</code>&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x4E3A;<code>inline</code>&#x6216;&#x8005;<code>inline-block</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#x4F1A;&#x6D88;&#x5931;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-tag">li</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">10px</span></span></span>;
+}</span>
+</code></pre>
+<h3 id="&#x6D6E;&#x52A8;&#x5217;&#x8868;">&#x6D6E;&#x52A8;&#x5217;&#x8868;</h3>
+<p>&#x4FEE;&#x6539;<code>display</code>&#x5C5E;&#x6027;&#x503C;&#x7684;&#x65B9;&#x6CD5;&#x6BD4;&#x8F83;&#x5FEB;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x53BB;&#x9664;&#x4E86;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#xFF0C;&#x5982;&#x679C;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x8BDD;&#xFF0C;&#x5C06;&#x6BCF;&#x4E2A;<code>&lt;li&gt;</code>&#x5217;&#x8868;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x4E3A;&#x6D6E;&#x52A8;&#x662F;&#x4E2A;&#x597D;&#x7684;&#x9009;&#x9879;&#x3002;</p>
+<p>&#x5C06;&#x6240;&#x6709;&#x7684;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x7684;<code>float</code>&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;<code>left</code> &#x4F1A;&#x5C06;&#x6240;&#x6709;&#x7684;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x6C34;&#x5E73;&#x7D27;&#x6328;&#x3002;&#x5F53;&#x6211;&#x6D6E;&#x52A8;&#x6BCF;&#x4E2A;<code>&lt;li&gt;</code>&#x5143;&#x7D20;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;&#x9ED8;&#x8BA4;&#x4F1A;&#x663E;&#x793A;&#x5728;&#x7D27;&#x6328;&#x7684;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x4E0A;&#x65B9;&#xFF0C;&#x4E3A;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x51FA;&#x73B0;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;<code>margin</code> &#x6216;<code>padding</code> &#x503C;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-tag">li</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">20px</span></span></span>;
+}</span>
+</code></pre>
+<p>&#x548C;&#x6D6E;&#x52A8;&#x5176;&#x4ED6;&#x5143;&#x7D20;&#x4E00;&#x6837;&#xFF0C;&#x4F1A;&#x7834;&#x574F;&#x9875;&#x9762;&#x7684;&#x8BBE;&#x8BA1;&#x6D41;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x8BB0;&#x4F4F;&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x2014;&#x2014;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x5F97;&#x662F;<code>clearfix</code>&#x6280;&#x672F;&#x2014;&#x2014;&#x5176;&#x4F1A;&#x5C06;&#x9875;&#x9762;&#x6062;&#x590D;&#x5230;&#x6B63;&#x5E38;&#x6D41;&#x5E03;&#x5C40;&#x3002;</p>
+<h3 id="&#x5BFC;&#x822A;&#x5217;&#x8868;&#x793A;&#x4F8B;">&#x5BFC;&#x822A;&#x5217;&#x8868;&#x793A;&#x4F8B;</h3>
+<p>&#x540C;&#x5728;&#x5728;&#x5F00;&#x53D1;&#xFF0C;&#x67E5;&#x627E;&#xFF0C;&#x5BFC;&#x822A;&#x83DC;&#x5355;&#x65F6;&#x4F7F;&#x7528;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;&#x5982;&#x4E0A;&#x7684;&#x6280;&#x672F;&#x8BA9;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6C34;&#x5E73;&#x663E;&#x793A;&#x3002;&#x5982;&#x4E0B;&#x7684;&#x793A;&#x4F8B;&#x5C55;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x65E0;&#x5E8F;&#x5217;&#x8868;&#xFF0C;&#x5C06;&#x5176; <code>display</code>&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x4E3A;<code>inline-block</code>&#x5236;&#x4F5C;&#x7684;&#x5BFC;&#x822A;&#x83DC;&#x5355;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;navigation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Settings<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Notifications<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;#&quot;</span>&gt;</span>Logout<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-class">.navigation</span> <span class="hljs-tag">ul</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font</span>:<span class="hljs-value"> bold <span class="hljs-number">11px</span> <span class="hljs-string">&quot;Helvetica Neue&quot;</span>, Helvetica, Arial, sans-serif</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-transform</span>:<span class="hljs-value"> uppercase</span></span>;
+}</span>
+<span class="hljs-class">.navigation</span> <span class="hljs-tag">li</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block</span></span>;
+}</span>
+<span class="hljs-class">.navigation</span> <span class="hljs-tag">a</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#395870</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(<span class="hljs-hexcolor">#49708f</span>, <span class="hljs-hexcolor">#293f50</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-right</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, .<span class="hljs-number">3</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#fff</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">12px</span> <span class="hljs-number">20px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> none</span></span>;
+}</span>
+<span class="hljs-class">.navigation</span> <span class="hljs-rule"><span class="hljs-attribute">a</span>:<span class="hljs-value">hover {
+  background: <span class="hljs-hexcolor">#314b60</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">box-shadow</span>:<span class="hljs-value"> inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10px</span> <span class="hljs-number">1px</span> <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, .<span class="hljs-number">3</span>)</span></span>;
+}
+<span class="hljs-class">.navigation</span> <span class="hljs-rule"><span class="hljs-attribute">li</span>:<span class="hljs-value">first-child a {
+  border-radius: <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">4px</span></span></span>;
+}
+<span class="hljs-class">.navigation</span> <span class="hljs-rule"><span class="hljs-attribute">li</span>:<span class="hljs-value">last-child a {
+  border-right: <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span></span></span>;
+}
+</code></pre>
+<h3 id="&#x5B9E;&#x8DF5;">&#x5B9E;&#x8DF5;</h3>
+<p>Now that we know how to build lists within HTML and CSS, let&#x2019;s loop back to our Styles Conference website and see where we might be able to use lists.</p>
+<ol>
+<li>Currently the navigation menus within the <header> and <footer> elements on our pages consist of a handful of anchor elements. These anchor elements could be better organized in an unordered list.</footer></header></li>
+</ol>
+<p>Using an unordered list (via the <ul> element) and list items (via the <li> element) will give structure to our navigation menus. These new elements, however, will display our navigation menus vertically.</li></ul></p>
+<p>We&#x2019;re going to want to change the display value of our <li> elements to inline-block to get all of them to align in a horizontal row. When we do that, though, we&#x2019;ll also need to account for the blank space left between each </li><li> element. Thinking back to Lesson 5, &#x201C;Positioning Content,&#x201D; we know that opening an HTML comment at the end of a </li><li> element and closing an HTML comment at the beginning of a </li><li> element will remove this space.</li></p>
+<p>Keeping this in mind, the markup for the navigation menu within our <header> element will now look like this:</header></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav primary-nav&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;index.html&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;speakers.html&quot;</span>&gt;</span>Speakers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;schedule.html&quot;</span>&gt;</span>Schedule<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;venue.html&quot;</span>&gt;</span>Venue<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;register.html&quot;</span>&gt;</span>Register<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+</code></pre>
+<p>Along these same lines, the markup for the navigation menu within our <footer> element will now look like this:</footer></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;index.html&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;speakers.html&quot;</span>&gt;</span>Speakers<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;schedule.html&quot;</span>&gt;</span>Schedule<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;venue.html&quot;</span>&gt;</span>Venue<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><span class="hljs-comment">&lt;!--
+    --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;register.html&quot;</span>&gt;</span>Register<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span>
+</code></pre>
+<p>Let&#x2019;s not forget to make these changes in all of our HTML files.</p>
+<ol>
+<li>With the unordered list in place, let&#x2019;s make sure the list items align horizontally, and let&#x2019;s clean up their styles a bit. We&#x2019;ll use the existing nav class to help target our new styles.</li>
+</ol>
+<p>We&#x2019;ll begin by setting all of the <li> elements within any element with the class attribute value of nav to be displayed inline-block, to include some horizontal margins, and to be vertically aligned to the top of the element.</li></p>
+<p>Additionally, we&#x2019;ll use the :last-child pseudo-class selector to identify the last <li> element and reset its right margin to 0. Doing so ensures that any horizontal space between the </li><li> element and the edge of its parent element is removed.</li></p>
+<p>Within our main.css file, below our existing navigation styles, let&#x2019;s add the following CSS:</p>
+<pre><code class="lang-css"><span class="hljs-class">.nav</span> <span class="hljs-tag">li</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> inline-block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> <span class="hljs-number">10px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> top</span></span>;
+}</span>
+<span class="hljs-class">.nav</span> <span class="hljs-rule"><span class="hljs-attribute">li</span>:<span class="hljs-value">last-child {
+  margin-right: <span class="hljs-number">0</span></span></span>;
+}
+</code></pre>
+<p>You may be wondering why our unordered list didn&#x2019;t include any list item markers or default styles. These styles were removed by the reset at the top of our style sheet. If we look at the reset, we&#x2019;ll see our <ol>, <ul>, and <li> elements all include a margin and padding of 0, and our <ol> and <ul> elements have a list-style value of none.</ul></ol></li></ul></ol></p>
+<ol>
+<li>Our navigation menus aren&#x2019;t the only places we&#x2019;ll be using lists. We&#x2019;ll also use them on some of our internal pages, including the Speakers page. Let&#x2019;s add some speakers to our conference.</li>
+</ol>
+<p>Within our speakers.html file just below our lead section, let&#x2019;s create a new section where we&#x2019;ll present all of our speakers. Reusing some existing styles, we&#x2019;ll use a <section> element with a class attribute value of row to wrap all of our speakers and apply a white background and padding behind them. Inside the <section> element, we&#x2019;ll add a <div> element with a class attribute value of grid to center our speakers on the page and allow us to use multiple columns in doing so.</div></section></section></p>
+<p>So far our HTML below the lead section looks like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Inside the grid every speaker will be marked up with his or her own <section> element, which will include two columns. The first column will span two-thirds of the <section> element and will be marked up using a <div> element. The second column will span the remaining one-third of the <section> element and will be marked up using an <aside> element, as its content is secondary to the speaker and his or her specific talk.</aside></section></div></section></section></li>
+</ol>
+<p>Using our existing col-2-3 and col-1-3 classes, the outline for a speaker section will look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;shay-howe&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>There are a few items to notice here. First, each <section> element for each speaker includes an ID attribute with the speaker&#x2019;s name as the attribute value. Later, when we create the schedule for our conference, these ID attributes will serve as anchors, allowing us to link from the schedule to a speaker&#x2019;s profile.</section></p>
+<p>Additionally, the closing tag of the <div> element is followed by the opening of an HTML comment, and the opening tag of the <aside> element is preceded by the closing of an HTML comment. Because the column-based classes will display these elements as inline-block elements, we are removing the blank space that will appear between them.</aside></div></p>
+<ol>
+<li>Inside the two-thirds column, marked up with the <div> element, we&#x2019;ll use a few headings and paragraphs to show the speaker&#x2019;s name, the title and abstract of the talk, and a short biography.</div></li>
+</ol>
+<p>Including this content, a speaker section will look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;shay-howe&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Shay Howe<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>Less Is More: How Constraints Cultivate Growth<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>By setting constraints, we force ourselves...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>About Shay<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>As a designer and front-end developer, Shay...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Within the one-third column, marked up with an <aside> element, we&#x2019;re going to add a <div> element with a class attribute value of speaker-info. We&#x2019;ll use a <div> element because we&#x2019;ll be adding styles to this element soon.</div></div></aside></li>
+</ol>
+<p>Before getting into any styles, though, let&#x2019;s add an unordered list within the <div> element that includes as list items some relevant links for the speaker.</div></p>
+<p>Now our HTML for a speaker will look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;shay-howe&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Shay Howe<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>Less Is More: How Constraints Cultivate Growth<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>By setting constraints, we force ourselves...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>About Shay<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>As a designer and front-end developer, Shay...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;speaker-info&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;https://twitter.com/shayhowe&quot;</span>&gt;</span>@shayhowe<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://learn.shayhowe.com/&quot;</span>&gt;</span>learn.shayhowe.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>With the <div> element with a class attribute value of speaker-info ready, we can add some styles to it.</div></li>
+</ol>
+<p>We&#x2019;ll begin by adding a new section within our main.css file for the Speaker page styles. From there, let&#x2019;s add a 1-pixel solid gray border with a 5-pixel radius around any element that includes the class attribute value of speaker-info.</p>
+<p>Next, let&#x2019;s add a top margin of 88 pixels to position the element on the same vertical line as the first paragraph of the talk description, and let&#x2019;s also add 22 pixels of vertical padding inside the element to provide room for the nested unordered list.</p>
+<p>Lastly, let&#x2019;s center all of the text within the element.</p>
+<p>In all, our CSS for the speaker-info class rule set looks like this:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/*
+  ========================================
+  Speakers
+  ========================================
+*/</span>
+
+<span class="hljs-class">.speaker-info</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#dfe2e5</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">5px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">88px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">22px</span> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center</span></span>;
+}</span>
+</code></pre>
+<p>Let&#x2019;s take a minute to review why we&#x2019;re using a <div> element here and the corresponding styles.</div></p>
+<p>We&#x2019;re placing a <div> element inside the <aside> element with the class attribute value of col-1-3 because we&#x2019;ll want the padding inherited from the col-1-3 class to be outside of the border on the <div> element. Before long we&#x2019;ll be including an image within the <div> element, alongside the unordered list; therefore we created a <div> element as opposed to applying these styles directly to the <ul> element.</ul></div></div></div></aside></div></p>
+<ol>
+<li><p>As we add more and more speakers to the page, we&#x2019;ll want to ensure that they remain an equal distance apart vertically. To do so, we&#x2019;ll create a speaker class rule set which includes a bottom margin of 44 pixels, like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.speaker</span> <span class="hljs-rules">{
+<span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">44px</span></span></span>;
+}</span>
+</code></pre>
+<p>We can then apply this class to the <section> element for each speaker, provided it isn&#x2019;t the last speaker. We&#x2019;ll omit this class on the last speaker, as we don&#x2019;t want to create any unnecessary margins before our <footer> element. With more than one speaker, our layout will look like this:</footer></section></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;speaker&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;chris-mills&quot;</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span>
+     ...
+   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+   --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+     ...
+   <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;shay-howe&quot;</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span>
+     ...
+   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+   --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+     ...
+   <span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+
+ <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+</li>
+</ol>
+<p>Notice how the first speaker <section> element, for Chris Mills, includes the class attribute value of speaker, which vertically separates it from the speaker <section> element for myself, Shay Howe. The last speaker <section> element, again for myself, doesn&#x2019;t include a class attribute value of speaker in order to keep it a proper distance from the <footer> element.</footer></section></section></section></p>
+<p>Our navigation menus are now complete, and the Speakers page is taking shape.</p>
+<p><img src="Fig08.01.png" alt="">
+Fig 8
+Our Speakers page after updating our navigation menus and adding speakers</p>
+<h2 id="demo-&#x548C;&#x6E90;&#x7801;">Demo &#x548C;&#x6E90;&#x7801;</h2>
+<ul>
+<li><a href="http://learn.shayhowe.com/practice/creating-lists/index.html" target="_blank">Demo</a></li>
+<li><a href="http://learn.shayhowe.com/practice/creating-lists.zip" target="_blank">&#x6E90;&#x7801;</a></li>
+</ul>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p><a href="">&#x5217;&#x8868;</a> &#x5728;HTML&#x4E2D;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x90A3;&#x4E9B;&#x4E0D;&#x662F;&#x663E;&#x800C;&#x6613;&#x89C1;&#x7684;&#x5730;&#x65B9;  The key is to use them as semantically as possible and to leverage them where they best fit.</p>
+<p>&#x7B80;&#x5355;&#x56DE;&#x987E;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x6709;&#x5E8F;&#x3001;&#x65E0;&#x5E8F;&#x3001;&#x63CF;&#x8FF0;&#x5217;&#x8868;</li>
+<li>&#x5982;&#x4F55;&#x5D4C;&#x5957;&#x5217;&#x8868;</li>
+<li>&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x5217;&#x8868;&#x5143;&#x7D20;&#x7684;&#x6807;&#x8BB0;&#x548C;&#x4F4D;&#x7F6E;</li>
+<li>&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x80CC;&#x666F;&#x56FE;&#x4F5C;&#x4E3A;&#x5217;&#x8868;&#x5143;&#x7D20;&#x6807;&#x8BB0;</li>
+<li>&#x5217;&#x8868;&#x5982;&#x4F55;&#x6C34;&#x5E73;&#x663E;&#x793A;&#x6216;&#x6D6E;&#x52A8;</li>
+</ul>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x4E86;&#x5982;&#x4F55;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x6DFB;&#x52A0;&#x5217;&#x8868;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5B66;&#x4E60;&#x5982;&#x4F55;&#x5728;&#x5217;&#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x591A;&#x5A92;&#x4F53;&#xFF0C;&#x5305;&#x62EC;&#x5982;&#x4F55;&#x6DFB;&#x52A0;&#x56FE;&#x7247;&#xFF0C;&#x97F3;&#x9891;&#xFF0C;&#x89C6;&#x9891;&#x7B49;&#x7B49;&#x3002;</p>
+<h2 id="&#x8D44;&#x6E90;&#x548C;&#x94FE;&#x63A5;">&#x8D44;&#x6E90;&#x548C;&#x94FE;&#x63A5;</h2>
+<ul>
+<li><a href="http://www.smashingmagazine.com/2009/12/11/styling-html-lists-with-css-techniques-and-resources/" target="_blank">Styling HTML Lists with CSS</a> via Smashing Magazine</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="_blank">List Style Type</a> via Mozilla Developer Network</li>
+<li><a href="http://alistapart.com/article/taminglists" target="_blank">CSS Design: Taming Lists</a> via A List Apart</li>
+</ul>
 <h2 id="&#x8BFE;&#x7A0B;&#x94FE;&#x63A5;">&#x8BFE;&#x7A0B;&#x94FE;&#x63A5;</h2>
 <ul>
 <li><a href="https://github.com/hexcola/Learn_to_Code_HTML_And_CSS_zh/blob/master/Fundamentals/docs/Lesson_07_Setting_Backgrounds_And_Gradients.md" target="_blank">&#x8BFE;&#x7A0B;07&#xFF1A;&#x80CC;&#x666F;&#x548C;&#x6E10;&#x53D8;</a></li>

@@ -53,7 +53,7 @@
         data-chapter-title="添加多媒体"
         data-filepath="docs/09_Adding_Media.md"
         data-basepath=".."
-        data-revision="Thu Jan 28 2016 11:09:53 GMT+0800 (China Standard Time)"
+        data-revision="Sun Jan 31 2016 03:15:39 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -472,6 +472,410 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="&#x8BFE;&#x7A0B;09&#xFF1A;&#x6DFB;&#x52A0;&#x591A;&#x5A92;&#x4F53;">&#x8BFE;&#x7A0B;09&#xFF1A;&#x6DFB;&#x52A0;&#x591A;&#x5A92;&#x4F53;</h1>
+<h2 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h2>
+<p>&#x5982;&#x679C;&#x7F51;&#x9875;&#x90FD;&#x662F;&#x7EAF;&#x6587;&#x672C;&#xFF0C;&#x90A3;&#x591A;&#x5355;&#x8C03;&#xFF0C;HTML&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x5D4C;&#x5165;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5305;&#x62EC;&#x56FE;&#x7247;&#xFF0C;&#x97F3;&#x8F68;&#xFF0C;&#x89C6;&#x9891;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x5D4C;&#x5957;&#x5176;&#x4ED6;&#x7F51;&#x9875;&#x7B49;&#x7B49;&#x3002;</p>
+<ul>
+<li>&#x6DFB;&#x52A0;&#x56FE;&#x7247;</li>
+<li>&#x6DFB;&#x52A0;&#x97F3;&#x9891;</li>
+<li>&#x6DFB;&#x52A0;&#x89C6;&#x9891;</li>
+<li>&#x6DFB;&#x52A0;&#x5D4C;&#x5165;&#x5F0F;&#x6846;&#x67B6;</li>
+<li>Figures &amp; Captions</li>
+</ul>
+<h2 id="&#x6DFB;&#x52A0;&#x56FE;&#x7247;">&#x6DFB;&#x52A0;&#x56FE;&#x7247;</h2>
+<hr>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x884C;&#x5185;&#x5143;&#x7D20;<code>&lt;img&gt;</code>&#x7528;&#x6765;&#x6DFB;&#x52A0;&#x56FE;&#x7247;&#xFF0C;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x5B83;&#x7684;<code>src</code>&#x548C;<code>alt</code>(alternative text)&#x5C5E;&#x6027;&#x3002;</p>
+<ul>
+<li><code>src</code>&#x5C5E;&#x6027;&#x662F;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x56FE;&#x7247;&#x4F4D;&#x7F6E;</li>
+<li><code>alt</code>&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x56FE;&#x7247;&#x5185;&#x5BB9;&#xFF0C;&#x5B83;&#x7531;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x67E5;&#x627E;&#xFF0C; &#x4E14;&#x5F53;&#x56FE;&#x7247;&#x627E;&#x4E0D;&#x5230;&#x65F6;&#xFF0C;&#x5C5E;&#x6027;&#x503C;&#x7684;&#x6587;&#x672C;&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x3002;  The alt attribute value is picked up by search engines and assistive technologies to help convey the purpose of an image.</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;dog.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;A black, brown, and white dog wearing a kerchief&quot;</span>&gt;</span>
+</code></pre>
+<p><img src="Fig 09.01.png" alt="">
+Fig 9
+The alternate text, &#x201C;A black, brown, and white dog wearing a kerchief,&#x201D; shown in place of a missing image</p>
+<blockquote>
+<p>&#x652F;&#x6301;&#x7684;&#x56FE;&#x7247;&#x683C;&#x5F0F;
+&#x56FE;&#x7247;&#x6709;&#x5F88;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#xFF0C;&#x4E14;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6709;&#x652F;&#x6301;&#x548C;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x3002;&#x5927;&#x90E8;&#x5206;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x652F;&#x6301;<code>gif</code>, <code>jpg</code>&#xFF0C;<code>png</code>&#x56FE;&#x7247;&#xFF0C;&#x4F7F;&#x7528;&#x5F97;&#x6BD4;&#x8F83;&#x5E7F;&#x6CDB;&#x7684;&#x683C;&#x5F0F;&#x662F;<code>jpg</code> &#x548C;<code>png</code> The jpg format provides quality images with high color counts while maintaining a decent file size, ideal for faster load times. The png format is great for images with transparencies or low color counts.
+&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x4EEC;&#x4F1A;&#x5C06;jpg&#x56FE;&#x7247;&#x7528;&#x4E8E;&#x7167;&#x7247;&#xFF0C;png&#x56FE;&#x7247;&#x7528;&#x4E8E;&#x56FE;&#x6807;&#x6216;&#x80CC;&#x666F;&#x3002;</p>
+</blockquote>
+<h3 id="&#x4FEE;&#x6539;&#x56FE;&#x7247;&#x5C3A;&#x5BF8;">&#x4FEE;&#x6539;&#x56FE;&#x7247;&#x5C3A;&#x5BF8;</h3>
+<p>&#x5728;&#x7F51;&#x9875;&#x52A0;&#x8F7D;&#x4E4B;&#x524D;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x544A;&#x8BC9;&#x6D4F;&#x89C8;&#x5668;&#x56FE;&#x7247;&#x7684;&#x5C3A;&#x5BF8;&#x3002;&#x8FD9;&#x6837;&#x6D4F;&#x89C8;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x4E3A;&#x56FE;&#x7247;&#x4FDD;&#x7559;&#x7A7A;&#x95F4;&#x540C;&#x65F6;&#x52A0;&#x5FEB;&#x6E32;&#x67D3;&#x901F;&#x5EA6;&#x3002;&#x6709;&#x597D;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x8BBE;&#x7F6E;&#x56FE;&#x7247;&#x7684;&#x5C3A;&#x5BF8;&#x3002;&#x4E00;&#x79CD;&#x662F;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7528;<code>&lt;img&gt;</code> &#x5143;&#x7D20;&#x7684;<code>width</code> &#x548C;<code>height</code>&#x5C5E;&#x6027;&#x3002; &#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CSS&#x6837;&#x5F0F;&#x4E2D;&#x7684;<code>width</code> &#x548C;<code>height</code> &#x5C5E;&#x6027;&#xFF0C; &#x5F53;&#x4E24;&#x4E2A;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x5F97;&#x65F6;&#x5019;&#xFF0C;CSS&#x4F1A;&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x5355;&#x72EC;&#x8BBE;&#x7F6E;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x9AD8;&#xFF0C;&#x56FE;&#x7247;&#x4F1A;&#x6839;&#x636E;&#x5BBD;&#x9AD8;&#x6BD4;&#x4F8B;&#x76F8;&#x5E94;&#x7F29;&#x653E;&#x3002;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x5BBD;&#x9AD8;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x6709;&#x65F6;&#x4F1A;&#x4F7F;&#x56FE;&#x7247;&#x62C9;&#x4F38;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">200px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">200px</span></span></span>;
+}</span>
+</code></pre>
+<p>&#x5C3D;&#x7BA1;&#x5728;HTML&#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>width</code> &#x548C;<code>height</code>&#x5C5E;&#x6027;&#x4E3A;&#x56FE;&#x7247;&#x7684;&#x9ED8;&#x8BA4;&#x5C3A;&#x5BF8;&#x63D0;&#x4F9B;&#x4E86;&#x8BED;&#x4E49;&#x4EF7;&#x503C;&#xFF0C;&#x4F46;&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x5C3A;&#x5BF8;&#x7684;&#x56FE;&#x7247;&#x5C31;&#x5F88;&#x56F0;&#x96BE;&#x3002;&#x8FD9;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;&#x662F;&#x4F7F;&#x7528;CSS&#x6765;&#x8BBE;&#x7F6E;&#x56FE;&#x7247;&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
+<h3 id="&#x56FE;&#x7247;&#x5B9A;&#x4F4D;">&#x56FE;&#x7247;&#x5B9A;&#x4F4D;</h3>
+<p>&#x6211;&#x4EEC;&#x6709;&#x5F88;&#x591A;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x8BBE;&#x7F6E;&#x56FE;&#x7247;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x56FE;&#x7247;&#x5143;&#x7D20;&#x662F;&#x884C;&#x5185;&#x5143;&#x7D20;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;CSS&#x6307;&#x5B9A;&#x4E3A;<code>float</code>&#x6216;<code>display</code>&#x7684;&#x503C;&#x4EE5;&#x53CA;&#x76D2;&#x6A21;&#x578B;&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#xFF0C;&#x5305;&#x62EC;<code>padding</code> <code>border</code> <code>margin</code>&#x3002;</p>
+<h4 id="&#x884C;&#x5185;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;">&#x884C;&#x5185;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;</h4>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;<code>&lt;img&gt;</code> &#x5143;&#x7D20;&#x662F;&#x884C;&#x5185;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;&#x6837;&#x5F0F;&#x7684;&#x8BDD;&#xFF0C;&#x6587;&#x672C;&#x4F1A;&#x76F4;&#x63A5;&#x5305;&#x56F4;&#x56FE;&#x7247;&#xFF0C;&#x4E14;&#x5F53;&#x524D;&#x7684;&#x884C;&#x9AD8;&#x4F1A;&#x548C;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x5C31;&#x5BFC;&#x81F4;&#x4E86;&#x884C;&#x548C;&#x884C;&#x4E4B;&#x95F4;&#x4EA7;&#x751F;&#x4E86;&#x95F4;&#x8DDD;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Gatsby is a black, brown, and white hound mix puppy who loves howling at fire trucks and collecting belly rubs. <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;dog.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;A black, brown, and white dog wearing a kerchief&quot;</span>&gt;</span> Although he spends most of his time sleeping he is also quick to chase any birds who enter his vision.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+<p>&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x4E0D;&#x4FEE;&#x6539;&#x6837;&#x5F0F;&#x7684;&#x60C5;&#x51B5;&#x6BD4;&#x8F83;&#x5C11;&#x3002;&#x66F4;&#x591A;&#x7684;&#x60C5;&#x51B5;&#x662F;&#x56FE;&#x7247;&#x4F5C;&#x4E3A;&#x5757;&#x5143;&#x7D20;&#x663E;&#x793A;&#xFF0C;&#x6216;&#x8005;&#x6D6E;&#x52A8;&#x5230;&#x7F51;&#x9875;&#x7684;&#x4E00;&#x4FA7;&#x3002;</p>
+<h4 id="&#x5757;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;">&#x5757;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;</h4>
+<p>&#x5728;CSS&#x4E2D;&#x8BBE;&#x7F6E;<code>display</code>&#x5C5E;&#x6027;&#x503C;&#x4E3A;<code>block</code>&#x4F1A;&#x5F3A;&#x5236;&#x5C06;&#x56FE;&#x7247;&#x5143;&#x7D20;&#x4FEE;&#x6539;&#x4E3A;&#x5757;&#x5143;&#x7D20;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4F1A;&#x5360;&#x636E;&#x65B0;&#x7684;&#x4E00;&#x884C;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
+}</span>
+</code></pre>
+<h4 id="&#x56FE;&#x7247;&#x5DE6;&#x5BF9;&#x9F50;&#x6216;&#x53F3;&#x5BF9;&#x9F50;">&#x56FE;&#x7247;&#x5DE6;&#x5BF9;&#x9F50;&#x6216;&#x53F3;&#x5BF9;&#x9F50;</h4>
+<p>&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x56FE;&#x7247;&#x4EE5;<code>inline</code> <code>block</code> &#x6216;&#x8005;<code>inline-block</code>&#x7684;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#x90FD;&#x4E0D;&#x592A;&#x7406;&#x60F3;&#x3002;&#x6211;&#x4EEC;&#x66F4;&#x591A;&#x5E0C;&#x671B;&#x7684;&#x662F;&#x56FE;&#x7247;&#x5143;&#x7D20;&#x5C45;&#x4E8E;&#x5176;&#x7236;&#x5143;&#x7D20;&#x7684;&#x5DE6;&#x4FA7;&#x6216;&#x8005;&#x53F3;&#x4FA7;&#xFF0C;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x5143;&#x7D20;&#x56F4;&#x7ED5;&#x7740;&#x5B83;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>float</code>&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A;<code>left</code>&#x6216;<code>right</code>&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x8FD8;&#x8BB0;&#x5F97;&#x6211;&#x4EEC;&#x5728;&#x7B2C;5&#x8BFE;&#x91CC;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;<code>float</code>&#x5C5E;&#x6027;&#x7684;&#x6700;&#x521D;&#x76EE;&#x6807;&#x5C31;&#x662F;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x56FE;&#x7247;&#x5DE6;&#x5BF9;&#x9F50;&#x8FD8;&#x662F;&#x53F3;&#x5BF9;&#x9F50;&#x7684;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C31;&#x5C06;&#x5B83;&#x7528;&#x4E8E;&#x539F;&#x59CB;&#x76EE;&#x6807;&#x3002;</p>
+<p>&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x53EA;&#x662F;&#x5F00;&#x59CB;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x4F1A;&#x76F4;&#x63A5;&#x548C;&#x5B83;&#x63A5;&#x89E6;&#xFF0C;&#x4E3A;&#x4E86;&#x7ED9;&#x56FE;&#x7247;&#x5468;&#x56F4;&#x6D41;&#x51FA;&#x7A7A;&#x767D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;margin&#x5C5E;&#x6027;&#xFF0C;&#x6B64;&#x5916;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;padding&#xFF0C; border &#x548C; background&#x5C5E;&#x6027;&#x7B49;&#x7B49;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#eaeaed</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#9799a7</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> right</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">8px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">4px</span></span></span>;
+}</span>
+</code></pre>
+<blockquote>
+<p>&#x4EC0;&#x4E48;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&#x56FE;&#x7247;&#x5143;&#x7D20;&#xFF1F;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x80CC;&#x666F;&#x56FE;&#x7247;&#xFF1F;
+&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x5411;&#x56FE;&#x7247;&#x4E2D;&#x6DFB;&#x52A0;&#x56FE;&#x7247;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x672C;&#x8BFE;&#x6240;&#x63D0;&#x5230;&#x7684;&#x4F7F;&#x7528;<code>&lt;img&gt;</code> &#x5143;&#x7D20;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x5C31;&#x662F;&#x5728;&#x4E0A;&#x4E00;&#x8282;&#x8BFE;&#x4E2D;&#x6240;&#x63D0;&#x5230;&#x7684;&#x4F7F;&#x7528;<code>background</code> &#x6216;<code>background-image</code>&#x5C5E;&#x6027;&#xFF0C;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;&#x5B83;&#x4EEC;&#x6709;&#x5404;&#x81EA;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#x3002;
+<code>&lt;img&gt;</code>&#x5F80;&#x5F80;&#x7528;&#x4E8E;&#x627F;&#x8F7D;&#x8BED;&#x4E49;&#x4EE5;&#x53CA;&#x548C;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#x76F8;&#x5173;&#x3002;
+<code>&lt;background&gt;</code> &#x6216;<code>&lt;background-image&gt;</code> &#x5F80;&#x5F80;&#x503E;&#x5411;&#x4E8E;&#x5C06;&#x56FE;&#x7247;&#x7528;&#x4E8E;&#x8BBE;&#x8BA1;&#x6216;&#x7F51;&#x9875;&#x7684;&#x7528;&#x6237;&#x754C;&#x9762;&#xFF0C;&#x800C;&#x4E14;&#x548C;&#x7F51;&#x9875;&#x7684;&#x5185;&#x5BB9;&#x65E0;&#x5173;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5B9E;&#x8DF5;">&#x5B9E;&#x8DF5;</h2>
+<hr>
+<p>Now that we know how to add and position images on a page, let&#x2019;s take a look at our Styles Conference website and see where we can add a few images.</p>
+<ol>
+<li>Let&#x2019;s begin by adding some images to our home page. Specifically, we&#x2019;ll add an image within each of the teaser sections promoting a few of our pages.</li>
+</ol>
+<p>Before we jump into the code, though, let&#x2019;s create a new folder named &#x201C;images&#x201D; within our &#x201C;assets&#x201D; folder. Then, within the &#x201C;images&#x201D; folder, let&#x2019;s create another folder named &#x201C;home&#x201D; specifically for our home page images. Within the &#x201C;home&#x201D; folder we&#x2019;ll add three images: speakers.jpg, schedule.jpg, and venue.jpg. (For reference, these images may be downloaded within a zip file.)</p>
+<p>Then, inside our index.html file, each teaser section has an <a> element wrapping both an <h3 id="and-an--element-lets-move-the--element-above-the--element-and-replace-it-with-an--element-the-src-attribute-value-for-each--element-will-correspond-to-the-folder-structure-and-filename-we-set-up-and-the-alt-attribute-value-will-describe-the-contents-of-each-image"> and an <h5 id="element-lets-move-the--element-above-the--element-and-replace-it-with-an--element-the-src-attribute-value-for-each--element-will-correspond-to-the-folder-structure-and-filename-we-set-up-and-the-alt-attribute-value-will-describe-the-contents-of-each-image"> element. Let&#x2019;s move the <h5 id="element-above-the--element-and-replace-it-with-an--element-the-src-attribute-value-for-each--element-will-correspond-to-the-folder-structure-and-filename-we-set-up-and-the-alt-attribute-value-will-describe-the-contents-of-each-image"> element above the <a> element and replace it with an <img> element. The src attribute value for each <img> element will correspond to the folder structure and filename we set up, and the alt attribute value will describe the contents of each image.</a></h5></h5></h3></a></p>
+<p>The HTML for our first teaser, for the Speakers page, will look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;teaser col-1-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>Speakers<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;speakers.html&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;assets/images/home/speakers.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;Professional Speaker&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>World-Class Speakers<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>Let&#x2019;s continue this pattern for both the Schedule and Venue page teasers, too.</p>
+<ol>
+<li>Now that we&#x2019;ve added a few images to our home page, we&#x2019;ll need to clean up their styles a bit and make sure they properly fit into the layout of our page.</li>
+</ol>
+<p>Since images are inline-level elements by default, let&#x2019;s change our images within the teaser sections to block-level elements. Let&#x2019;s also set their maximum width to 100% to ensure they don&#x2019;t exceed the width of their respective columns. Changing this width value is important as it allows our images to adjust with the width of the columns as necessary.</p>
+<p>Lastly, let&#x2019;s round the corners of the images slightly and apply 22 pixels of bottom margin to the images, providing a little breathing room.</p>
+<p>Once we add these new styles to our existing home page styles (using the teaser class as a qualifying selector for the <img> elements), our CSS will look like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.teaser</span> <span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">5px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> block</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">22px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span>
+}
+</span></span></span></code></pre>
+<ol>
+<li>Next up, let&#x2019;s add images of all of the speakers to the Speakers page. We&#x2019;ll begin by creating a &#x201C;speakers&#x201D; folder within our &#x201C;images&#x201D; folder and placing images of all of the speakers there.</li>
+</ol>
+<p>Within the speakers.html file, let&#x2019;s add an <img> element within each of the speaker information <aside> elements. Let&#x2019;s place each <img> element inside the <div> element with the class attribute value of speaker-info, just above the <ul> element.</ul></div></aside></p>
+<p>The src attribute value of each image will correspond to the &#x201C;speakers&#x201D; folder we set up and the speaker&#x2019;s name; the alt attribute value will be the speaker&#x2019;s name.</p>
+<p>The <aside> element for myself, as a speaker, will look like this:</aside></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">aside</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;speaker-info&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;assets/images/speakers/shay-howe.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;Shay Howe&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;https://twitter.com/shayhowe&quot;</span>&gt;</span>@shayhowe<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://learn.shayhowe.com/&quot;</span>&gt;</span>learn.shayhowe.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">aside</span>&gt;</span>
+</code></pre>
+<p>This same pattern for adding an image should then be applied to all other speakers.</p>
+<ol>
+<li>As we did with the images on our home page, we&#x2019;ll want to apply some styles to the images on the Speakers page.</li>
+</ol>
+<p>Let&#x2019;s begin by applying the border-radius property with a value of 50%, turning our images into circles. From there, let&#x2019;s set a fixed height of 130 pixels to each image and set them to be vertically aligned to the top of the line they reside within.</p>
+<p>With the height and vertical alignment in place, let&#x2019;s apply vertical margins to the images. Using a negative 66-pixel margin on the top of the images, we&#x2019;ll pull them slightly out of the <aside> element and make them vertically centered with the top border of the <div> element with a class attribute value of speaker-info. Then, applying a 22-pixel margin on the bottom of the image provides space between the image and the <ul> element below it.</ul></div></aside></p>
+<p>When we add these new styles to our existing Speakers page styles (using the speaker-info class as a qualifying selector for the <img> elements), our CSS will look like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.speaker-info</span> <span class="hljs-tag">img</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">50%</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">130px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> -<span class="hljs-number">66px</span> <span class="hljs-number">0</span> <span class="hljs-number">22px</span> <span class="hljs-number">0</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">vertical-align</span>:<span class="hljs-value"> top</span></span>;
+}</span>
+</code></pre>
+<ol>
+<li>Since we are using an aggressive negative margin on the <img> element within the <div> element with a class attribute value of speaker-info, we need to remove the padding on the top of that <div> element.</div></div></li>
+</ol>
+<p>Previously we were using the padding property with a value of 22px 0, thus placing 22 pixels of padding on the top and bottom and 0 pixels of padding on the left and right of the <div> element. Let&#x2019;s swap this property and value out for the padding-bottom property, as that&#x2019;s the only padding we need to identify, and use a value of 22 pixels.</div></p>
+<p>The new speaker-info class rule set looks like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.speaker-info</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#dfe2e5</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border-radius</span>:<span class="hljs-value"> <span class="hljs-number">5px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-top</span>:<span class="hljs-value"> <span class="hljs-number">88px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding-bottom</span>:<span class="hljs-value"> <span class="hljs-number">22px</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> center</span></span>;
+}</span>
+</code></pre>
+<p>Now both our home and Speaker pages are looking pretty sharp.
+<img src="Fig09.02.png" alt="">
+Fig 9
+Our Styles Conference home page after adding images to each section that teases another page</p>
+<p><img src="Fig09.03.png" alt=""></p>
+<h2 id="&#x6DFB;&#x52A0;&#x97F3;&#x9891;">&#x6DFB;&#x52A0;&#x97F3;&#x9891;</h2>
+<hr>
+<p>HTML5&#x901A;&#x8FC7;<code>&lt;audio&gt;</code><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">&#x5143;&#x7D20;</a>&#x63D0;&#x4F9B;&#x4E86;&#x5FEB;&#x901F;&#x800C;&#x7B80;&#x5355;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x7ED9;&#x7F51;&#x7AD9;&#x6DFB;&#x52A0;<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" target="_blank">&#x97F3;&#x9891;&#x6587;&#x4EF6;</a>&#xFF0C;&#x548C;<code>&lt;img&gt;</code>&#x5143;&#x7D20;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x901A;&#x8FC7;<code>src</code>&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x8D44;&#x6E90;&#xFF0C;&#x4E0D;&#x540C;&#x4E8E;<code>&lt;img&gt;</code>&#x5143;&#x7D20;&#xFF0C;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x9700;&#x8981;&#x5F00;&#x53E3;&#x548C;&#x95ED;&#x53E3;&#x6807;&#x7B7E;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x8BA8;&#x8BBA;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">audio</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;jazz.ogg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">audio</span>&gt;</span>
+</code></pre>
+<h3 id="&#x97F3;&#x9891;&#x5C5E;&#x6027;">&#x97F3;&#x9891;&#x5C5E;&#x6027;</h3>
+<p>&#x9664;&#x4E86;<code>src</code>&#x5143;&#x7D20;&#x5916;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x5C5E;&#x6027;&#x8FD8;&#x5305;&#x62EC;<code>autoplay</code>&#xFF0C; <code>controls</code>&#xFF0C; <code>loop</code>&#xFF0C;&#x4EE5;&#x53CA;<code>preload</code>&#x3002;
+<code>autoplay</code>&#xFF0C; <code>controls</code>&#xFF0C;<code>loop</code>&#x5C5E;&#x6027;&#x90FD;&#x662F;&#x5E03;&#x5C14;&#x5C5E;&#x6027;&#xFF0C;&#x4F5C;&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x5B83;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x72B6;&#x6001;&#x503C;&#xFF0C;&#x5F53;&#x4E14;&#x4EC5;&#x5F53;&#x5B83;&#x4EEC;&#x51FA;&#x73B0;&#x4E8E;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x8BBE;&#x7F6E;&#x4E3A;<code>true</code>&#xFF0C;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x4F1A;&#x66F4;&#x52A0;&#x503C;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;<code>&lt;audio&gt;</code> &#x5143;&#x7D20;&#x4E0D;&#x5728;&#x9875;&#x9762;&#x663E;&#x793A;&#xFF0C;&#x5982;&#x679C;<code>autoplay</code>&#x5C5E;&#x6027;&#x51FA;&#x73B0;&#x5728;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#xFF0C;&#x9875;&#x9762;&#x4E2D;&#x5C06;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#xFF0C;&#x4F46;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x4F1A;&#x5728;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x65F6;&#x81EA;&#x52A8;&#x64AD;&#x653E;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">audio</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;jazz.ogg&quot;</span> <span class="hljs-attribute">autoplay</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">audio</span>&gt;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x8981;&#x60F3;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x663E;&#x793A;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#xFF0C;<code>controls</code>&#x5E03;&#x5C14;&#x503C;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">audio</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;jazz.ogg&quot;</span> <span class="hljs-attribute">controls</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">audio</span>&gt;</span>
+</code></pre>
+<p>&#x5F53;&#x5C55;&#x793A;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x65F6;&#xFF0C;<code>loop</code>&#x5E03;&#x5C14;&#x5C5E;&#x6027;&#x4F1A;&#x8BA9;&#x97F3;&#x9891;&#x5FAA;&#x73AF;&#x64AD;&#x653E;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x5173;&#x4E8E;<code>preload</code>&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x8BE5;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x662F;&#x5426;&#x5728;&#x97F3;&#x9891;&#x64AD;&#x653E;&#x4E4B;&#x524D;&#x52A0;&#x8F7D;&#xFF0C;&#x5B83;&#x63A5;&#x6536;&#x4E09;&#x4E2A;&#x503C;<code>none</code> <code>auto</code>&#x548C;<code>metadata</code>&#x3002;</p>
+<ul>
+<li><code>none</code>&#x5C06;&#x4E0D;&#x9884;&#x52A0;&#x8F7D;&#x5173;&#x4E8E;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x7684;&#x4EFB;&#x4F55;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>auto</code>&#x5C06;&#x52A0;&#x8F7D;&#x5173;&#x4E8E;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;</li>
+<li><code>metadata</code>&#x5904;&#x4E8E;<code>none</code>&#x548C;<code>auto</code>&#x503C;&#x4E4B;&#x95F4;&#xFF0C;&#x4F1A;&#x52A0;&#x8F7D;&#x5173;&#x4E8E;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x7684;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x62EC;&#x5982;&#x97F3;&#x9891;&#x957F;&#x5EA6;&#xFF0C;&#x4F46;&#x4E0D;&#x662F;&#x5168;&#x90E8;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<p>&#x5F53;<code>preload</code>&#x5C5E;&#x6027;&#x672A;&#x51FA;&#x73B0;&#x5728;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x662F;&#xFF0C;&#x5173;&#x4E8E;&#x97F3;&#x9891;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x90FD;&#x4F1A;&#x52A0;&#x8F7D;&#xFF0C;&#x6B63;&#x5982;&#x5C06;&#x5176;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;<code>auto</code>&#x4E00;&#x6837;&#x3002;&#x5F53;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x5BF9;&#x7F51;&#x9875;&#x5185;&#x5BB9;&#x4E0D;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C06;<code>preload</code>&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A;<code>metadata</code>&#x6216;<code>none</code>&#x4F1A;&#x8282;&#x7701;&#x5E26;&#x5BBD;&#x5E76;&#x8BA9;&#x7F51;&#x9875;&#x52A0;&#x8F7D;&#x66F4;&#x5FEB;&#x3002;</p>
+<h3 id="&#x5907;&#x7528;&#x97F3;&#x9891;&#x4EE5;&#x53CA;&#x591A;&#x8D44;&#x6E90;&#x6587;&#x4EF6;">&#x5907;&#x7528;&#x97F3;&#x9891;&#x4EE5;&#x53CA;&#x591A;&#x8D44;&#x6E90;&#x6587;&#x4EF6;</h3>
+<p>&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x4E0D;&#x540C;&#x7684;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#xFF0C;&#x4E09;&#x5927;&#x4E3B;&#x6D41;&#x7684;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x662F;<code>ogg</code> <code>mp3</code>&#x548C;<code>wav</code> &#x4E3A;&#x4E86;&#x80FD;&#x5F97;&#x5230;&#x6700;&#x597D;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x52A0;&#x8F7D;&#x51E0;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5907;&#x4EFD;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x6837;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x9996;&#x5148;&#x5F97;&#x4ECE;<code>&lt;audio&gt;</code>&#x4E2D;&#x79FB;&#x9664;<code>src</code>&#x5C5E;&#x6027;&#xFF0C;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x4F7F;&#x7528;<code>&lt;source&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;<code>src</code>&#x5C5E;&#x6027;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x8BBE;&#x7F6E;&#x4E86;<code>src</code>&#x5C5E;&#x6027;&#x503C;&#x7684;<code>&lt;source&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x540C;&#x65F6;&#x5728;<code>&lt;source&gt;</code>&#x5C5E;&#x6027;&#x4F7F;&#x7528;<code>type</code>&#x5E2E;&#x52A9;&#x6D4F;&#x89C8;&#x5668;&#x8BC6;&#x522B;&#x97F3;&#x9891;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x80FD;&#x8BC6;&#x522B;&#x4E00;&#x79CD;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x5FFD;&#x7565;&#x5176;&#x4ED6;&#x7684;&#x97F3;&#x9891;&#x3002;</p>
+<p>&#x4F46;&#x7531;&#x4E8E;&#x8BE5;&#x5C5E;&#x6027;&#x662F;&#x5728;HTML5&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#xFF0C;&#x4E00;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x80FD;&#x4E0D;&#x652F;&#x6301;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#x7528;&#x4E8E;&#x4E0B;&#x8F7D;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">audio</span> <span class="hljs-attribute">controls</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;jazz.ogg&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;audio/ogg&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;jazz.mp3&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;audio/mpeg&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;jazz.wav&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;audio/wav&quot;</span>&gt;</span>
+  Please <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;jazz.mp3&quot;</span> <span class="hljs-attribute">download</span>&gt;</span>download<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> the audio file.
+<span class="hljs-tag">&lt;/<span class="hljs-title">audio</span>&gt;</span>
+</code></pre>
+<p>&#x9664;&#x4E86;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x5916;&#xFF0C;HTML5&#x8FD8;&#x652F;&#x6301;<code>&lt;video&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x5B83;&#x548C;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x7528;&#x5F88;&#x591A;&#x5171;&#x901A;&#x7684;&#x5C5E;&#x6027;&#x3002;</p>
+<h2 id="&#x6DFB;&#x52A0;&#x89C6;&#x9891;">&#x6DFB;&#x52A0;&#x89C6;&#x9891;</h2>
+<hr>
+<p><a href="http://dev.opera.com/articles/introduction-html5-video/" target="_blank">&#x5728;HTML5&#x4E2D;&#x6DFB;&#x52A0;&#x89C6;&#x9891;</a> &#x548C;&#x6DFB;&#x52A0;&#x97F3;&#x9891;&#x6587;&#x4EF6;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x3002; &#x6211;&#x4EEC;&#x4E5F;&#x4F7F;&#x7528;<code>src</code> <code>autoplay</code> <code>controls</code> <code>loop</code> <code>preload</code>&#x5C5E;&#x6027;&#x548C;&#x5907;&#x7528;&#x89C6;&#x9891;&#x3002;</p>
+<p>&#x5728;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x5982;&#x679C;<code>controls</code>&#x5C5E;&#x6027;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#xFF0C;&#x97F3;&#x9891;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#xFF0C;&#x800C;&#x5728;&#x89C6;&#x9891;&#x4E2D;&#xFF0C;&#x5982;&#x679C;<code>controls</code>&#x5C5E;&#x6027;&#x6CA1;&#x6709;&#x663E;&#x793A;&#xFF0C;&#x5219;&#x89C6;&#x9891;&#x4F1A;&#x663E;&#x793A;&#x3002; With the <audio> element, if the controls Boolean attribute isn&#x2019;t specified the audio clip isn&#x2019;t displayed. With videos, if the controls Boolean attribute is not specified the video will display. However, it is fairly difficult to view unless the autoplay Boolean attribute is also applied. In general, the best practice here is to include the controls Boolean attribute unless there is a good reason not to allow users to start, stop, or replay the video.</audio></p>
+<p>&#x7531;&#x4E8E;&#x89C6;&#x9891;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x4F1A;&#x5360;&#x636E;&#x4E00;&#x4E9B;&#x7A7A;&#x95F4;&#xFF0C;&#x6211;&#x4EEC;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x5728;CSS&#x4E2D;&#x6307;&#x5B9A;&#x5B83;&#x7684;<code>width</code>&#x548C;<code>height</code>&#x5C5E;&#x6027;&#x503C;&#x3002; &#x8FD9;&#x6837;&#x4F1A;&#x4FDD;&#x8BC1;&#x89C6;&#x9891;&#x4E0D;&#x4F1A;&#x592A;&#x5927;&#xFF0C;&#x5E76;&#x4FDD;&#x6301;&#x5728;&#x7F51;&#x9875;&#x4E4B;&#x4E2D;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x548C;&#x56FE;&#x7247;&#x4E00;&#x6837;&#x6307;&#x5B9A;&#x5C3A;&#x5BF8;&#x540E;&#xFF0C;&#x4F1A;&#x4F7F;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x89C6;&#x9891;&#x66F4;&#x5FEB;&#xFF0C;&#x4E14;&#x4F1A;&#x5206;&#x914D;&#x6070;&#x5F53;&#x7684;&#x7A7A;&#x95F4;&#x7528;&#x4E8E;&#x8F93;&#x51FA;&#x89C6;&#x9891;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">video</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;earth.ogv&quot;</span> <span class="hljs-attribute">controls</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x97F3;&#x9891;&#x548C;&#x89C6;&#x9891;&#x7684;&#x63A7;&#x5236;&#x6761;
+&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;<code>&lt;audio&gt;</code> <code>&lt;video&gt;</code>&#x5143;&#x7D20;&#x7684;&#x63A7;&#x5236;&#x6761;&#x662F;&#x7531;&#x6D4F;&#x89C8;&#x5668;&#x51B3;&#x5B9A;&#x7684;&#xFF0C;&#x6839;&#x636E;&#x7F51;&#x7AD9;&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E5F;&#x8BB8;&#x4F1A;&#x6709;&#x6307;&#x5B9A;&#x63A7;&#x5236;&#x6761;&#x7684;&#x6837;&#x5F0F;&#x7684;&#x9700;&#x6C42;&#x3002;&#x5982;&#x679C;&#x662F;&#x8FD9;&#x4E2A;&#x60C5;&#x51B5;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x64AD;&#x653E;&#x5668;&#xFF0C;&#x4F46;&#x9700;&#x8981;&#x4E9B;JavaScript&#x3002;
+&#x6B64;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x64AD;&#x653E;&#x5668;&#x4F7F;&#x7528;&#x4E86;<code>&lt;img&gt;</code>&#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x63A7;&#x5236;&#x5668;&#xFF0C;<code>alt</code>&#x5C5E;&#x6027;&#x503C;value of the alt attribute should explictly state that the image is a control and requires the proper interaction to work.</p>
+</blockquote>
+<h3 id="poster-&#x5C5E;&#x6027;"><code>Poster</code> &#x5C5E;&#x6027;</h3>
+<p>&#x5BF9;&#x4E8E;<code>&lt;video&gt;</code>&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;<code>poster</code>&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;URL&#x6765;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x56FE;&#x7247;&#xFF0C;&#x7528;&#x4E8E;&#x4E00;&#x6BB5;&#x89C6;&#x9891;&#x7684;&#x663E;&#x793A;&#x56FE;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">video</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;earth.ogv&quot;</span> <span class="hljs-attribute">controls</span> <span class="hljs-attribute">poster</span>=<span class="hljs-value">&quot;earth-video-screenshot.jpg&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span>
+</code></pre>
+<h3 id="&#x5907;&#x7528;&#x89C6;&#x9891;">&#x5907;&#x7528;&#x89C6;&#x9891;</h3>
+<p>&#x548C;<code>&lt;audio&gt;</code>&#x5143;&#x7D20;&#x4E00;&#x6837;&#xFF0C;&#x5907;&#x7528;&#x89C6;&#x9891;&#x4E5F;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;HTML&#x6807;&#x8BB0;&#x683C;&#x5F0F;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">video</span> <span class="hljs-attribute">controls</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;earth.ogv&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;video/ogg&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;earth.mp4&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;video/mp4&quot;</span>&gt;</span>
+  Please <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;earth.mp4&quot;</span> <span class="hljs-attribute">download</span>&gt;</span>download<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> the video.
+<span class="hljs-tag">&lt;/<span class="hljs-title">video</span>&gt;</span>
+</code></pre>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x5907;&#x7528;&#x9009;&#x9879;&#x662F;&#x4F7F;&#x7528;&#x6587;&#x672C;&#x5D4C;&#x5165;YouTube&#x6216;Vimeo&#x89C6;&#x9891;&#xFF0C;&#x8FD9;&#x4E9B;&#x89C6;&#x9891;&#x7F51;&#x7AD9;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4E0A;&#x4F20;&#x89C6;&#x9891;&#xFF0C;&#x63D0;&#x4F9B;&#x6807;&#x51C6;&#x7684;&#x89C6;&#x9891;&#x64AD;&#x653E;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x8BA9;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x884C;&#x5185;&#x6846;&#x67B6;&#x5D4C;&#x5165;&#x89C6;&#x9891;&#x3002;</p>
+<blockquote>
+<p>HTML5 &#x97F3;&#x9891;&#x548C;&#x89C6;&#x9891;&#x6587;&#x4EF6;&#x683C;&#x5F0F;
+&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;<code>&lt;audio&gt;</code> &#x548C;<code>&lt;video&gt;</code>&#x5143;&#x7D20;&#x7684;&#x540C;&#x65F6;&#x4E5F;&#x5BF9;&#x6587;&#x4EF6;&#x7684;&#x683C;&#x5F0F;&#x6709;&#x5996;&#x6C14;&#xFF0C;&#x6BCF;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x6709;&#x81EA;&#x5DF1;<a href="https://developer.mozilla.org/en-US/docs/HTML/Supported_media_formats" target="_blank">&#x9996;&#x9009;</a>&#x7684;&#x97F3;&#x9891;&#x548C;&#x89C6;&#x9891;&#x683C;&#x5F0F;&#x3002;</p>
+</blockquote>
+<h2 id="&#x6DFB;&#x52A0;&#x884C;&#x5185;&#x6846;&#x67B6;">&#x6DFB;&#x52A0;&#x884C;&#x5185;&#x6846;&#x67B6;</h2>
+<p>&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x5411;&#x7F51;&#x9875;&#x4E2D;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x5D4C;&#x5957;&#x5176;&#x4ED6;&#x7684;HTML&#x7F51;&#x9875;&#x5185;&#x5BB9;&#x5230;&#x5F53;&#x524D;&#x7F51;&#x9875;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>&lt;iframe&gt;</code>&#x5143;&#x7D20;&#x6765;&#x5B9E;&#x73B0;&#x3002;Another way to add content to a page is to embed another HTML page within the current page. This is done using an inline frame, or <iframe> element. The <iframe> element accepts the URL of another HTML page within the src attribute value; this causes the content from the embedded HTML page to be displayed on the current page. The value of the src attribute may be a URL relative to the page the <iframe> element appears on or an absolute URL for an entirely external page.</iframe></iframe></iframe></p>
+<p>Many pages use the <iframe> element to embed media onto a page from an external website such as Google Maps, YouTube, and others.</iframe></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://www.google.com/maps/embed?...&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+</code></pre>
+<p>The <iframe> element has a few default styles, including an inset border and a width and height. These styles can be adjusted using the frameborder, width, and height HTML attributes or by using the border, width, and height CSS properties.</iframe></p>
+<h3 id="&#x65E0;&#x7F1D;&#x884C;&#x5185;&#x6846;&#x67B6;">&#x65E0;&#x7F1D;&#x884C;&#x5185;&#x6846;&#x67B6;</h3>
+<p>Pages referenced within the src attribute of an <iframe> element play by their own rules, as they do not inherit any styles or behaviors from the page they are referenced on. Any styles applied to a page that includes an <iframe> element will not be inherited by the page referenced within the <iframe> element. Additionally, links within the page referenced within the <iframe> element will open inside that frame, leaving the page that contains the <iframe> element unchanged.</iframe></iframe></iframe></iframe></iframe></p>
+<p>There will be times when we&#x2019;ll want to change these behaviors, and the seamless Boolean attribute will allow us to do just that. When present on the <iframe> element, the seamless Boolean attribute allows styles from the page that includes an <iframe> element to be inherited by the page referenced within the <iframe> element. Additionally, the seamless Boolean attribute allows links clicked on a page referenced within an <iframe> element to be opened within the same window as the original page that includes the <iframe> element.</iframe></iframe></iframe></iframe></iframe></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;contact.html&quot;</span> <span class="hljs-attribute">seamless</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+</code></pre>
+<p>The seamless Boolean attribute is a new attribute introduced in HTML5. Although the browser support for this attribute is growing, it will not work within older browsers. It&#x2019;s advisable to test the seamless Boolean attribute before using it.</p>
+<h2 id="&#x5B9E;&#x8DF5;">&#x5B9E;&#x8DF5;</h2>
+<p>Inline frames provide a great way to add dynamic content to a page. Let&#x2019;s give this a shot by updating our Venue page with some maps.</p>
+<ol>
+<li>Before adding any maps or inline frames, let&#x2019;s first prepare our Venue page for a two-column grid. Below the leading section of the page we&#x2019;ll add a <section> element with the class attribute value of row to identify a new section of the page, and we&#x2019;ll include some general styles, such as a white background and some vertical padding.</section></li>
+</ol>
+<p>Directly inside this <section> element let&#x2019;s add a <div> element with the class attribute value of grid. The class of grid centers our content on the page and prepares for the one-third and two-thirds columns to follow.</div></section></p>
+<p>So far the main section of our venue.html file looks like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Within the <div> element with the class attribute value of grid we&#x2019;ll have two new sections, one for the conference venue and one for the conference hotel. Let&#x2019;s add two new <section> elements and give each of these <section> elements a unique class that corresponds to its content. We&#x2019;ll use these classes to add margins to the bottom of each section.</section></section></div></li>
+</ol>
+<p>Our HTML should now look like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-hotel&quot;</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Now that we have a few classes to work with, let&#x2019;s create a new section within our main.css file for Venue page styles. We&#x2019;ll add a 66-pixel margin to the bottom of the <section> element with the class attribute value of venue-theatre to insert some space between it and the <section> element below it.</section></section></li>
+</ol>
+<p>Then, we&#x2019;ll add a 22-pixel margin to the bottom of the <section> element with the class attribute value of venue-hotel to provide some space between it and the <footer> element below it.</footer></section></p>
+<p>The new venue section within the main.css file looks like the following:</p>
+<pre><code class="lang-css"><span class="hljs-comment">/*
+  ========================================
+  Venue
+  ========================================
+*/</span>
+
+<span class="hljs-class">.venue-theatre</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">66px</span></span></span>;
+}</span>
+<span class="hljs-class">.venue-hotel</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin-bottom</span>:<span class="hljs-value"> <span class="hljs-number">22px</span></span></span>;
+}</span>
+</code></pre>
+<p>The <section> element with the class attribute value of venue-hotel has a smaller bottom margin than the <section> element with the class attribute value of venue-theatre because it sits next to the padding from the bottom of the <section> element with the class attribute of row. Adding that margin and padding together gives us the same value as the bottom margin on the <section> element with the class attribute value of venue-theatre.</section></section></section></section></p>
+<ol>
+<li>Now it&#x2019;s time to create the two columns within each of the new <section> elements. We&#x2019;ll start by adding a <div> element with a class attribute value of col-1-3 to establish a one-third column. After it we&#x2019;ll add an <iframe> element with a class attribute value of col-2-3 to establish a two-thirds column.</iframe></div></section></li>
+</ol>
+<p>Keeping in mind that the column classes make both the <div> and <iframe> elements inline-block elements, we need to remove the empty space that will appear between them. To do so we’ll open an HTML comment directly after the closing <div> tag, and we&#x2019;ll close the HTML comment immediately before the opening <iframe> tag.</iframe></div></iframe></div></p>
+<p>In all, our HTML for the columns looks like this:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;row&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;grid&quot;</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+      --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-hotel&quot;</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+      --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Within each of the <div> elements with a class attribute value of col-1-3 let&#x2019;s add the venue&#x2019;s name within an <h2 id="element-followed-by-two--elements-in-the-first--element-lets-include-the-venues-address-and-in-the-second--element-lets-include-the-venues-website-within-an-anchor-link-and-phone-number"> element, followed by two <p> elements. In the first </p><p> element let&#x2019;s include the venue&#x2019;s address, and in the second </p><p> element let&#x2019;s include the venue&#x2019;s website (within an anchor link) and phone number.</p></h2></div></li>
+</ol>
+<p>Within each of the paragraphs, let&#x2019;s use the line-break element, <br>, to place breaks within the address and in between the website and phone number.</p>
+<p>For the <section> element with the class attribute value of venue-theatre, the HTML looks like this:</section></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Chicago Theatre<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>175 N State St <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> Chicago, IL 60601<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://www.thechicagotheatre.com/&quot;</span>&gt;</span>thechicagotheatre.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> (312) 462-6300<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>The same pattern shown here for the theatre should also be applied to the hotel (using, of course, the proper address, website, and phone number).</p>
+<p>We can search for these addresses in Google Maps. Once we locate an address</p>
+<ol>
+<li>We can search for these addresses in Google Maps. Once we locate an address and create a customized map, we have the ability to embed that map into our page. Following the instructions on Google Maps for how to share and embed a map will provide us with the HTML for an <iframe> element.</iframe></li>
+</ol>
+<p>Let&#x2019;s copy the HTML&#x2014;<iframe> element, src attribute, and all—onto our page where our existing <iframe> element resides. We’ll do this for each location, using two different <iframe> elements.</iframe></iframe></iframe></p>
+<p>In copying over the <iframe> element from Google Maps we need to make sure we preserve the class attribute and value, col-2-3, from our existing <iframe> element. We also need to be careful not to harm the HTML comment that closes directly before our opening <iframe> tag.</iframe></iframe></iframe></p>
+<p>Looking directly at the <section> element with the class attribute value of venue-theatre again, the HTML looks like this:</section></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Chicago Theatre<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>175 N State St <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> Chicago, IL 60601<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://www.thechicagotheatre.com/&quot;</span>&gt;</span>thechicagotheatre.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> (312) 462-6300<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2-3&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<ol>
+<li>Lastly, we&#x2019;ll want to make sure that both <iframe> elements that reference Google Maps share the same height. To do this, we’ll create a new class, venue-map, and apply it to each of the <iframe> elements alongside the existing col-2-3 class attribute value.</iframe></iframe></li>
+</ol>
+<p>The HTML for the <section> element with the class attribute value of venue-theatre now looks like this:</section></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-theatre&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-1-3&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Chicago Theatre<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>175 N State St <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> Chicago, IL 60601<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;http://www.thechicagotheatre.com/&quot;</span>&gt;</span>thechicagotheatre.com<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span> (312) 462-6300<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><span class="hljs-comment">&lt;!--
+
+  --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;venue-map col-2-3&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x880e2ca55810a493%3A0x4700ddf60fcbfad6!2schicago+theatre!5e0!3m2!1sen!2sus!4v1388701393606&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+</code></pre>
+<p>Once the venue-map class is applied to each <iframe> element, let’s create the venue-map class rule set within our main.css file. It includes the height property with a value of 264 pixels.</iframe></p>
+<p>The venue-map class rule set looks like this:</p>
+<pre><code class="lang-css"><span class="hljs-class">.venue-map</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">264px</span></span></span>;
+}</span>
+</code></pre>
+<p>We now have a Venue page, complete with maps for the different locations of our conference.
+<img src="Fig09.04.png" alt="">
+Fig 9
+Our Styles Conference Venue page, which now includes inline frames</p>
+<h2 id="demo&#x548C;&#x6E90;&#x7801;">Demo&#x548C;&#x6E90;&#x7801;</h2>
+<ul>
+<li><a href="http://learn.shayhowe.com/practice/adding-media/index.html" target="_blank">Demo</a></li>
+<li><a href="http://learn.shayhowe.com/practice/adding-media.zip" target="_blank">&#x6E90;&#x7801;</a></li>
+</ul>
+<h2 id="semantically-identifying-figures--captions">Semantically Identifying Figures &amp; Captions</h2>
+<p>With HTML5 also came the introduction of the <figure> and <figcaption> elements. These elements were created to semantically mark up self-contained content or media, commonly with a caption. Before HTML5 this was frequently done using an ordered list. While an ordered list worked, the markup was not semantically correct.</figcaption></figure></p>
+<h3 id="figure">Figure</h3>
+<p>The <figure> block-level element is used to identify and wrap self-contained content, often in the form of media. It may surround images, audio clips, videos, blocks of code, diagrams, illustrations, or other self-contained media. More than one item of self-contained content, such as multiple images or videos, may be contained within the <figure> element at a time. If the <figure> element is moved from the main portion of a page to another location (for example, the bottom of the page), it should not disrupt the content or legibility of the page.</figure></figure></figure></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;dog.jpg&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;A black, brown, and white dog wearing a kerchief&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+</code></pre>
+<h3 id="figure-caption">Figure Caption</h3>
+<p>To add a caption or legend to the <figure> element, the <figcaption> element is used. The <figcaption> may appear at the top of, bottom of, or anywhere within the <figure> element; however, it may only appear once. When it&#x2019;s used, the <figcaption> element will serve as the caption for all content within the <figure> element.</figure></figcaption></figure></figcaption></figcaption></figure></p>
+<p>Additionally, the <figcaption> element may replace an <img> element&#x2019;s alt attribute if the content of the <figcaption> element provides a useful description of the visual content of the image.</figcaption></figcaption></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">figure</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;dog.jpg&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">figcaption</span>&gt;</span>A beautiful black, brown, and white hound dog wearing kerchief.<span class="hljs-tag">&lt;/<span class="hljs-title">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+</code></pre>
+<p>Not all forms of media need to be included within a <figure> element or include a <figcaption> element; only those that are self-contained and belong together as a group.</figcaption></figure></p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x9664;&#x4E86;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x5916;&#xFF0C;&#x591A;&#x5A92;&#x4F53;&#x5185;&#x5BB9;&#x5728;&#x7F51;&#x7AD9;&#x4E2D;&#x5360;&#x6BD4;&#x5F88;&#x5927;&#x3002;&#x5728;&#x7F51;&#x7AD9;&#x4E2D;&#x4F7F;&#x7528;&#x56FE;&#x7247;&#xFF0C;&#x97F3;&#x9891;&#xFF0C;&#x89C6;&#x9891;&#x5728;&#x6700;&#x8FD1;&#x51E0;&#x5E74;&#x66B4;&#x589E;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x505C;&#x7F13;&#x7684;&#x8D8B;&#x52BF;&#x3002;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x4E86;&#x5728;&#x8BBE;&#x8BA1;&#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x591A;&#x5A92;&#x4F53;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5B83;&#x4EEC;&#x6765;&#x4E30;&#x5BCC;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x5411;&#x7F51;&#x9875;&#x4E2D;&#x6DFB;&#x52A0;&#x56FE;&#x7247;&#xFF0C;&#x97F3;&#x9891;&#xFF0C;&#x89C6;&#x9891;&#xFF0C;&#x5185;&#x6846;&#x67B6;&#x7684;&#x6700;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>&#x5728;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x5B9A;&#x4F4D;&#x3002;</li>
+<li>&#x5728;&#x8001;&#x7248;&#x672C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x63D0;&#x4F9B;&#x5907;&#x7528;&#x7684;&#x97F3;&#x9891;&#x548C;&#x89C6;&#x9891;&#x3002;</li>
+<li>&#x97F3;&#x9891;&#x548C;&#x89C6;&#x9891;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x5C5E;&#x6027;</li>
+<li>&#x65E0;&#x7F1D;&#x5C5E;&#x6027;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5185;&#x6846;&#x67B6;&#x8868;&#x73B0;&#x5982;&#x540C;&#x662F;&#x5F53;&#x524D;&#x7F51;&#x7AD9;&#x7684;&#x4E00;&#x90E8;&#x5206;</li>
+<li>&#x8BED;&#x4E49;&#x5316;&#x6807;&#x8BB0;&#x81EA;&#x5305;&#x542B;&#x5185;&#x5BB9;&#xFF0C;&#x5305;&#x62EC;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x3002;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5230;&#x5B66;&#x4E60;HTML&#x4E0E;CSS&#x7684;&#x51B2;&#x523A;&#x9636;&#x6BB5;&#x4E86;&#xFF0C;&#x4EC5;&#x4EC5;&#x5269;&#x4E0B;&#x51E0;&#x4E2A;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x4ECB;&#x7ECD;&#x4E86;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C06;&#x8BA8;&#x8BBA;&#x8868;&#x5355;&#x3002;</p>
+<h2 id="&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;">&#x8D44;&#x6E90;&#x4E0E;&#x94FE;&#x63A5;</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" target="_blank">Using HTML5 audio and video</a> via Mozilla Developer Network</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Audio HTML5 Element</a> via Mozilla Developer Network</li>
+<li><a href="http://dev.opera.com/articles/introduction-html5-video/" target="_blank">Introduction to HTML5 Video</a> via Dev.Opera</li>
+<li><a href="http://html5doctor.com/the-figure-figcaption-elements/" target="_blank">The figure &amp; figcaption elements</a> via HTML5 Doctor</li>
+</ul>
 <h2 id="&#x8BFE;&#x7A0B;&#x94FE;&#x63A5;">&#x8BFE;&#x7A0B;&#x94FE;&#x63A5;</h2>
 <ul>
 <li><a href="https://github.com/hexcola/Learn_to_Code_HTML_And_CSS_zh/blob/master/Fundamentals/docs/Lesson_08_Creating_Lists.md" target="_blank">&#x8BFE;&#x7A0B;08&#xFF1A;&#x521B;&#x5EFA;&#x5217;&#x8868;</a></li>
