@@ -45,7 +45,7 @@ HTML
 
 后代选择器是最常用的子选择器，它匹配继承了指定祖先的每个元素。在文档树内，后代元素不一定直接位于祖先元素之后，像父-子关系，而是可以位于祖先元素内的任意位置。后代选择器由选择器内以空格分隔的元素构成，每个元素列表创建一个新的层次结构。
 
-`article h2`是一个后代选择器，它只选择位于`article`元素之内的`h2`元素。注意，无论`h2`元素在哪，只要在`article`元素之内，它就会被选中。此外，任何`article`元素之外的`h2`元素都会回被选中。
+`article h2`是一个后代选择器，它只选择位于`article`元素之内的`h2`元素。注意，无论`h2`元素在哪，只要在`article`元素之内，它就会被选中。此外，任何`article`元素之外的`h2`元素都会被选中。
 
 如下，第3行和第5行被选中。
 
@@ -100,17 +100,17 @@ HTML
 `article h2`|后代选择器|选择位于指定祖先元素内任意位置的元素
 `article > p`|直接子选择器|选择指定父元素内紧邻的子元素
 
-## Sibling Selectors
+## 兄弟选择器
 
-Knowing how to select children of an element is largely beneficial, and quite commonly seen. However sibling elements, those elements that share a common parent, may also need to be selected. These sibling selections can be made by way of the general sibling and adjacent sibling selectors.
+知道了如何选择一个元素的子类是非常有益且很常用的。然而兄弟元素，即共有一个父类的那些元素，可能也需要被选中。这些兄弟选择可由一般兄弟选择器和紧邻兄弟选择器实现。
 
-### General Sibling Selector
+### 一般兄弟选择器
 
-The general sibling selector allow elements to be selected based on their sibling elements, those which share the same common parent. They are created by using the tilde character, `~`, between two elements within a selector. The first element identifies what the second element shall be a sibling with, and both of which must share the same parent.
+一般兄弟选择器允许通过共有同一个父类的兄弟元素来选择元素。他们通过在选择器内两元素之间放置波浪号，`~`，来构建。第一个元素标明第二个元素应与谁是兄弟关系，它们必须共有同一个父类。
 
-The `h2 ~ p` selector is a general sibling selector that looks for `p` elements that follow, and share the same parent, of any `h2` elements. In order for a `p` element to be selected it must come after any `h2` element.
+`h2 ~ p`选择器是一个一般兄弟选择器，它查找共有同一个父类的所有`h2`元素之后的`p`元素。一个`p`元素要被选中，则它必须位于任一`h2`元素之后。
 
-The paragraphs on lines 5 and 9 are selected as they come after the heading within the document tree and share the same parent as their sibling heading.
+如下第5行和第9行被选中，因为它们位于文档树内的标题之后，且与它们的兄弟标题共有同一个父类。
 
 CSS
 
@@ -133,13 +133,13 @@ HTML
 </section>
 ```
 
-### Adjacent Sibling Selector
+### 紧邻兄弟选择器
 
-Occasionally a little more control may be desired, including the ability to select a sibling element that directly follows after another sibling element, which is where the adjacent sibling element comes in. The adjacent sibling selector will only select sibling elements directly following after another sibling element. Instead of using the tilde character, as with general sibling selectors, the adjacent sibling selector uses a plus character, `+`, between the two elements within a selector. Again, the first element identifies what the second element shall directly follow after and be a sibling with, and both of which must share the same parent.
+偶尔会需要更多的控制权，包括选择一个直接跟随另一个兄弟元素的兄弟元素的能力，这就是紧邻兄弟元素的来源。紧邻兄弟选择器只会选择直接跟随另一个兄弟元素后的兄弟元素。相对于一般兄弟选择器使用波浪号，紧邻兄弟选择器在两元素之间使用一个加号，`+`。再次强调，第一个元素标明第二个元素应跟在谁后面，与谁是兄弟关系，并且必须共有同一个父类。
 
-Looking at the adjacent sibling selector `h2 + p` only `p` elements directly following after `h2` elements will be selected. Both of which must also share the same parent element.
+注意紧邻兄弟选择器`h2 + p`，只有直接位于`h2`元素之后的`p`元素被选中。它们也必须共有同一父元素。
 
-The paragraph on line 5 is selected as it directly follows after its sibling heading along with sharing the same parent element, thus selected.
+如下第5行被选中，因为它直接位于它共有同一父元素的兄弟标题之后。
 
 CSS
 
@@ -162,7 +162,7 @@ HTML
 </section>
 ```
 
-> ### Sibling Selectors Example
+> ### 兄弟选择器示例
 
 > HTML
 
@@ -236,12 +236,12 @@ HTML
 > }
 > ```
 
-### Sibling Selectors Overview
+### 兄弟选择器概览
 
-Example|Classification|Explanation
+示例|分类|说明
 ---|---|---
-`h2 ~ p`|General Sibling Selector|Selects an element that follows anywhere after the prior element, in which both elements share the same parent
-`h2 + p`|Adjacent Sibling Selector|Selects an element that follows directly after the prior element, in which both elements share the same parent
+`h2 ~ p`|一般兄弟选择器|选择共有同一个父类的，居前元素之后任意位置的元素
+`h2 + p`|紧邻兄弟选择器|选择共有同一个父类的，直接位于居前元素之后的元素
 
 ## Attribute Selectors
 
