@@ -243,13 +243,13 @@ HTML
 `h2 ~ p`|一般兄弟选择器|选择共有同一个父类的，居前元素之后任意位置的元素
 `h2 + p`|紧邻兄弟选择器|选择共有同一个父类的，直接位于居前元素之后的元素
 
-## Attribute Selectors
+## 属性选择器
 
-Some of the common selectors looked at early may also be defined as attribute selectors, in which an element is selected based up on its class or ID value. These class and ID attribute selectors are widely used and extremely powerful but only the beginning. Other attribute selectors have emerged over the years, specifically taking a large leap forward with CSS3. Now elements can be selected based on whether an attribute is present and what its value may contain.
+前面提到的一些一般选择器，也可以认为是属性选择器，如在class或ID值的基础之上选择元素。这些class属性和ID属性选择器被广泛使用并极其强大，但这只是开始。这些年来出现了另一些属性选择器，特别是CSS3前进了一大步。现在可以通过属性是否存在以及属性值可能包含的内容来选择元素。
 
-### Attribute Present Selector
+### 属性存在选择器
 
-The first attribute selector identifies an element based on whether it includes an attribute or not, regardless of any actual value. To select an element based on if an attribute is present or not simply include the attribute name in square brackets, `[]`, within a selector. The square brackets may or may not follow any qualifier such as an element type or class, all depending on the level of specificity desired.
+第一个属性选择器通过是否包含一个属性来匹配元素，无论实际属性值为何。要基于属性存在与否选择元素，只需简单地在选择器中把属性名包含在方括号`[]`中。方括号可以跟在任何像如元素类型或class的预选条件后，也可以单独使用，完全取决于所需的特异性等级。
 
 CSS
 
@@ -263,9 +263,9 @@ HTML
 <a href="#" target="_blank">...</a>
 ```
 
-### Attribute Equals Selector
+### 属性等于选择器
 
-To identify an element with a specific, and exact matching, attribute value the same selector from before may be used, however this time inside of the square brackets following the attribute name, include the desired matching value. Inside the square brackets should be the attribute name followed by an equals sign, `=`, quotations, `""`, and inside of the quotations should be the desired matching attribute value.
+同一个选择器要在使用前确定一个具有特定的完全匹配的属性值的元素，那么这次要在方括号内属性名之后包含要匹配的值。在方括号内应该有属性名，之后跟着一个等号`=`，再一对引号`""`，引号中间应有要匹配的属性值。
 
 CSS
 
@@ -279,9 +279,9 @@ HTML
 <a href="http://google.com/">...</a>
 ```
 
-### Attribute Contains Selector
+### 属性包含选择器
 
-When looking to find an element based on part of an attribute value, but not an exact match, the asterisk character, `*`, may be used within the square brackets of a selector. The asterisk should fall just after the attribute name, directly before the equals sign. Doing so denotes that the value to follow only needs to appear, or be contained, within the attribute value.
+当想要通过一部分而不是完全匹配的属性值类找到一个元素时，可以在选择器的方括号内使用星号`*`。星号应紧跟在属性名之后，等号之前。这样做表明之后的值，只需要出现或被包含在属性值中。
 
 CSS
 
@@ -295,7 +295,7 @@ HTML
 <a href="/login.php">...</a>
 ```
 
-### Attribute Begins With Selector
+### 属性以之开始选择器
 
 In addition to selecting an element based on if an attribute value contains a stated value, it is also possible to select an element based on what an attribute value begins with. Using a circumflex accent, `^`, within the square brackets of a selector between the attribute name and equals sign denotes that the attribute value should begin with the stated value.
 
@@ -311,7 +311,7 @@ HTML
 <a href="https://chase.com/">...</a>
 ```
 
-### Attribute Ends With Selector
+### 属性以之结束选择器
 
 Opposite of the begins with selector, there is also an ends with attribute selector. Instead of using the circumflex accent, the ends with attribute selector uses the dollar sign, `$`, within the square brackets of a selector between the attribute name and equals sign. Using the dollar sign denotes that the attribute value needs to end with the stated value.
 
@@ -327,7 +327,7 @@ HTML
 <a href="/docs/menu.pdf">...</a>
 ```
 
-### Attribute Spaced Selector
+### 属性间隔选择器
 
 At times attribute values may be spaced apart, in which only one of the words needs to be matched in order to make a selection. In this event using the tilde character, `~`, within the square brackets of a selector between the attribute name and equals sign denotes an attribute value that should be whitespace-separated, with one word matching the exact stated value.
 
@@ -343,7 +343,7 @@ HTML
 <a href="#" rel="tag nofollow">...</a>
 ```
 
-### Attribute Hyphenated Selector
+### 属性联用选择器
 
 When an attribute value is hyphen-separated, rather than whitespace-separated, the vertical line character, `|`, may be used within the square brackets of a selector between the attribute name and equals sign. The vertical line denotes that the attribute value may be hyphen-separated however the hyphen-separated words must begin with the stated value.
 
@@ -359,7 +359,7 @@ HTML
 <a href="#" lang="en-US">...</a>
 ```
 
-> ### Attribute Selectors Example
+> ### 属性选择器示例
 
 > HTML
 
@@ -408,7 +408,7 @@ HTML
 > }
 > ```
 
-### Attribute Selectors Overview
+### 属性选择器概览
 
 Example|Classification|Explanation
 ---|---|---
@@ -420,11 +420,11 @@ Example|Classification|Explanation
 `a[rel~="tag"]`|Attribute Spaced Selector|Selects an element if the given attribute value is whitespace-separated with one word being exactly as stated
 `a[lang|="en"]`|Attribute Hyphenated Selector|Selects an element if the given attribute value is hyphen-separated and begins with the word stated
 
-## Pseudo-classes
+## 伪类
 
 Pseudo-classes are similar to regular classes in HTML however they are not directly stated within the markup, instead they are a dynamically populated as a result of users actions or the document structure. The most common pseudo-class, and one you’ve likely seen before, is `:hover`. Notice how this pseudo-class begins with the colon character, `:`, as will all other pseudo-classes.
 
-###　Link Pseudo-classes
+###　Link Pseudo-classes链接伪类
 
 Some of the more basic pseudo-classes include two revolving around links specifically. The `:link` and `:visited` pseudo-classes define if a link has or hasn’t been visited. To style an anchor which has not been visited the `:link` pseudo-class comes into play, where the `:visited` pseudo-class styles links that a user has already visited based on their browsing history.
 
@@ -442,7 +442,7 @@ a:active {...}
 a:focus {...}
 ```
 
-### User Interface State Pseudo-classes
+### User Interface State Pseudo-classes用户接口状态伪类
 
 As with the link pseudo-classes there are also some pseudo-classes generated around the user interface state of elements, particularly within form elements. These user interface element state pseudo-classes include `:enabled`, `:disabled`, `:checked`, and `:indeterminate`.
 
@@ -460,7 +460,7 @@ input:checked {...}
 input:indeterminate {...}
 ```
 
-### Structural & Position Pseudo-classes
+### Structural & Position Pseudo-classes结构与位置伪类
 
 A handful of pseudo-classes are structural and position based, in which they are determined based off where elements reside in the document tree. These structural and position based pseudo-classes come in a few different shapes and sizes, each of which provides their own unique function. Some pseudo-classes have been around longer than others, however CSS3 brought way of an entire new set of pseudo-classes to supplement the existing ones.
 
@@ -526,7 +526,7 @@ Lastly there are a few structural and position based pseudo-classes that select 
 
 The number or expression that falls within the parenthesis determines exactly what element, or elements, are to be selected. Using a number outright will count individual elements from the beginning or end of the document tree and then select one element, while using an expression will count numerous elements from the beginning or end of the document tree and select them in groups or multiples.
 
-> ### Using Pseudo-class Numbers & Expressions
+> ### Using Pseudo-class Numbers & Expressions使用伪类参数和表达式
 
 > As mentioned, using numbers outright within a pseudo-class will count from the beginning, or end, of the document tree and select one element accordingly. For example, the `li:nth-child(4)` selector will select the fourth list item within a list. Counting begins with the first list item and increases by one for each list item, until finally locating and selecting the forth item. When using a number outright it must be a positive number.
 
@@ -705,7 +705,7 @@ HTML
 </article>
 ```
 
-### Target Pseudo-class
+### Target Pseudo-class目标伪类
 
 The `:target` pseudo-class is used to style elements when an element’s ID attribute value matches that of the URI fragment identifier. The fragment identifier within a URI can be recognized by the hash character, `#`, and what directly follows it. The URL `http://example.com/index.html#hello` includes the fragment identifier of `hello`. When this identifier matches the ID attribute value of an element on the page, `<section id="hello">` for example, that element may be identified and stylized using the `:target` pseudo-class. Fragment identifiers are most commonly seen when using on page links, or linking to another part of the same page.
 
@@ -723,7 +723,7 @@ HTML
 <section id="hello">...</section>
 ```
 
-### Empty Pseudo-class
+### Empty Pseudo-class空伪类
 
 The `:empty` pseudo-class allows elements that do not contain children or text nodes to be selected. Comments, processing instructions, and empty text nodes are not considered children and are not treated as such.
 
@@ -745,7 +745,7 @@ HTML
 <div><strong></strong></div>
 ```
 
-### Negation Pseudo-class
+### Negation Pseudo-class否定伪类
 
 The negation pseudo-class, `:not(x)`, is a pseudo-class that takes an argument which is filtered out from the selection to be made. The `p:not(.intro)` selector uses the negation pseudo-class to identify every paragraph element without the class of `intro`. The paragraph element is identified at the beginning of the selector followed by the `:not(x)` pseudo-class. Inside of the parentheses falls the negation selector, the class of `.intro` in this case.
 
@@ -767,7 +767,7 @@ HTML
 <section class="awesome">This section will be selected</section>
 ```
 
-> ### Pseudo-classes Example
+> ### Pseudo-classes Example伪类示例
 
 > HTML
 
@@ -843,7 +843,7 @@ HTML
 > }
 > ```
 
-Pseudo-classes Overview
+### Pseudo-classes Overview伪类概览
 
 Example|Classification|Explanation
 ---|---|---
@@ -870,11 +870,11 @@ Example|Classification|Explanation
 `div:empty`|Empty Pseudo-class|Selects an element that does not contain any children or text nodes
 `div:not(.awesome)`|Negation Pseudo-class|Selects an element not represented by the stated argument
 
-## Pseudo-elements
+## Pseudo-elements伪元素
 
 Pseudo-elements are dynamic elements that don’t exist in the document tree, and when used within selectors these pseudo-elements allow unique parts of the page to be stylized. One important point to note, only one pseudo-element may be used within a selector at a given time.
 
-### Textual Pseudo-elements
+### Textual Pseudo-elements文本伪元素
 
 The first pseudo-elements ever released were the `:first-letter` and `:first-line` textual pseudo-elements. The `:first-letter` pseudo-element will identify the first letter of text within an element, while the `:first-line` pseudo-element will identify the first line of text within an element.
 
@@ -897,7 +897,7 @@ HTML
 <p class="bravo">Integer eget enim...</p>
 ```
 
-### Generated Content Pseudo-elements
+### Generated Content Pseudo-elements生成内容伪元素
 
 The `:before` and `:after` generated content pseudo-elements create new inline level pseudo-elements just inside the selected element. Most commonly these pseudo-elements are used in conjunction with the `content` property to add insignificant information to a page, however that is not always the case. Additional uses of these psuedo-elements may be to add user interface components to the page without having to clutter the document with unsemantic elements.
 
@@ -920,7 +920,7 @@ HTML
 <a href="http://learn.shayhowe.com/">Learn How to Build Websites</a>
 ```
 
-### Fragment Pseudo-element
+### Fragment Pseudo-element片段伪元素
 
 The `::selection` fragment pseudo-element identifies part of the document that has been selected, or highlighted, by a user’s actions. The selection may then be stylized, however only using the `color`, `background`, `background-color`, and `text-shadow` properties. It is worth noting, the `background-image` property is ignore. While the shorthand `background` property may be used to add a color, any images will be ignored.
 
@@ -991,7 +991,7 @@ When selecting any of the text within the demonstration below the background wil
 > }
 > ```
 
-### Pseudo-elements Overview
+### Pseudo-elements Overview伪元素概览
 
 Example|Classification|Explanation
 ---|---|---
